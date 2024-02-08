@@ -1,6 +1,6 @@
 ---
 label: Welcome
-description: Marker Data allows users to extract, convert & create databases from Final Cut Pro’s maker metadata. 
+description: Shot Data allows users to develop & build Shot List & Storyboard databases from Final Cut Pro.
 icon: home
 order: -1
 image: /static/shot-data-social-card.png
