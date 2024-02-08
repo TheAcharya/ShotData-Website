@@ -1,0 +1,46 @@
+---
+label: Welcome
+description: Marker Data allows users to extract, convert & create databases from Final Cut Pro’s maker metadata. 
+icon: home
+order: -1
+image: /static/shot-data-social-card.png
+---
+<style>
+	@media (max-width: 959px) {
+		img.rightLogo {
+			display: none !important;
+		}
+	}
+</style>
+<img class="rightLogo" src="https://github.com/TheAcharya/MarkerData-Website/blob/main/docs/static/logo.png?raw=true" align="right" style="width: 300px !important; height: 300px !important;" />
+
+# Shot Data
+
+## Core Features
+
+## Demo
+
+## Screenshot
+
+
+## System Requirements
+
+macOS Ventura 13.6.2 or later
+Final Cut Pro 10.6.9 or later
+Runs natively on both Apple silicon and Intel-based Mac computers
+
+## Use Cases
+- Marker Notes Database
+- VFX Database
+- ADR Database
+- Stock footage Database
+- Music Cue Sheet Database
+- Colourist’s Notes Database
+- Client Review & Tracking Database
+- Offline & Online Notes Database
+
+## Support
+
+Technical support questions are best asked in the [Discussions](https://github.com/TheAcharya/ShotData/discussions).
+
+For bug reports, feature requests and other suggestions you can create a new [issue](https://github.com/TheAcharya/ShotData/issues) to discuss.

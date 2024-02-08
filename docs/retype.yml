@@ -1,0 +1,67 @@
+input: .
+output: .retype
+url: https://shotdata.theacharya.co
+
+meta:
+title: " - Shot Data for Final Cut Pro"
+
+branding:
+  title: Shot Data
+  logo: static/logo.png
+
+favicon: static/favicon.ico
+
+editor:
+  enabled: false
+
+edit:
+  base: /docs
+
+breadcrumb:
+  home: ":icon-home:"
+  
+outbound:
+  icon: ""
+
+links:
+- text: Star our App on GitHub
+  icon: mark-github
+  link: https://github.com/TheAcharya/ShotData
+  target: blank
+  
+- text: Download
+  icon: download
+  link: https://github.com/TheAcharya/ShotData/releases
+  target: blank
+  
+- text: Issues
+  link: https://github.com/TheAcharya/ShotData/issues
+  icon: issue-opened
+  target: blank
+  
+- text: Discussions
+  link: https://github.com/TheAcharya/ShotData/discussions
+  icon: comment-discussion
+  target: blank
+  
+- text: Sponsor
+  link: https://github.com/sponsors/TheAcharya
+  icon: heart-fill
+  target: blank
+  
+- text: Vigneswaran Rajkumar
+  link: https://twitter.com/IAmVigneswaran
+  icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" version="1.1"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+  target: blank
+  
+markdown:
+  lineBreaks: hard
+
+footer:
+  copyright: "&copy; Copyright {{ year }} [The Acharya](https://theacharya.co/). All rights reserved."
+  links:
+  - text: License
+    link: license.md
+    icon: law
+    
+poweredByRetype: false
