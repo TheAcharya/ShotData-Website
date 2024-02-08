@@ -12,7 +12,7 @@ image: /static/shot-data-social-card.png
 		}
 	}
 </style>
-<img class="rightLogo" src="https://github.com/TheAcharya/MarkerData-Website/blob/main/docs/static/logo.png?raw=true" align="right" style="width: 300px !important; height: 300px !important;" />
+<img class="rightLogo" src="https://github.com/TheAcharya/ShotData-Website/blob/main/docs/static/logo.png?raw=true" align="right" style="width: 300px !important; height: 300px !important;" />
 
 # Shot Data
 
@@ -30,14 +30,6 @@ Final Cut Pro 10.6.9 or later
 Runs natively on both Apple silicon and Intel-based Mac computers
 
 ## Use Cases
-- Marker Notes Database
-- VFX Database
-- ADR Database
-- Stock footage Database
-- Music Cue Sheet Database
-- Colourist’s Notes Database
-- Client Review & Tracking Database
-- Offline & Online Notes Database
 
 ## Support
 
