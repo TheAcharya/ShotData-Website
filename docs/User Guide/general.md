@@ -5,7 +5,7 @@ order: -3
 ---
 # General Settings
 
-![General Settings](/assets/pd-general-settings.png)
+![General Settings](/assets/sd-general-settings.png)
 
 ## Export Destination
 
@@ -105,7 +105,7 @@ PDF export is experimental and optimised for A4 landscape. Tables paginate acros
 
 ## Sheets
 
-![](/assets/pd-general-settings-sheets.png)
+![](/assets/sd-general-settings-sheets.png)
 
 By [!badge text="Default"], **Production Data** includes `Selected Roles Inventory` in the Excel report. This tab permits you to choose which worksheets are included in each export.
 
@@ -144,7 +144,7 @@ When an enabled sheet has no matching items in the project, Excel and PDF keep t
 
 ### Label
 
-![](/assets/pd-general-settings-sheets-copyright.png)
+![](/assets/sd-general-settings-sheets-copyright.png)
 
 The `Label` section adds an optional copyright line to the report cover branding.
 
@@ -162,7 +162,7 @@ Whitespace-only text is treated as empty and is not written to the report.
 
 ## Columns
 
-![](/assets/pd-general-settings-columns.png)
+![](/assets/sd-general-settings-columns.png)
 
 The `Columns` tab controls which columns appear on role inventory sheets in the Excel workbook. Use the table to turn individual columns on or off. Disabled columns are omitted from the export.
 
@@ -182,7 +182,7 @@ Pressing `Disable All` will uncheck all column selections.
 
 ## Notification
 
-![](/assets/pd-general-settings-notifications.png)
+![](/assets/sd-general-settings-notifications.png)
 
 ### Notification Frequency
 
@@ -203,7 +203,7 @@ By [!badge text="Default"] Progress Bar is shown on **Production Data**'s dock i
 
 ### Open macOS Notification Settings
 
-![](/assets/pd-general-settings-notifications_macOS.png)
+![](/assets/sd-general-settings-notifications_macOS.png)
 
 Select the `Open macOS Notification Settings` link to open macOS Notification Settings. Navigate to **Production Data** to manage notification settings.
 

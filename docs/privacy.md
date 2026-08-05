@@ -5,13 +5,13 @@ order: -98
 ---
 # Privacy Policy
 
-## Production Data
+## Shot Data
 
-The Acharya ("We", "Us", or "Our") built Production Data (the "App") as a simple, private tool, available on the Mac App Store and through TestFlight. This Privacy Policy explains how We handle your information when you use the App, regardless of how you installed it.
+The Acharya ("We", "Us", or "Our") built Shot Data (the "App") as a simple, private tool, available on the Mac App Store and through TestFlight. This Privacy Policy explains how We handle your information when you use the App, regardless of how you installed it.
 
 ## Summary
 
-**Production Data does not collect, store, transmit, or track any personal data or usage data.** The App works entirely on your device and does not connect to any server operated by Us.
+**Shot Data does not collect, store, transmit, or track any personal data or usage data.** The App works entirely on your device and does not connect to any server operated by Us.
 
 ## Data Collection
 
@@ -59,4 +59,4 @@ If you have any questions about this Privacy Policy, feel free to reach out [her
 
 ---
 
-Last updated: 11th July 2026
+Last updated: 5th August 2026

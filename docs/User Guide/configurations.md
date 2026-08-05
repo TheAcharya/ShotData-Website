@@ -1,15 +1,15 @@
 ---
 label: Configurations
 icon: briefcase
-order: -5
+order: -4
 ---
 # Configuration Settings
 
-![Configuration Settings](/assets/pd-configuration-settings.png)
+![Configuration Settings](/assets/sd-configuration-settings.png)
 
 ## Default Configuration
 
-![Default Configuration](/assets/pd-configuration-settings_01.png)
+![Default Configuration](/assets/sd-configuration-settings_01.png)
 
 You will not be allowed to delete or make changes to the Default Configuration.
 
@@ -22,7 +22,7 @@ The Default Configuration serves as a comprehensive delineation of the default v
 1. Click on the `+` button.
 2. You will be prompted to enter a Configuration Name.
 
-![Default Configuration](/assets/pd-configuration-settings_02.png)
+![Default Configuration](/assets/sd-configuration-settings_02.png)
 
 3. Click on the `Save` button.
 
@@ -30,7 +30,7 @@ The Default Configuration serves as a comprehensive delineation of the default v
 Identical Configuration Names are disallowed, and attempts to do so will elicit an error prompt.
 !!!
 
-![Couldn't create configuration](/assets/pd-configuration-settings_03.png)
+![Couldn't create configuration](/assets/sd-configuration-settings_03.png)
 
 ## Make Active Configuration
 
@@ -38,7 +38,7 @@ Identical Configuration Names are disallowed, and attempts to do so will elicit 
 
 At any given time, only a single Configuration may be designated as active.
 
-![Active Configuration](/assets/pd-configuration-settings_04.gif)
+![Active Configuration](/assets/sd-configuration-settings_04.gif)
 
 1. Select your desired Configuration.
 2. Click on the `Make Active` button.
@@ -49,7 +49,7 @@ Alternatively, you can click on the `Configurations` menu located in the menu ba
 
 1. Click on the `Configurations` menu.
 
-![Configurations Menu](/assets/pd-configuration-settings_05.gif)
+![Configurations Menu](/assets/sd-configuration-settings_05.gif)
 
 2. Click on your desired Configuration to `Make Active`.
 
@@ -59,7 +59,7 @@ You can also click on the `Quick Configurations Selector` menu located on the to
 
 1. Click on the `Quick Configurations Selector` menu.
 
-![Quick Configurations Selector](/assets/pd-configuration-settings_06.gif)
+![Quick Configurations Selector](/assets/sd-configuration-settings_06.gif)
 
 2. Click on your desired Configuration to `Make Active`.
 
@@ -69,7 +69,7 @@ Starting with **Production Data** version 1.1.0, you will have the capability to
 
 1. Right-click on your desired Configuration.
 
-![Assign Shortcut](/assets/pd-configuration-settings_08.png)
+![Assign Shortcut](/assets/sd-configuration-settings_08.png)
 
 2. Click on your desired keyboard shortcut.
 
@@ -99,7 +99,7 @@ Through the utilisation of the `Duplicate` function, you can effortlessly genera
 
 On any Active Configuration, modifications to any settings prompts the display of a `Changed` badge adjacent to the Configuration side panel.
 
-![Configuration Changed](/assets/pd-configuration-settings_07.png)
+![Configuration Changed](/assets/sd-configuration-settings_07.png)
 
 You have three methods for updating an active configuration.
 

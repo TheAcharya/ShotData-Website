@@ -3,7 +3,7 @@ layout: page
 ---
 # Additional Credits
 
-Production Data is also made possible because of the hard work of these amazing open-source projects and libraries. :heart:
+Shot Data is also made possible because of the hard work of these amazing open-source projects and libraries. :heart:
 
 | Library | Role |
 |---|---|

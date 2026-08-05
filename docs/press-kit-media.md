@@ -6,7 +6,7 @@ order: -95
 
 # Press Kit & Media
 
-We would greatly appreciate your support in sharing and promoting **Production Data**!
+We would greatly appreciate your support in sharing and promoting **Shot Data**!
 
 [!file Press Kit](https://github.com/TheAcharya/MarkerData/raw/main/Press%20Kit/press-kit.zip)
 
