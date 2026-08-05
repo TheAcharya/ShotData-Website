@@ -15,13 +15,13 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-dotnet@v1
+      - uses: actions/checkout@v7
         with:
-          dotnet-version: 7.0.x
+          fetch-depth: 0
 
       - uses: retypeapp/action-build@latest
+        env:
+          RETYPE_SECRET: ${{ secrets.RETYPE_SECRET }}
 
       - uses: retypeapp/action-github-pages@latest
         with:

@@ -1,38 +1,111 @@
 ---
 label: Welcome
-description: Shot Data allows users to develop & build Shot List & Storyboard databases from Final Cut Pro.
+description: Production Data allows users to export Excel production reports from Final Cut Pro timelines.
 icon: home
 order: -1
-image: /static/shot-data-social-card.png
+image: /static/production-data-social-card.png
 ---
-<style>
-	@media (max-width: 959px) {
-		img.rightLogo {
-			display: none !important;
-		}
-	}
-</style>
-<img class="rightLogo" src="https://github.com/TheAcharya/ShotData-Website/blob/main/docs/static/logo.png?raw=true" align="right" style="width: 300px !important; height: 300px !important;" />
 
-# Shot Data
+# Production Data
+
+![](/static/production-data-social-card.png)
+
+The lightweight spreadsheet creation application crafted for [Final Cut Pro](https://www.apple.com/final-cut-pro/). It serves as a native macOS frontend, allowing users to conveniently export structured Excel production reports from Final Cut Pro projects, powered by [OpenFCPXMLKit](https://github.com/TheAcharya/OpenFCPXMLKit), a free and open-source, experimental FCPXML parsing engine.
 
 ## Core Features
 
+- Functionality allowing export of Excel workbooks (`.xlsx`) from Final Cut Pro timelines.
+- Precise extraction of timeline metadata, ensuring an accurate representation of clips, roles, and production information.
+- Role-based inventory sheets built from audio and video roles on the timeline, with per-role enable and disable control.
+- Comprehensive timeline functionality, encompassing support for timelines such as Projects and Compound Clips.
+- Optional report sheets for Markers, Keywords, Titles & Generators, Transitions, Effects, Speed Changes, Summary, and Media Summary.
+- Configurable report columns, timecode format, and disabled-clip exclusion for tailored deliverables.
+- Allows the creation of multiple configurations tailored to diverse project requirements, with assignable keyboard shortcuts.
+- Export on drop or confirm when you are ready, with automatic and manual export modes.
+- Accepts drag and drop and Final Cut Pro timeline drags.
+- Each export is saved to a uniquely named timestamped folder within your chosen export destination.
+- Optional experimental PDF report export (`.pdf`) alongside the Excel workbook, using the same active Configuration settings.
+- Exported Excel workbooks are compatible with Apple's Numbers and other spreadsheet applications.
+- Written in Apple Swift language and SwiftUI framework.
+- No hidden costs, no subscriptions, no in-app purchases.
+- Available on the Mac App Store.
+
+## Available Report Sheets
+
+- Selected Roles Inventory
+- Markers
+- Keywords
+- Titles & Generators
+- Transitions
+- Non-Standard Effects & Templates
+- Video & Audio Effects
+- Speed Change Effects
+- Summary
+- Media Summary
+
 ## Demo
+
+==- Export to Excel
+
+<video controls width="1920">
+  <source src="/assets/pd-export-01.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+==- Review Roles
+
+<video controls width="1920">
+  <source src="/assets/pd-roles-01.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+==- Automatic Export
+
+<video controls width="1920">
+  <source src="/assets/pd-automatic-export-01.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+==- Manual Export
+
+<video controls width="1920">
+  <source src="/assets/pd-manual-export-01.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+===
 
 ## Screenshot
 
+![Main Extract Window](/assets/pd-main.png)
+
+![General Settings](/assets/pd-general-settings.png)
+
+![Roles](/assets/pd-roles-settings.png)
+
+![Configuration Settings](/assets/pd-configuration-settings.png)
 
 ## System Requirements
 
-macOS Ventura 13.6.2 or later
-Final Cut Pro 10.6.9 or later
-Runs natively on both Apple silicon and Intel-based Mac computers
+macOS 26.0 or later
+Final Cut Pro 12.0 (Lifetime / Perpetual Version) or later
+Final Cut Pro Creator Studio 12.0 (Subscription Version) or later
+Runs only on Apple silicon Macs
 
 ## Use Cases
 
+- Production tracking spreadsheets
+- Role inventory for sound editorial and mix
+- Assistant editor clip and conform reports
+- VFX turnover and handoff sheets
+- Post-production deliverable documentation
+- Timeline marker and keyword logging exports
+- Client review and tracking workbooks
+- Offline and online editorial notes
+- Dubbing and ADR role sheets
+
 ## Support
 
-Technical support questions are best asked in the [Discussions](https://github.com/TheAcharya/ShotData/discussions).
+There is currently no dedicated trial version of **Production Data**. However, prospective users are warmly welcome to download the latest CLI build from [OpenFCPXMLKit](https://github.com/TheAcharya/OpenFCPXMLKit), the open-source engine that powers the application, with full documentation provided within the repository. The spreadsheet produced via the CLI is identical in output to the one generated by **Production Data** itself, so we would encourage you to test your own `.fcpxml` or `.fcpxmld` files with the CLI first, and to proceed with purchasing **Production Data** only once you are happy with the results.
 
-For bug reports, feature requests and other suggestions you can create a new [issue](https://github.com/TheAcharya/ShotData/issues) to discuss.
+Do note that OpenFCPXMLKit is offered as-is, as an open-source project, and does not come with official support. That said, if you have any questions or run into issues specifically with the downloaded **Production Data** software, please do not hesitate to reach out. You can contact us [here](https://tech.theacharya.co).

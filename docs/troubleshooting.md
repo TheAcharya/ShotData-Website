@@ -1,66 +1,225 @@
 ---
 label: Troubleshooting
 icon: tools
-order: -95
+order: -94
 ---
 # Troubleshooting
 
 Below, you will find a comprehensive list of common issues users may encounter, accompanied by solutions to resolve them.
 
-## How to access the logs in Marker Data?
+If you are still stuck after following these steps, open the logs (`Help` → `Open Logs`) and retain the log files from the Logs folder when seeking further help.
 
-To access the logs for **Shot Data**, navigate to the `Help` menu and select `Open Logs`.
+## How to access the logs in Production Data?
 
-## Why is the upload speed to Notion slow?
+To access the logs for **Production Data**, navigate to the `Help` menu and select `Open Logs`.
 
-The slow upload speed to Notion could be attributed to potential issues with Notion's servers or regional server connectivity. Please verify the current [status](https://status.notion.so/) of Notion's servers.
+This opens the Logs folder in Finder and writes a current snapshot of application activity to `productiondata_log.txt`. During parse and export, **Production Data** also writes `openfcpxmlkit_log.txt` in the same folder.
 
-## Final Cut Pro crashes during extraction when the timeline includes Metaburner’s Custom Title.
+!!!info Info
+Both files live under Application Support for **Production Data**. Share them only if you are comfortable doing so when requesting support — they may include project and file names from your machine.
+!!!
 
-Metaburner’s Custom Title is a highly complex title effect, leading to an intricate FCPXML structure. This complexity is the primary reason Final Cut Pro encounters stability issues during the extraction process. Additionally, **Marker Data** does not account for Metaburner’s Custom Title, as we do not support third-party custom titles for parsing.
+## Failed to export completely
 
-If you need to burn Metaburner’s Title into your clips for image extraction via **Marker Data**, a simple solution is to pre-render the timeline. To do this, render the timeline containing Metaburner’s Title and export it as a new file. Then, create a new timeline with the rendered file and copy-paste the title containing all your markers. This approach allows you to perform extraction tasks seamlessly without encountering any issues.
+![Failed to export completely](/assets/pd-troubleshooting_01.png)
 
-## I have verified and ensured that all Notion prerequisites are met and entered correctly. However, Marker Data still shows Failed to upload completely.
+**Production Data** cannot write the Excel workbook until you choose an export destination.
 
-1. Navigate to the `Help` menu and select `Open Logs`.
-2. Open the log file `csv2notion-neo_log.txt`.
-3. Scroll down to review the most recent entries.
+You will see this when:
 
-If you encounter error messages similar to the one displayed, it may indicate that Notion has updated its APIs, requiring an update to Marker Data's Notion module.
+- The Extract footer shows `Please select!` next to `Export Folder`
+- You start an export (drop, `Choose File`, `File → Open…`, or `Start Export`) without a folder selected
+- The alert reads `Failed to export completely` with the message `Please select a valid export folder.`
 
-```bash
-2025-02-15 10:23:02,118 [ERROR   ] Error at division
-Traceback (most recent call last):
-  File "csv2notion_neo/cli.py", line 58, in cli
-  File "csv2notion_neo/cli_steps.py", line 80, in upload_rows
-  File "tqdm/std.py", line 1181, in __iter__
-  File "csv2notion_neo/utils_threading.py", line 39, in process_iter
-  File "csv2notion_neo/utils_threading.py", line 39, in <genexpr>
-  File "concurrent/futures/_base.py", line 437, in result
-  File "concurrent/futures/_base.py", line 389, in __get_result
-  File "concurrent/futures/thread.py", line 57, in run
-  File "csv2notion_neo/utils_threading.py", line 27, in worker
-  File "csv2notion_neo/notion_uploader.py", line 33, in upload_row
-  File "csv2notion_neo/notion_uploader.py", line 50, in _get_db_row
-  File "csv2notion_neo/notion_db.py", line 106, in add_row
-  File "csv2notion_neo/notion_db_collection.py", line 39, in add_row_block
-  File "csv2notion_neo/notion_db_collection.py", line 69, in _add_row_block
-  File "csv2notion_neo/notion_row.py", line 46, in icon
-  File "csv2notion_neo/notion_row_upload_file.py", line 21, in upload_filetype
-  File "csv2notion_neo/notion_row_upload_file.py", line 41, in upload_file
-```
+On [Extract](/user-guide/extract), click the folder control in the footer, or open [General Settings](/user-guide/general) → `File` and choose a destination under `Export Destination`. Select a folder you can write to (for example on your Mac, an external drive, or a mounted network volume). Confirm the footer no longer shows `Please select!` — it should display the folder name — then provide your project again, or press `Start Export` if you are in `Manual` mode.
 
-Occasionally, **Shot Data**'s Notion module would become non-functional when Notion updates its APIs. This occurs due to the reliance on [unofficial APIs](/faq/#what-rationale-underlies-the-utilisation-of-notion-v2-tokens-in-lieu-of-official-api-provided-by-notion).
+!!!info Info
+The export folder is remembered with a security-scoped bookmark. **Production Data** does not store a plain file path as the source of truth. If the volume is disconnected later, see [Missing Folder!](#export-folder-shows-missing-folder).
+!!!
 
-If you encounter such an problem, please open an [issue](https://github.com/TheAcharya/ShotData/issues). With time and thorough investigation, we will release an update for **Shot Data**. However, the update may not be immediate, as it depends on our availability to analyse and resolve the issue. We appreciate your patience and understanding.
+## Export Folder shows “Missing Folder!”
 
-## Module Status
+The footer (and General → File) shows `Missing Folder!` when a previously chosen destination can no longer be resolved — for example the drive was ejected, the network volume is offline, or the folder was moved or deleted.
 
-To streamline our internal testing process, we have implemented an automated weekly validation of Marker Data’s module.
+Reconnect the drive or volume if it was disconnected, then click the folder control and choose the destination again (or a new one). Right-click the folder control and choose `Clear Path` if you need to remove the old selection first, then pick a folder again.
 
-Modules   | Status | Schedule
----    | --- | ---
-Notion  | [![notion_image_upload_test](https://github.com/TheAcharya/csv2notion-neo/actions/workflows/notion_image_upload_test.yml/badge.svg)](https://github.com/TheAcharya/csv2notion-neo/actions/workflows/notion_image_upload_test.yml) | Scheduled weekly on Saturdays at 8:00 AM Singapore time
+## Start Export is disabled or greyed out
 
-If the badge is green, indicating a successful test, it confirms that our modules are compatible with the supported database platforms. However, if the badge turns red, signalling a failure, an update may be necessary to ensure continued compatibility.
+In `Manual` mode, `Start Export` stays disabled until a valid export folder is selected. Set an `Export Folder` first, then press `Start Export`.
+
+See also [Export Mode](/user-guide/general/#export-mode).
+
+## The export fails with an alert
+
+When an export does not finish successfully, **Production Data** shows `Failed to export completely`.
+
+- Press `Show Error Details` on the alert, **or**
+- Press `Show Error Details` in the progress footer on Extract
+
+This opens the `Failed Tasks` window with the file path and the error message for each failure. Use that text when searching this page or when contacting support.
+
+Press `Close` on the progress footer when you are finished reviewing the result.
+
+## Roles tables are empty on launch
+
+The [Roles](/user-guide/roles) panel stays empty until you load an FCPXML project. Tables appear only after a successful roles session.
+
+Drop an `.fcpxml` or `.fcpxmld` file onto Roles or Extract, drag a timeline / compound clip from Final Cut Pro, or use `File → Open…` (`⌘` `O`). Wait until the Roles footer shows roles loaded from your project, then review the Video and Audio tabs and export — or switch to Extract and press `Start Export` in `Manual` mode.
+
+!!!info Info
+There is no Clear or Refresh control for Roles. To refresh the list, load a project again.
+!!!
+
+## No audio or video roles found
+
+After loading a project, Roles may report that no audio or video roles were found. Confirm the file is a Final Cut Pro XML export (`.fcpxml` / `.fcpxmld`) or a timeline / compound-clip drag that contains FCPXML. Prefer File → Export XML from Final Cut Pro for a full project document when possible. For compound clips dragged from Final Cut Pro, allow **Production Data** a moment to stage the file — root-level compound clips are normalised before roles are read. You may also try exporting XML again from Final Cut Pro and reopening the new file.
+
+If roles still do not appear, open the logs (`Help` → `Open Logs`) and contact support with `openfcpxmlkit_log.txt`.
+
+## Dropping a project on Roles does nothing useful / stays on Roles
+
+Behaviour depends on [Export Mode](/user-guide/general/#export-mode):
+
+- **Automatic** — drop on Roles should switch to Extract and begin the export (after a folder is set).
+- **Manual** — Roles stays open so you can review enable/disable settings. Switch to Extract and press `Start Export` when you are ready.
+
+If you expected an immediate export, switch to `Automatic` under General → File, or use `⌘` `⇧` `E`.
+
+## Only one project is accepted when I drop several files
+
+This is intentional. **Production Data** processes one FCPXML project per action. If multiple items are offered at once, only the first item is used.
+
+Provide one project at a time.
+
+## Media Summary lists files as missing, but the media is on disk
+
+`Media Summary` is an optional sheet. **Production Data** reads media paths from the FCPXML and checks whether those paths exist — it does not open or copy your media files.
+
+Paths may appear as missing when:
+
+- You dragged a timeline or compound clip from Final Cut Pro (or used a text clipping), so the project was staged in the application Cache without a neighbouring media folder
+- Relative paths in the XML cannot be resolved against the source location
+- The media volume is offline or the files have moved since the project was edited
+
+The rest of the Excel (and optional PDF) report still exports normally. Turn off `Media Summary` under [Sheets](/user-guide/general/#sheets) if you do not need this sheet, or open an on-disk `.fcpxml` / `.fcpxmld` beside its media when you need more accurate missing-media checks.
+
+When the sheet is enabled and no referenced media is missing, Excel and PDF keep the headers and show a `No Missing Media` status row — that is expected, not an error.
+
+!!!info Info
+Checking `Distinguish Original and Proxy Media` only splits Missing Original / Missing Proxy columns; it does not grant broader disk access.
+!!!
+
+## Install Location Warning
+
+macOS may show `Install Location Warning` if **Production Data** is not running from the Applications folder.
+
+Move the application into `/Applications`, then launch it again. Choose `Don't show again` only if you intentionally run it from another location and accept the risk of sandbox or bookmark quirks.
+
+## Couldn’t create or rename a configuration
+
+Named configurations must be unique. If a configuration with the same name already exists (in the list or as a file on disk), **Production Data** refuses to overwrite it and shows an alert such as `Couldn't create configuration`.
+
+Choose a different name. The built-in `Default` configuration cannot be saved as a named file, renamed, or deleted.
+
+See [Configurations](/user-guide/configurations).
+
+## Configurations shows a “Changed” badge
+
+The orange `Changed` badge means the active non-default configuration has unsaved edits compared with its saved preset.
+
+- Press `Update Active Configuration` (`⌘` `S`) to save, **or**
+- Discard changes from the Configurations panel or menu (`⌘` `Z`)
+
+Exports still use your current in-memory settings even when `Changed` is visible — the badge is a reminder to save the preset if you want those settings kept for next time.
+
+## Notifications do not appear
+
+Under General → Notifications:
+
+1. Confirm `Notification Frequency` is not set to `Never`.
+2. Press `Open macOS Notification Settings` and allow notifications for **Production Data**.
+3. Remember that **Production Data** may only appear in Notification Settings after the first authorisation prompt.
+4. When **Production Data** is the frontmost app, banners may be silent or less obvious — check Notification Centre.
+
+`Each Report Step` sends intermediate banners without sound; the final completion notification uses the default sound.
+
+## Dock progress ring does not show
+
+Enable `Show Progress on Dock Icon` under General → Notifications. Progress appears only while an export is running.
+
+## Clean Cache — when should I use it?
+
+`File` → `Show Cache` reveals the temporary FCPXML staging folder. `File` → `Clean Cache` (`⌘` `K`) empties that folder only.
+
+Use Clean Cache if staging files have accumulated after many Final Cut Pro drags or text clippings. It does **not** delete preferences, Configurations, Logs, or your export folder.
+
+Clean Cache is disabled while an export or roles load is in progress. Wait until the run finishes, then clean.
+
+!!!info Info
+Cache files may be named like `FCP Drop-…`. Export folders and `.xlsx` / `.pdf` names still use the project or clip name from the timeline — not the Cache staging name.
+!!!
+
+## PDF export looks different from Excel or truncates text
+
+`Create PDF Report` is experimental and optimised for A4 landscape. Tables paginate across pages and cell text may truncate. Matching sheet pages share a tint.
+
+For the complete dataset and full column control, use the Excel (`.xlsx`) workbook. The PDF uses the same active Configuration (sheets, columns, roles, timecode, and filters) — there are no separate PDF-only settings.
+
+See [Create PDF Report](/user-guide/general/#create-pdf-report).
+
+## Protect Sheets — I cannot open the file / where is the password?
+
+`Protect Sheets` applies an Excel worksheet **edit lock** so cells are harder to change by accident. It is **not** file-open encryption and does not set a workbook password.
+
+Excel still opens the file without a password. Anyone can turn protection off in Excel. PDF export ignores this option — use Preview’s Encrypt (or another PDF tool) if you need a password-protected PDF.
+
+## The spreadsheet is missing sheets or columns I expected
+
+Exports follow the **active Configuration**:
+
+1. Check [Sheets](/user-guide/general/#sheets) for which worksheets are enabled.
+2. Check [Columns](/user-guide/general/#columns) for enabled workbook columns.
+3. Check [Roles](/user-guide/roles) — disabled roles are omitted from the report.
+4. Confirm options such as `Exclude Disabled Clips` and `Include Markers Outside Clip Boundaries` under General → File.
+
+The Markers `Hidden` column appears only when `Include Markers Outside Clip Boundaries` is on; it is not listed under Columns.
+
+If the role inventory `Total` footer is missing, check [Columns](/user-guide/general/#columns). Excluding `Timeline Out` or `Clip Duration` omits the Total footer entirely (Excel and PDF).
+
+## An enabled sheet shows “No … Found” or looks empty
+
+Enabling a sheet under [Sheets](/user-guide/general/#sheets) includes that section in the Excel workbook and optional PDF. When the project has no matching items, the sheet is **not** omitted — Excel and PDF keep the headers and show a single status row, for example:
+
+- `No Markers Found`
+- `No Keywords Found`
+- `No Titles & Generators Found`
+- `No Transitions Found`
+- `No Effects Found`
+- `No Speed Change Effects Found`
+- `No Non-Std Effects Found`
+- `No Roles Found`
+- `No Missing Media` (on `Media Summary` when nothing is missing)
+
+This is not an export failure. Confirm the timeline actually contains the items you expect for that sheet, or turn the sheet off if you do not need it.
+
+!!!info Info
+Individual **per-role** inventory tabs may still be omitted when empty. `Summary` keeps its project-metrics layout rather than a `No … Found` status row.
+!!!
+
+## Excel shows “Non-Std Effects & Templates” instead of the full name
+
+Excel limits worksheet names to 31 characters, so the workbook tab would appear as `Non-Std Effects & Templates`. The Sheets toggle and Extract status bar use the full name `Non-Standard Effects & Templates`. 
+
+See [Sheets](/user-guide/general/#sheets).
+
+## Drag and drop from Final Cut Pro does not start an export
+
+Set a valid [Export Folder](#failed-to-export-completely--please-select-a-valid-export-folder) first. Confirm Export Mode: `Automatic` starts immediately; `Manual` waits for `Start Export` on Extract. Drop onto Extract or Roles (or the Dock icon), or use `Choose File` / `File → Open…`. Finder text clippings are accepted only when they contain FCPXML content, and only one project is processed per action.
+
+If nothing happens, try File → Export XML from Final Cut Pro and open the `.fcpxml` / `.fcpxmld` file instead.
+
+## Library folders failed to initialise
+
+On first launch, **Production Data** creates its Application Support folders (preferences, Configurations, Logs, Cache). If you see `Failed to initialize Library folders`, free disk space, ensure the app may write inside its sandbox container, then quit and reopen **Production Data**.
+
+If the alert persists, contact support with a description of your macOS version and install location.
