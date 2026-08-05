@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shotdata.theacharya.co/sitemap.xml.gz
+Sitemap: http://shotdata.theacharya.co/sitemap.xml
