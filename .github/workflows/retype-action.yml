@@ -7,21 +7,16 @@ on:
 
 jobs:
   publish:
-    name: Publish to retype branch
-
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
 
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
       - uses: retypeapp/action-build@latest
-        env:
-          RETYPE_SECRET: ${{ secrets.RETYPE_SECRET }}
 
       - uses: retypeapp/action-github-pages@latest
         with:
