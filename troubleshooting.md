@@ -16,7 +16,7 @@ Both files live under Application Support for **Production Data**. Share them on
 
 ## Failed to export completely
 
-![Failed to export completely](/assets/pd-troubleshooting_01.png)
+![Failed to export completely](/assets/sd-troubleshooting_01.png)
 
 **Production Data** cannot write the Excel workbook until you choose an export destination.
 

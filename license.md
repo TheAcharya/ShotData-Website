@@ -1,10 +1,10 @@
-# Production Data End User License Agreement
+# Shot Data End User License Agreement
 
 Copyright (c) 2026 The Acharya
 
-## Production Data
+## Shot Data
 
-This licence agreement is between you ("You") and The Acharya ("We" or "Us") for the use of Production Data (the "App"). By downloading or using the App, You agree to these terms. If You do not agree, do not use the App.
+This licence agreement is between you ("You") and The Acharya ("We" or "Us") for the use of Shot Data (the "App"). By downloading or using the App, You agree to these terms. If You do not agree, do not use the App.
 
 ## Apple Is Not a Party
 
@@ -61,4 +61,4 @@ Feel free to reach out if you have any questions or issues with the downloaded s
 
 ---
 
-Last updated: 11th July 2026
+Last updated: 5th August 2026

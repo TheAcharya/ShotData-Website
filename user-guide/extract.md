@@ -1,6 +1,6 @@
 # Extract
 
-![Extract Window](/assets/pd-main.png)
+![Extract Window](/assets/sd-main.png)
 
 **Production Data**'s home panel, `Extract` Panel, lets you provide a Final Cut Pro project and generate an Excel production report (.xlsx), with an optional PDF when enabled in [General Settings](/user-guide/general).
 
@@ -8,7 +8,7 @@ Following the creation of your [Configuration](/user-guide/configurations), sele
 
 ## Drag and Drop
 
-![Extract Window](/assets/pd-main-01.gif)
+![Extract Window](/assets/sd-main-01.gif)
 
 Drag and drop an `.fcpxml` or `.fcpxmld` file onto Extract, or drag a timeline / compound clip directly from Final Cut Pro. You may also use a Finder text clipping that contains FCPXML.
 
@@ -23,45 +23,45 @@ In `Automatic` mode, export begins as soon as a project is received. In `Manual`
 ## Excel Sample Sheets
 
 +++ Sheet 1
-![Selected Roles Inventory](/assets/pd-excel-example_01.png)
+![Selected Roles Inventory](/assets/sd-excel-example_01.png)
 +++ Sheet 2
-![Titles](/assets/pd-excel-example_02.png)
+![Titles](/assets/sd-excel-example_02.png)
 +++ Sheet 3
-![Video](/assets/pd-excel-example_03.png)
+![Video](/assets/sd-excel-example_03.png)
 +++ Sheet 4
-![Roles](/assets/pd-excel-example_04.png)
+![Roles](/assets/sd-excel-example_04.png)
 +++ Sheet 5
-![Markers](/assets/pd-excel-example_05.png)
+![Markers](/assets/sd-excel-example_05.png)
 +++ Sheet 6
-![Keywords](/assets/pd-excel-example_06.png)
+![Keywords](/assets/sd-excel-example_06.png)
 +++ Sheet 7
-![Titles & Generators](/assets/pd-excel-example_07.png)
+![Titles & Generators](/assets/sd-excel-example_07.png)
 +++ Sheet 8
-![Video & Audio Effects](/assets/pd-excel-example_08.png)
+![Video & Audio Effects](/assets/sd-excel-example_08.png)
 +++ Sheet 9
-![Summary](/assets/pd-excel-example_09.png)
+![Summary](/assets/sd-excel-example_09.png)
 +++
 
 ## PDF Sample Pages
 
 +++ Page 1
-![Selected Roles Inventory](/assets/pd-pdf-example_01.png)
+![Selected Roles Inventory](/assets/sd-pdf-example_01.png)
 +++ Page 2
-![Titles](/assets/pd-pdf-example_02.png)
+![Titles](/assets/sd-pdf-example_02.png)
 +++ Page 3
-![Video](/assets/pd-pdf-example_03.png)
+![Video](/assets/sd-pdf-example_03.png)
 +++ Page 4
-![Roles](/assets/pd-pdf-example_04.png)
+![Roles](/assets/sd-pdf-example_04.png)
 +++ Page 5
-![Markers](/assets/pd-pdf-example_05.png)
+![Markers](/assets/sd-pdf-example_05.png)
 +++ Page 6
-![Keywords](/assets/pd-pdf-example_06.png)
+![Keywords](/assets/sd-pdf-example_06.png)
 +++ Page 7
-![Titles & Generators](/assets/pd-pdf-example_07.png)
+![Titles & Generators](/assets/sd-pdf-example_07.png)
 +++ Page 8
-![Video & Audio Effects](/assets/pd-pdf-example_08.png)
+![Video & Audio Effects](/assets/sd-pdf-example_08.png)
 +++ Page 9
-![Summary](/assets/pd-pdf-example_09.png)
+![Summary](/assets/sd-pdf-example_09.png)
 +++
 
 !!!info Info

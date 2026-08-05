@@ -40,28 +40,28 @@ The lightweight spreadsheet creation application crafted for [Final Cut Pro](htt
 ==- Export to Excel
 
 <video controls width="1920">
-  <source src="/assets/pd-export-01.mp4" type="video/mp4">
+  <source src="/assets/sd-export-01.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
 ==- Review Roles
 
 <video controls width="1920">
-  <source src="/assets/pd-roles-01.mp4" type="video/mp4">
+  <source src="/assets/sd-roles-01.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
 ==- Automatic Export
 
 <video controls width="1920">
-  <source src="/assets/pd-automatic-export-01.mp4" type="video/mp4">
+  <source src="/assets/sd-automatic-export-01.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
 ==- Manual Export
 
 <video controls width="1920">
-  <source src="/assets/pd-manual-export-01.mp4" type="video/mp4">
+  <source src="/assets/sd-manual-export-01.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
@@ -69,13 +69,13 @@ Your browser does not support the video tag.
 
 ## Screenshot
 
-![Main Extract Window](/assets/pd-main.png)
+![Main Extract Window](/assets/sd-main.png)
 
-![General Settings](/assets/pd-general-settings.png)
+![General Settings](/assets/sd-general-settings.png)
 
-![Roles](/assets/pd-roles-settings.png)
+![Roles](/assets/sd-roles-settings.png)
 
-![Configuration Settings](/assets/pd-configuration-settings.png)
+![Configuration Settings](/assets/sd-configuration-settings.png)
 
 ## System Requirements
 

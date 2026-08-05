@@ -18,7 +18,7 @@ Notwithstanding this emphasis on user-friendly design, this website stands ready
 
 It is imperative to review Production Data’s Onboarding information and instructions to familiarise yourself with its key features and perform necessary initial steps before using the application.
 
-![Production Data's Onboarding Screen](/assets/pd-onboarding.gif)
+![Production Data's Onboarding Screen](/assets/sd-onboarding.gif)
 
 ## Uninstall
 

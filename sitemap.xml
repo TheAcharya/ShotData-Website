@@ -13,16 +13,16 @@
     <loc>http://shotdata.theacharya.co/disclaimers/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/troubleshooting/</loc>
-  </url>
-  <url>
-    <loc>http://shotdata.theacharya.co/user-guide/extract/</loc>
-  </url>
-  <url>
     <loc>http://shotdata.theacharya.co/prologue/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/user-guide/configurations/</loc>
+  </url>
+  <url>
+    <loc>http://shotdata.theacharya.co/troubleshooting/</loc>
+  </url>
+  <url>
+    <loc>http://shotdata.theacharya.co/user-guide/extract/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/user-guide/general/</loc>
@@ -32,6 +32,9 @@
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/privacy/</loc>
+  </url>
+  <url>
+    <loc>http://shotdata.theacharya.co/user-guide/databases/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/press-kit-media/</loc>
@@ -49,10 +52,13 @@
     <loc>http://shotdata.theacharya.co/the-acharya/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/user-guide/roles/</loc>
+    <loc>http://shotdata.theacharya.co/user-guide/keyboard-shortcuts/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/in-action/reviewing-roles/</loc>
+    <loc>http://shotdata.theacharya.co/user-guide/overview/</loc>
+  </url>
+  <url>
+    <loc>http://shotdata.theacharya.co/case-study/final-cut-pro-enigma/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/in-action/creating-excel-spreadsheet/</loc>
@@ -61,18 +67,12 @@
     <loc>http://shotdata.theacharya.co/in-action/creating-pdf-report/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/case-study/final-cut-pro-enigma/</loc>
+    <loc>http://shotdata.theacharya.co/user-guide/notion-queue/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/user-guide/overview/</loc>
+    <loc>http://shotdata.theacharya.co/databases/database-platforms/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/case-study/reviving-a-lost-feature/</loc>
-  </url>
-  <url>
-    <loc>http://shotdata.theacharya.co/user-guide/keyboard-shortcuts/</loc>
-  </url>
-  <url>
-    <loc>http://shotdata.theacharya.co/case-study/alternative-report-generator/</loc>
+    <loc>http://shotdata.theacharya.co/databases/notion-prerequisite/</loc>
   </url>
 </urlset>

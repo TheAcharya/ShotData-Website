@@ -4,7 +4,7 @@
 
 ## Configuration Setup
 
-![Create Configuration for PDF](/assets/pd-create-pdf-report-01.gif)
+![Create Configuration for PDF](/assets/sd-create-pdf-report-01.gif)
 
 1. [Create Your Configuration](/user-guide/configurations/#add-configuration).
 2. Select your desired Export Destination by clicking on the [Folder Icon](/user-guide/general/#export-destination).
@@ -20,7 +20,7 @@ PDF uses the same active Configuration as Excel — there are no separate PDF sh
 
 ### Optional Sheet Selection
 
-![](/assets/pd-general-settings-sheets.png)
+![](/assets/sd-general-settings-sheets.png)
 
 On the [Sheets](/user-guide/general/#sheets) tab, choose which worksheets appear in both the Excel workbook and the PDF report:
 
@@ -31,14 +31,14 @@ A summary of enabled sheets is also shown in the status bar on [Extract](/user-g
 
 ### Optional Column Selection
 
-![](/assets/pd-general-settings-columns.png)
+![](/assets/sd-general-settings-columns.png)
 
 On the [Columns](/user-guide/general/#columns) tab, use the table to turn individual columns on or off. Disabled columns are omitted from both the Excel and PDF export. Press `Enable All` or `Disable All` when you need a quick reset.
 
 ## Final Cut Pro to PDF Report
 
 <video controls width="1920">
-  <source src="/assets/pd-create-pdf-report-02.mp4" type="video/mp4">
+  <source src="/assets/sd-create-pdf-report-02.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
