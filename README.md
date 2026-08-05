@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/TheAcharya/ShotData"><img src="https://github.com/TheAcharya/ShotData/blob/main/assets/Shot_data_app_icon.png?raw=true" height="200">
+  <a href="https://shotdata.theacharya.co"><img src="https://github.com/TheAcharya/ShotData-Website/blob/main/docs/static/logo.png?raw=true" height="200">
   <h1 align="center">Shot Data Website</h1>
 </p>
 
