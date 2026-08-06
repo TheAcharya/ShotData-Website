@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.839311076951">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.839311200196">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="static/favicon.ico" />
-    <link href="resources/css/retype.css?v=4.6.0.839311076951" rel="stylesheet">
+    <link href="resources/css/retype.css?v=4.6.0.839311200196" rel="stylesheet">
 
-    <script data-cfasync="false" src="resources/js/config.js?v=4.6.0.839311076951" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="resources/js/config.js?v=4.6.0.839311200196" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="resources/js/lunr.js?v=4.6.0.839311076951" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="resources/js/lunr.js?v=4.6.0.839311200196" data-turbo-eval="false" defer></script>
 
     <meta name="msvalidate.01" content="325120C12888C61306930ACDFB17A57E" />
     <!-- Google Tag Manager -->
@@ -265,34 +265,21 @@
 <p>The shot list database creation application crafted for <a href="https://www.apple.com/final-cut-pro/">Final Cut Pro</a>. It serves as a native macOS frontend for storytellers who pre-cut a project as a stills timeline, turning that intention into ordered PNG stills and a shot list before cameras roll, powered by <a href="https://github.com/TheAcharya/OpenFCPXMLKit">OpenFCPXMLKit</a>, a free and open-source, experimental FCPXML parsing engine.</p>
 <h2 id="core-features">Core Features</h2>
 <ul>
-<li>Functionality allowing export of Excel workbooks (<code translate="no" v-pre>.xlsx</code>) from Final Cut Pro timelines.</li>
-<li>Precise extraction of timeline metadata, ensuring an accurate representation of clips, roles, and production information.</li>
-<li>Role-based inventory sheets built from audio and video roles on the timeline, with per-role enable and disable control.</li>
-<li>Comprehensive timeline functionality, encompassing support for timelines such as Projects and Compound Clips.</li>
-<li>Optional report sheets for Markers, Keywords, Titles &amp; Generators, Transitions, Effects, Speed Changes, Summary, and Media Summary.</li>
-<li>Configurable report columns, timecode format, and disabled-clip exclusion for tailored deliverables.</li>
-<li>Allows the creation of multiple configurations tailored to diverse project requirements, with assignable keyboard shortcuts.</li>
-<li>Export on drop or confirm when you are ready, with automatic and manual export modes.</li>
-<li>Accepts drag and drop and Final Cut Pro timeline drags.</li>
-<li>Each export is saved to a uniquely named timestamped folder within your chosen export destination.</li>
-<li>Optional experimental PDF report export (<code translate="no" v-pre>.pdf</code>) alongside the Excel workbook, using the same active Configuration settings.</li>
-<li>Exported Excel workbooks are compatible with Apple&#x27;s Numbers and other spreadsheet applications.</li>
-<li>Written in Apple Swift language and SwiftUI framework.</li>
+<li>Create a Shot List Database from Final Cut Pro still-image timelines: one PNG per shot plus a structured shot list.</li>
+<li>Built for pre-cut stills timelines on the primary timeline.</li>
+<li>Extract as Notion or CSV, with upload to Notion when you choose a Database Profile.</li>
+<li>Notion Queue for extract first, upload later.</li>
+<li>Scene Number and Folder Format controls, plus a quick Scene Number badge on Extract.</li>
+<li>Drag and drop <code translate="no" v-pre>.fcpxml</code> / <code translate="no" v-pre>.fcpxmld</code> files, or timelines and compound clips from Final Cut Pro.</li>
+<li>Each extract is saved to a uniquely named folder in your Export Folder.</li>
+<li>Written in Apple Swift and SwiftUI.</li>
 <li>No hidden costs, no subscriptions, no in-app purchases.</li>
 <li>Available on the Mac App Store.</li>
 </ul>
-<h2 id="available-report-sheets">Available Report Sheets</h2>
+<h2 id="available-extraction-formats">Available Extraction Formats</h2>
 <ul>
-<li>Selected Roles Inventory</li>
-<li>Markers</li>
-<li>Keywords</li>
-<li>Titles &amp; Generators</li>
-<li>Transitions</li>
-<li>Non-Standard Effects &amp; Templates</li>
-<li>Video &amp; Audio Effects</li>
-<li>Speed Change Effects</li>
-<li>Summary</li>
-<li>Media Summary</li>
+<li>Notion (upload via Database Profile)</li>
+<li>Comma-separated values (CSV)</li>
 </ul>
 <h2 id="demo">Demo</h2>
 <doc-panels expando>
