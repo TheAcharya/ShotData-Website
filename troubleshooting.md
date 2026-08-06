@@ -4,32 +4,32 @@ Below, you will find a comprehensive list of common issues users may encounter, 
 
 If you are still stuck after following these steps, open the logs (`Help` → `Open Logs`) and retain the log files from the Logs folder when seeking further help.
 
-## How to access the logs in Production Data?
+## How to access the logs in Shot Data?
 
-To access the logs for **Production Data**, navigate to the `Help` menu and select `Open Logs`.
+To access the logs for **Shot Data**, navigate to the `Help` menu and select `Open Logs`.
 
-This opens the Logs folder in Finder and writes a current snapshot of application activity to `productiondata_log.txt`. During parse and export, **Production Data** also writes `openfcpxmlkit_log.txt` in the same folder.
+This opens the Logs folder in Finder and writes a current snapshot of application activity to `shotdata_log.txt`. During parse and extraction, **Shot Data** also writes `openfcpxmlkit_log.txt` in the same folder.
 
 !!!info Info
-Both files live under Application Support for **Production Data**. Share them only if you are comfortable doing so when requesting support — they may include project and file names from your machine.
+Both files live under Application Support for **Shot Data**. Share them only if you are comfortable doing so when requesting support — they may include project and file names from your machine. Notion upload messages appear in `shotdata_log.txt` (there is no separate Notion upload log file).
 !!!
 
-## Failed to export completely
+## Failed to extract completely — please select a valid export folder
 
-![Failed to export completely](/assets/sd-troubleshooting_01.png)
+![Failed to extract completely](/assets/sd-troubleshooting_01.png)
 
-**Production Data** cannot write the Excel workbook until you choose an export destination.
+**Shot Data** cannot write shot PNGs or a manifest until you choose an export destination.
 
 You will see this when:
 
 - The Extract footer shows `Please select!` next to `Export Folder`
-- You start an export (drop, `Choose File`, `File → Open…`, or `Start Export`) without a folder selected
-- The alert reads `Failed to export completely` with the message `Please select a valid export folder.`
+- You start an extraction (drop, `Choose File`, or `File → Open…`) without a folder selected
+- The alert reads `Failed to extract completely` with the message `Please select a valid export folder.`
 
-On [Extract](/user-guide/extract), click the folder control in the footer, or open [General Settings](/user-guide/general) → `File` and choose a destination under `Export Destination`. Select a folder you can write to (for example on your Mac, an external drive, or a mounted network volume). Confirm the footer no longer shows `Please select!` — it should display the folder name — then provide your project again, or press `Start Export` if you are in `Manual` mode.
+On [Extract](/user-guide/extract), click the folder control in the footer, or open [General Settings](/user-guide/general) → `File` and choose a destination under `Export Destination`. Select a folder you can write to (for example on your Mac, an external drive, or a mounted network volume). Confirm the footer no longer shows `Please select!` — it should display the folder name — then provide your timeline again.
 
 !!!info Info
-The export folder is remembered with a security-scoped bookmark. **Production Data** does not store a plain file path as the source of truth. If the volume is disconnected later, see [Missing Folder!](#export-folder-shows-missing-folder).
+The export folder is remembered with a security-scoped bookmark. **Shot Data** does not store a plain file path as the source of truth. If the volume is disconnected later, see [Missing Folder!](#export-folder-shows-missing-folder).
 !!!
 
 ## Export Folder shows “Missing Folder!”
@@ -38,81 +38,89 @@ The footer (and General → File) shows `Missing Folder!` when a previously chos
 
 Reconnect the drive or volume if it was disconnected, then click the folder control and choose the destination again (or a new one). Right-click the folder control and choose `Clear Path` if you need to remove the old selection first, then pick a folder again.
 
-## Start Export is disabled or greyed out
+## Scene Number must not be empty
 
-In `Manual` mode, `Start Export` stays disabled until a valid export folder is selected. Set an `Export Folder` first, then press `Start Export`.
+Extraction aborts if `Scene Number` is blank. The alert message reads `Scene Number must not be empty. Set one under General → File.`
 
-See also [Export Mode](/user-guide/general/#export-mode).
+Set a Scene Number under [General → File](/user-guide/general/#scene-number), or use the ruby Scene Number badge at the top-right of [Extract](/user-guide/extract). Alphanumeric values are allowed (for example `50A` produces shot IDs such as `50A-001`).
 
-## The export fails with an alert
+## The extraction fails with an alert
 
-When an export does not finish successfully, **Production Data** shows `Failed to export completely`.
+When an extraction does not finish successfully, **Shot Data** shows `Failed to extract completely`.
 
 - Press `Show Error Details` on the alert, **or**
 - Press `Show Error Details` in the progress footer on Extract
 
-This opens the `Failed Tasks` window with the file path and the error message for each failure. Use that text when searching this page or when contacting support.
+This opens the `Failed Tasks` window with the file path and the error message for each failure. Hover a truncated cell to see the full text. Use that message when searching this page or when contacting support.
 
 Press `Close` on the progress footer when you are finished reviewing the result.
 
-## Roles tables are empty on launch
+## Prompted to choose a media folder / stills cannot be read
 
-The [Roles](/user-guide/roles) panel stays empty until you load an FCPXML project. Tables appear only after a successful roles session.
+After planning shots, **Shot Data** may ask you to choose a folder that contains the source still images. That happens when the App Sandbox cannot open the planned stills — for example after dragging a timeline from Final Cut Pro (staged in Cache), or when stills live on another volume.
 
-Drop an `.fcpxml` or `.fcpxmld` file onto Roles or Extract, drag a timeline / compound clip from Final Cut Pro, or use `File → Open…` (`⌘` `O`). Wait until the Roles footer shows roles loaded from your project, then review the Video and Audio tabs and export — or switch to Extract and press `Start Export` in `Manual` mode.
-
-!!!info Info
-There is no Clear or Refresh control for Roles. To refresh the list, load a project again.
-!!!
-
-## No audio or video roles found
-
-After loading a project, Roles may report that no audio or video roles were found. Confirm the file is a Final Cut Pro XML export (`.fcpxml` / `.fcpxmld`) or a timeline / compound-clip drag that contains FCPXML. Prefer File → Export XML from Final Cut Pro for a full project document when possible. For compound clips dragged from Final Cut Pro, allow **Production Data** a moment to stage the file — root-level compound clips are normalised before roles are read. You may also try exporting XML again from Final Cut Pro and reopening the new file.
-
-If roles still do not appear, open the logs (`Help` → `Open Logs`) and contact support with `openfcpxmlkit_log.txt`.
-
-## Dropping a project on Roles does nothing useful / stays on Roles
-
-Behaviour depends on [Export Mode](/user-guide/general/#export-mode):
-
-- **Automatic** — drop on Roles should switch to Extract and begin the export (after a folder is set).
-- **Manual** — Roles stays open so you can review enable/disable settings. Switch to Extract and press `Start Export` when you are ready.
-
-If you expected an immediate export, switch to `Automatic` under General → File, or use `⌘` `⇧` `E`.
-
-## Only one project is accepted when I drop several files
-
-This is intentional. **Production Data** processes one FCPXML project per action. If multiple items are offered at once, only the first item is used.
-
-Provide one project at a time.
-
-## Media Summary lists files as missing, but the media is on disk
-
-`Media Summary` is an optional sheet. **Production Data** reads media paths from the FCPXML and checks whether those paths exist — it does not open or copy your media files.
-
-Paths may appear as missing when:
-
-- You dragged a timeline or compound clip from Final Cut Pro (or used a text clipping), so the project was staged in the application Cache without a neighbouring media folder
-- Relative paths in the XML cannot be resolved against the source location
-- The media volume is offline or the files have moved since the project was edited
-
-The rest of the Excel (and optional PDF) report still exports normally. Turn off `Media Summary` under [Sheets](/user-guide/general/#sheets) if you do not need this sheet, or open an on-disk `.fcpxml` / `.fcpxmld` beside its media when you need more accurate missing-media checks.
-
-When the sheet is enabled and no referenced media is missing, Excel and PDF keep the headers and show a `No Missing Media` status row — that is expected, not an error.
+- Choose the folder that holds your source images, or a parent folder that contains them all
+- Cancelling the panel stops the extraction cleanly (it is not treated as a hard failure)
+- If you pick the wrong folder, you may see a message that the selected folder doesn’t contain the stills — choose again at a higher level
 
 !!!info Info
-Checking `Distinguish Original and Proxy Media` only splits Missing Original / Missing Proxy columns; it does not grant broader disk access.
+The export folder bookmark does not automatically cover source media. Granting a media folder is a separate, session-only access for that extract.
 !!!
+
+## Extraction fails on video, Motion templates, titles, or other non-stills
+
+**Shot Data** only extracts the FCPXML **primary timeline** (primary spine). Connected clips and secondary lanes are ignored.
+
+Only **still images** on that primary timeline are supported. Extraction will fail (or skip unsupported items by throwing) when the primary spine includes things such as:
+
+- Video clips
+- Motion templates / titles / generators
+- Primary-spine audio
+
+Use a stills-based shot timeline on the primary spine, then extract again. If the error text is unclear, open the logs (`Help` → `Open Logs`) and check `openfcpxmlkit_log.txt`.
+
+## Only one timeline is accepted when I drop several files
+
+This is intentional. **Shot Data** processes one FCPXML timeline per action. If multiple items are offered at once, only the first item is used.
+
+Provide one timeline at a time.
+
+## Notion upload fails / Shot ID errors
+
+When uploading to Notion (during extract or from [Notion Queue](/user-guide/notion-queue)), check:
+
+1. Your [Database Profile](/user-guide/databases) has a valid Integration Token and Database URL — see [Notion Prerequisite](/databases/notion-prerequisite).
+2. The Notion database title (key) column is named `Shot ID` and uses Notion’s **Title** property type. **Shot Data** will not create that column. Typical messages:
+   - `Notion database must have a title property named "Shot ID"…`
+   - `Notion database column "Shot ID" exists but is not the title (key) property…`
+3. The integration is connected to the database in Notion (Connections).
+4. If you use a firewall such as Little Snitch, allow outbound HTTPS for **Shot Data**.
+
+Open `Help` → `Open Logs` and review recent lines in `shotdata_log.txt`. Manifest fields that are missing from the live Notion schema are skipped (logged once); they are not created automatically.
+
+See also [Databases](/user-guide/databases).
+
+## Experiencing slow uploads in Notion
+
+Notion enforces variable rate limits on its API. Upload speed also depends on your network and Notion’s servers. Check [Notion’s status](https://status.notion.so/) if uploads suddenly stall.
+
+You can lower parallel uploads under [Databases](/user-guide/databases) → `Upload Threads` (`5`, `10`, or `15`; default `5`). For large shot lists, prefer smaller batches via [Notion Queue](/user-guide/notion-queue) rather than one very large upload.
+
+For Notion’s current limits, see their [request limits documentation](https://developers.notion.com/reference/request-limits).
+
+## My CSV extract does not appear in Notion Queue
+
+Only **Notion** extracts are listed in [Notion Queue](/user-guide/notion-queue). CSV extracts are local only. Use `Notion` or `Notion (No Upload)` as the Extraction Format when you want Queue support.
 
 ## Install Location Warning
 
-macOS may show `Install Location Warning` if **Production Data** is not running from the Applications folder.
+macOS may show `Install Location Warning` if **Shot Data** is not running from the Applications folder.
 
 Move the application into `/Applications`, then launch it again. Choose `Don't show again` only if you intentionally run it from another location and accept the risk of sandbox or bookmark quirks.
 
 ## Couldn’t create or rename a configuration
 
-Named configurations must be unique. If a configuration with the same name already exists (in the list or as a file on disk), **Production Data** refuses to overwrite it and shows an alert such as `Couldn't create configuration`.
+Named configurations must be unique. If a configuration with the same name already exists (in the list or as a file on disk), **Shot Data** refuses to overwrite it and shows an alert such as `Couldn't create configuration`.
 
 Choose a different name. The built-in `Default` configuration cannot be saved as a named file, renamed, or deleted.
 
@@ -125,96 +133,47 @@ The orange `Changed` badge means the active non-default configuration has unsave
 - Press `Update Active Configuration` (`⌘` `S`) to save, **or**
 - Discard changes from the Configurations panel or menu (`⌘` `Z`)
 
-Exports still use your current in-memory settings even when `Changed` is visible — the badge is a reminder to save the preset if you want those settings kept for next time.
+Extractions still use your current in-memory settings even when `Changed` is visible — the badge is a reminder to save the preset if you want those settings kept for next time.
 
 ## Notifications do not appear
 
 Under General → Notifications:
 
 1. Confirm `Notification Frequency` is not set to `Never`.
-2. Press `Open macOS Notification Settings` and allow notifications for **Production Data**.
-3. Remember that **Production Data** may only appear in Notification Settings after the first authorisation prompt.
-4. When **Production Data** is the frontmost app, banners may be silent or less obvious — check Notification Centre.
+2. Press `Open macOS Notification Settings` and allow notifications for **Shot Data**.
+3. Remember that **Shot Data** may only appear in Notification Settings after the first authorisation prompt.
+4. When **Shot Data** is the frontmost app, banners may be silent or less obvious — check Notification Centre.
 
 `Each Report Step` sends intermediate banners without sound; the final completion notification uses the default sound.
 
 ## Dock progress ring does not show
 
-Enable `Show Progress on Dock Icon` under General → Notifications. Progress appears only while an export is running.
+Enable `Show Progress on Dock Icon` under General → Notifications. Progress appears only while an extraction (or upload) is running.
 
 ## Clean Cache — when should I use it?
 
 `File` → `Show Cache` reveals the temporary FCPXML staging folder. `File` → `Clean Cache` (`⌘` `K`) empties that folder only.
 
-Use Clean Cache if staging files have accumulated after many Final Cut Pro drags or text clippings. It does **not** delete preferences, Configurations, Logs, or your export folder.
+Use Clean Cache if staging files have accumulated after many Final Cut Pro drags or text clippings. It does **not** delete preferences, Configurations, Database Profiles, Logs, or your export folder.
 
-Clean Cache is disabled while an export or roles load is in progress. Wait until the run finishes, then clean.
-
-!!!info Info
-Cache files may be named like `FCP Drop-…`. Export folders and `.xlsx` / `.pdf` names still use the project or clip name from the timeline — not the Cache staging name.
-!!!
-
-## PDF export looks different from Excel or truncates text
-
-`Create PDF Report` is experimental and optimised for A4 landscape. Tables paginate across pages and cell text may truncate. Matching sheet pages share a tint.
-
-For the complete dataset and full column control, use the Excel (`.xlsx`) workbook. The PDF uses the same active Configuration (sheets, columns, roles, timecode, and filters) — there are no separate PDF-only settings.
-
-See [Create PDF Report](/user-guide/general/#create-pdf-report).
-
-## Protect Sheets — I cannot open the file / where is the password?
-
-`Protect Sheets` applies an Excel worksheet **edit lock** so cells are harder to change by accident. It is **not** file-open encryption and does not set a workbook password.
-
-Excel still opens the file without a password. Anyone can turn protection off in Excel. PDF export ignores this option — use Preview’s Encrypt (or another PDF tool) if you need a password-protected PDF.
-
-## The spreadsheet is missing sheets or columns I expected
-
-Exports follow the **active Configuration**:
-
-1. Check [Sheets](/user-guide/general/#sheets) for which worksheets are enabled.
-2. Check [Columns](/user-guide/general/#columns) for enabled workbook columns.
-3. Check [Roles](/user-guide/roles) — disabled roles are omitted from the report.
-4. Confirm options such as `Exclude Disabled Clips` and `Include Markers Outside Clip Boundaries` under General → File.
-
-The Markers `Hidden` column appears only when `Include Markers Outside Clip Boundaries` is on; it is not listed under Columns.
-
-If the role inventory `Total` footer is missing, check [Columns](/user-guide/general/#columns). Excluding `Timeline Out` or `Clip Duration` omits the Total footer entirely (Excel and PDF).
-
-## An enabled sheet shows “No … Found” or looks empty
-
-Enabling a sheet under [Sheets](/user-guide/general/#sheets) includes that section in the Excel workbook and optional PDF. When the project has no matching items, the sheet is **not** omitted — Excel and PDF keep the headers and show a single status row, for example:
-
-- `No Markers Found`
-- `No Keywords Found`
-- `No Titles & Generators Found`
-- `No Transitions Found`
-- `No Effects Found`
-- `No Speed Change Effects Found`
-- `No Non-Std Effects Found`
-- `No Roles Found`
-- `No Missing Media` (on `Media Summary` when nothing is missing)
-
-This is not an export failure. Confirm the timeline actually contains the items you expect for that sheet, or turn the sheet off if you do not need it.
+Clean Cache is disabled while an extraction is in progress. Wait until the run finishes, then clean.
 
 !!!info Info
-Individual **per-role** inventory tabs may still be omitted when empty. `Summary` keeps its project-metrics layout rather than a `No … Found` status row.
+Cache files may be named like `FCP Drop-…`. Export folders and shot-list names still use the timeline name from the project — not the Cache staging name.
 !!!
 
-## Excel shows “Non-Std Effects & Templates” instead of the full name
+## Drag and drop from Final Cut Pro does not start an extraction
 
-Excel limits worksheet names to 31 characters, so the workbook tab would appear as `Non-Std Effects & Templates`. The Sheets toggle and Extract status bar use the full name `Non-Standard Effects & Templates`. 
-
-See [Sheets](/user-guide/general/#sheets).
-
-## Drag and drop from Final Cut Pro does not start an export
-
-Set a valid [Export Folder](#failed-to-export-completely--please-select-a-valid-export-folder) first. Confirm Export Mode: `Automatic` starts immediately; `Manual` waits for `Start Export` on Extract. Drop onto Extract or Roles (or the Dock icon), or use `Choose File` / `File → Open…`. Finder text clippings are accepted only when they contain FCPXML content, and only one project is processed per action.
+Set a valid [Export Folder](#failed-to-extract-completely--please-select-a-valid-export-folder) and a non-empty [Scene Number](#scene-number-must-not-be-empty) first. Drop onto Extract (or the Dock icon), or use `Choose File` / `File → Open…`. Finder text clippings are accepted only when they contain FCPXML content, and only one timeline is processed per action.
 
 If nothing happens, try File → Export XML from Final Cut Pro and open the `.fcpxml` / `.fcpxmld` file instead.
 
 ## Library folders failed to initialise
 
-On first launch, **Production Data** creates its Application Support folders (preferences, Configurations, Logs, Cache). If you see `Failed to initialize Library folders`, free disk space, ensure the app may write inside its sandbox container, then quit and reopen **Production Data**.
+On first launch, **Shot Data** creates its Application Support folders (preferences, Configurations, Logs, Cache). If you see `Failed to initialize Library folders`, free disk space, ensure the app may write inside its sandbox container, then quit and reopen **Shot Data**.
 
 If the alert persists, contact support with a description of your macOS version and install location.
+
+## Shot Data does not appear under Files and Folders privacy
+
+Sandboxed open-panel grants often do **not** list the app under System Settings → Privacy & Security → Files and Folders. That is normal. Access comes from the folders you choose in **Shot Data** (export folder, media folder), not from a Full Disk Access toggle.
