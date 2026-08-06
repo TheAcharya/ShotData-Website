@@ -3,7 +3,7 @@ layout: page
 ---
 # Disclaimers
 
-The author(s) have no affiliation with Apple, Notion,, or Adobe in any capacity. All product names, logos, and brands are property of their respective owners.
+The author(s) have no affiliation with Apple or Notion in any capacity. All product names, logos, and brands are property of their respective owners.
 
 ## Fair Use Statement
 
