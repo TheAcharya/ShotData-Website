@@ -10,7 +10,7 @@ image: /static/shot-data-social-card.png
 
 ![](/static/production-data-social-card.png)
 
-The lightweight spreadsheet creation application crafted for [Final Cut Pro](https://www.apple.com/final-cut-pro/). It serves as a native macOS frontend, allowing users to conveniently export structured Excel production reports from Final Cut Pro projects, powered by [OpenFCPXMLKit](https://github.com/TheAcharya/OpenFCPXMLKit), a free and open-source, experimental FCPXML parsing engine.
+The shot list database creation application crafted for [Final Cut Pro](https://www.apple.com/final-cut-pro/). It serves as a native macOS frontend for storytellers who pre-cut a project as a stills timeline, turning that intention into ordered PNG stills and a shot list before cameras roll, powered by [OpenFCPXMLKit](https://github.com/TheAcharya/OpenFCPXMLKit), a free and open-source, experimental FCPXML parsing engine.
 
 ## Core Features
 
