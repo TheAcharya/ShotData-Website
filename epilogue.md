@@ -1,6 +1,6 @@
 # Epilogue
 
-## Use Weapon
+## What's happened, happened.
 
 ![Louise Banks opens The Universal Language, a foundation for what comes next.](assets/arrival_02.gif)
 
