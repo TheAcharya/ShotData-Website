@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.839303580384">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.839306868344">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>Frequently Asked Questions</title>
     <meta name="title" content="Frequently Asked Questions">
-    <meta name="description" content="Yes. The exported .xlsx workbook follows the standard Excel file format, so it opens directly in Apple's Numbers, Microsoft Excel, Google Sheets, and other spreadsheet applications that support .xlsx files, without requiring any conversion.">
+    <meta name="description" content="Yes. The exported .csv manifest follows a standard comma-separated format, so it opens directly in Apple's Numbers, Microsoft Excel, Google Sheets, and other spreadsheet applications that support .csv files, without requiring any conversion.">
 
     <!-- Canonical -->
     <link rel="canonical" href="http://shotdata.theacharya.co/faq/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://shotdata.theacharya.co/faq/">
     <meta property="og:title" content="Frequently Asked Questions">
-    <meta property="og:description" content="Yes. The exported .xlsx workbook follows the standard Excel file format, so it opens directly in Apple's Numbers, Microsoft Excel, Google Sheets, and other spreadsheet applications that support .xlsx files, without requiring any conversion.">
+    <meta property="og:description" content="Yes. The exported .csv manifest follows a standard comma-separated format, so it opens directly in Apple's Numbers, Microsoft Excel, Google Sheets, and other spreadsheet applications that support .csv files, without requiring any conversion.">
     <meta property="og:site_name" content="Shot Data">
     <meta property="og:locale" content="en_US">
 
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="http://shotdata.theacharya.co/faq/">
     <meta name="twitter:title" content="Frequently Asked Questions">
-    <meta name="twitter:description" content="Yes. The exported .xlsx workbook follows the standard Excel file format, so it opens directly in Apple's Numbers, Microsoft Excel, Google Sheets, and other spreadsheet applications that support .xlsx files, without requiring any conversion.">
+    <meta name="twitter:description" content="Yes. The exported .csv manifest follows a standard comma-separated format, so it opens directly in Apple's Numbers, Microsoft Excel, Google Sheets, and other spreadsheet applications that support .csv files, without requiring any conversion.">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="http://shotdata.theacharya.co/faq.md">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../static/favicon.ico" />
-    <link href="../resources/css/retype.css?v=4.6.0.839303580384" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.6.0.839306868344" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.839303580384" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.839306868344" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.839303580384" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.839306868344" data-turbo-eval="false" defer></script>
 
     <meta name="msvalidate.01" content="325120C12888C61306930ACDFB17A57E" />
     <!-- Google Tag Manager -->
@@ -251,23 +251,25 @@
 
                 <!-- Page content  -->
 <h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
-<h2 id="is-the-exported-excel-workbook-compatible-with-spreadsheet-applications-like-apple-numbers">Is the exported Excel workbook compatible with spreadsheet applications like Apple Numbers?</h2>
-<p>Yes. The exported <code translate="no" v-pre>.xlsx</code> workbook follows the standard Excel file format, so it opens directly in Apple&#x27;s <a href="https://www.apple.com/iwork/index.html">Numbers</a>, Microsoft Excel, Google Sheets, and other spreadsheet applications that support <code translate="no" v-pre>.xlsx</code> files, without requiring any conversion.</p>
+<h2 id="is-the-exported-csv-compatible-with-spreadsheet-applications-like-apple-numbers">Is the exported CSV compatible with spreadsheet applications like Apple Numbers?</h2>
+<p>Yes. The exported <code translate="no" v-pre>.csv</code> manifest follows a standard comma-separated format, so it opens directly in Apple&#x27;s <a href="https://www.apple.com/iwork/index.html">Numbers</a>, Microsoft Excel, Google Sheets, and other spreadsheet applications that support <code translate="no" v-pre>.csv</code> files, without requiring any conversion.</p>
+<h2 id="is-the-notion-manifest-compatible-with-csv2notion-neo">Is the Notion manifest compatible with csv2notion-neo?</h2>
+<p>Yes. The Notion JSON manifest written by <strong>Shot Data</strong> is compatible with <a href="https://github.com/TheAcharya/csv2notion-neo">csv2notion-neo</a>, which is free and open source. You can upload that Data Set with csv2notion-neo from the command line if you prefer a terminal workflow. <strong>Shot Data</strong> also includes its own in-process Notion upload for the same kind of manifest.</p>
 <h2 id="how-is-the-mac-app-different-from-the-cli">How is the Mac app different from the CLI?</h2>
-<p>Production Data brings the full breadth of <a href="https://github.com/TheAcharya/OpenFCPXMLKit">OpenFCPXMLKit</a>&#x27;s Excel reporting into a native, graphical macOS interface. Options that are set via command-line flags in the CLI, such as choosing which report sheets to include, applying column exclusions, selecting a timecode format, filtering by timeline, and enabling PDF export or sheet protection, are instead presented as straightforward, toggleable controls within the app, alongside conveniences like drag-and-drop input.</p>
-<p>The CLI remains free and open source for terminal-based workflows and is, in effect, OpenFCPXMLKit itself. As Shot Data is built directly on top of this same engine, the underlying reporting is identical between the two; the choice is simply a matter of interface.</p>
+<p><strong>Shot Data</strong> brings <a href="https://github.com/TheAcharya/OpenFCPXMLKit">OpenFCPXMLKit</a>&#x27;s Shot Extraction into a native, graphical macOS interface. Options that are set via command-line flags in the CLI — such as export destination, folder naming, scene number, and Notion or CSV output — are presented as straightforward controls within the app, alongside conveniences like drag-and-drop FCPXML intake, Configurations, Notion Queue, and dual progress for extract plus optional Notion upload.</p>
+<p>The CLI remains free and open source for terminal-based workflows and is, in effect, OpenFCPXMLKit itself. As <strong>Shot Data</strong> is built directly on top of this same Shot Extraction engine, the underlying extraction is the same between the two; the choice is simply a matter of interface, with the app adding the polished workflow and in-process Notion upload.</p>
 <h2 id="is-there-a-trial-version-of-shot-data">Is there a trial version of Shot Data?</h2>
-<p>There is currently no dedicated trial version of <strong>Shot Data</strong>. However, prospective users are welcome to download the latest CLI build from <a href="https://github.com/TheAcharya/OpenFCPXMLKit/releases">OpenFCPXMLKit</a>, the open-source engine that powers the application. This allows you to export and generate an Excel spreadsheet directly from the CLI tool, with full <a href="https://github.com/TheAcharya/OpenFCPXMLKit/blob/main/Documentation/README.md">documentation</a> and usage guidance provided within the repository. The spreadsheet produced via the CLI is identical in output to the one generated by <strong>Shot Data</strong> itself, so if you are satisfied with the results using your own FCPXML files, you can proceed to purchase <strong>Shot Data</strong> with confidence.</p>
+<p>There is currently no dedicated trial version of <strong>Shot Data</strong>. However, prospective users are welcome to download the latest CLI build from <a href="https://github.com/TheAcharya/OpenFCPXMLKit/releases">OpenFCPXMLKit</a>, the open-source engine that powers the application. This allows you to run Shot Extraction directly from the CLI tool on your own FCPXML files, with full <a href="https://github.com/TheAcharya/OpenFCPXMLKit/blob/main/Documentation/README.md">documentation</a> and usage guidance provided within the repository. If you are satisfied with the results, you can proceed to purchase <strong>Shot Data</strong> with confidence for the graphical workflow and in-app Notion upload.</p>
 <h2 id="i-do-not-wish-to-purchase-shot-data">I do not wish to purchase Shot Data.</h2>
 <p>That is entirely understandable. You are welcome to continue using the CLI tool free of charge for as long as it suits your needs.</p>
 <h2 id="i-have-purchased-shot-data-and-am-not-satisfied-with-it-can-i-request-a-refund">I have purchased Shot Data and am not satisfied with it. Can I request a refund?</h2>
 <p>Apple provides a mechanism for requesting refunds on App Store purchases. Please refer to the steps outlined on Apple&#x27;s official support <a href="https://support.apple.com/en-us/118223">pages</a> to submit your request.</p>
 <h2 id="what-kind-of-timelines-are-supported-in-shot-data">What kind of timelines are supported in Shot Data?</h2>
-<p><strong>Shot Data</strong> facilitates extraction from any conceivable timeline such as Projects and Compound Clips.</p>
+<p><strong>Shot Data</strong> can take Projects and Compound Clips as FCPXML / FCPXMLD input. Extraction only covers the <strong>primary timeline</strong> (primary spine), and only <strong>still images</strong> on that spine are supported. Video clips, Motion templates, titles/generators, and primary-spine audio are not extracted. Connected and secondary lanes are ignored.</p>
 <h2 id="why-is-there-no-workflow-extension-for-shot-data">Why is there no Workflow Extension for Shot Data?</h2>
-<p>Incorporating a Final Cut Pro Workflow Extension into <strong>Shot Data</strong> would not, in practice, unlock any meaningfully new capability for spreadsheet generation. There are two principal reasons for this decision.</p>
+<p>Incorporating a Final Cut Pro Workflow Extension into <strong>Shot Data</strong> would not, in practice, unlock any meaningfully new capability for Shot Extraction. There are two principal reasons for this decision.</p>
 <p>Firstly, a Workflow Extension would introduce a considerable degree of additional complexity to the <strong>Shot Data</strong> codebase, requiring ongoing maintenance to remain compatible with Final Cut Pro&#x27;s own extension framework and any changes Apple may introduce to it over time. This added burden does not correspond to a proportionate benefit for the user.</p>
-<p>Secondly, and more fundamentally, the core function of Shot Data does not require it. Users are already able to drag and drop their <code translate="no" v-pre>.fcpxmld</code> or <code translate="no" v-pre>.fcpxml</code> file directly onto <strong>Shot Data</strong>&#x27;s Export panel or its Dock icon, achieving effectively the same outcome with no meaningful difference in convenience or speed. A Workflow Extension would, at best, offer a marginally more integrated point of entry from within Final Cut Pro itself, but would not alter the underlying export process or the quality of the resulting spreadsheet in any material way.</p>
+<p>Secondly, and more fundamentally, the core function of <strong>Shot Data</strong> does not require it. Users are already able to drag and drop their <code translate="no" v-pre>.fcpxmld</code> or <code translate="no" v-pre>.fcpxml</code> file directly onto <strong>Shot Data</strong>&#x27;s Extract panel or its Dock icon, or open a file with <code translate="no" v-pre>⌘O</code>, achieving effectively the same outcome with no meaningful difference in convenience or speed. A Workflow Extension would, at best, offer a marginally more integrated point of entry from within Final Cut Pro itself, but would not alter the underlying extraction process or the quality of the resulting shot list in any material way.</p>
 <p>For these reasons, the existing drag-and-drop approach is considered the most sensible and sustainable path, offering users a straightforward experience without unnecessarily expanding the scope or complexity of the application.</p>
 <h2 id="does-shot-data-support-intel-based-macs">Does Shot Data support Intel-based Macs?</h2>
 <p>No. <strong>Shot Data</strong> is built and optimised exclusively for Apple Silicon.</p>
@@ -275,10 +277,10 @@
 <p><strong>Shot Data</strong> is compatible exclusively with the current and preceding major release of macOS, owing to Apple&#x27;s policy of restricting new software features and frameworks to their most recent operating system releases. Whilst these features may technically function on older systems, Apple provides no official support for such compatibility, which presents considerable challenges for developers who must then choose between implementing extensive workarounds or confining support to the most current OS versions.</p>
 <p>As an independent developer, we have elected to support only the current and immediately preceding major release of macOS, so as to avoid the complexities and time-consuming nature of such workarounds. This is a matter of practicality and efficiency, and is in no way a reflection of any lack of effort or dedication on our part.</p>
 <h2 id="how-is-marker-data-different-from-shot-data">How is Marker Data different from Shot Data?</h2>
-<p><a href="https://markerdata.theacharya.co">Marker Data</a> and <strong>Production Data</strong> are two distinct applications, each built to address a different aspect of the Final Cut Pro workflow. <strong>Marker Data</strong> focuses on extracting a timeline&#x27;s Marker metadata, along with associated PNGs or animated GIFs, and transmitting it into Notion or Airtable, allowing teams to manage VFX shots, shot collections, comments, and edit notes within a shared, dynamic database. <strong>Production Data</strong>, by contrast, is concerned with generating structured Excel and PDF reports directly from a timeline&#x27;s FCPXML, covering role inventories, markers, keywords, effects, and other production data in a single, portable spreadsheet.</p>
-<p>Put simply, <strong>Marker Data</strong> is oriented towards ongoing, collaborative database workflows, while <strong>Production Data</strong> is oriented towards producing a self-contained, shareable report. Both applications are built on open-source parsing foundations, and depending on your workflow, they can be used independently or alongside one another.</p>
+<p><a href="https://markerdata.theacharya.co">Marker Data</a> and <strong>Shot Data</strong> are two distinct applications, each built to address a different aspect of the Final Cut Pro workflow. <strong>Marker Data</strong> focuses on extracting a timeline&#x27;s Marker metadata, along with associated PNGs or animated GIFs, and transmitting it into Notion or Airtable, allowing teams to manage VFX shots, shot collections, comments, and edit notes within a shared, dynamic database. <strong>Shot Data</strong>, by contrast, creates a shot list from still-image timelines: one PNG per shot plus a Notion or CSV manifest, with optional in-app Notion upload and Notion Queue.</p>
+<p>Put simply, <strong>Marker Data</strong> is oriented towards marker-driven, collaborative database workflows, while <strong>Shot Data</strong> is oriented towards stills-based shot lists. Both applications are built on open-source parsing foundations, and depending on your workflow, they can be used independently or alongside one another.</p>
 <h2 id="why-is-shot-data-a-paid-application">Why is Shot Data a paid application?</h2>
-<p>This is a fair and reasonable question. Generating revenue from application development has never been a particular interest or priority; it has always been, first and foremost, a side project undertaken for workflow experimentation. That said, developing software for the Apple ecosystem carries genuine and ongoing costs, not least the annual Apple Developer Programme fee. Given that <a href="https://github.com/TheAcharya/OpenFCPXMLKit">OpenFCPXMLKit</a> is provided entirely free of charge and as open-source software, it seemed only fair to position  <strong>Shot Data</strong> as a modest paid application, offering the convenience of a polished graphical interface for those users who would rather not engage with the macOS Terminal or are unfamiliar with it.</p>
+<p>This is a fair and reasonable question. Generating revenue from application development has never been a particular interest or priority; it has always been, first and foremost, a side project undertaken for workflow experimentation. That said, developing software for the Apple ecosystem carries genuine and ongoing costs, not least the annual Apple Developer Programme fee. Given that <a href="https://github.com/TheAcharya/OpenFCPXMLKit">OpenFCPXMLKit</a> is provided entirely free of charge and as open-source software, it seemed only fair to position <strong>Shot Data</strong> as a modest paid application, offering the convenience of a polished graphical interface — including Configurations, Notion Queue, and in-app Notion upload — for those users who would rather not engage with the macOS Terminal or are unfamiliar with it.</p>
 
                 
                 <!-- Required only on API pages -->
