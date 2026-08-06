@@ -24,7 +24,7 @@
 
 - [Overview](http://shotdata.theacharya.co/user-guide/overview.md): Production Data has been meticulously crafted with a focus on simplicity, ensuring that users can execute tasks with minimal interaction. A central objective in its development has been reducing the number of clicks required for a seamless experience.
 - [Extract](http://shotdata.theacharya.co/user-guide/extract.md): Extract Window
-- [Notion Queue](http://shotdata.theacharya.co/user-guide/notion-queue.md): Queue Window
+- [Notion Queue](http://shotdata.theacharya.co/user-guide/notion-queue.md): Notion Queue Window
 - [General Settings](http://shotdata.theacharya.co/user-guide/general.md): General Settings
 - [Configuration Settings](http://shotdata.theacharya.co/user-guide/configurations.md): Configuration Settings
 - [Database Settings](http://shotdata.theacharya.co/user-guide/databases.md): Database Settings
