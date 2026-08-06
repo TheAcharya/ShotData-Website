@@ -3,7 +3,7 @@
 > Production Data allows users to export Excel production reports from Final Cut Pro timelines.
 
 - [Additional Credits](http://shotdata.theacharya.co/additional-credits.md): Shot Data is also made possible because of the hard work of these amazing open-source projects and libraries. ❤️
-- [Disclaimers](http://shotdata.theacharya.co/disclaimers.md): The author(s) have no affiliation with Apple, Notion,, or Adobe in any capacity. All product names, logos, and brands are property of their respective owners.
+- [Disclaimers](http://shotdata.theacharya.co/disclaimers.md): The author(s) have no affiliation with Apple or Notion in any capacity. All product names, logos, and brands are property of their respective owners.
 - [Shot Data End User License Agreement](http://shotdata.theacharya.co/license.md): Copyright (c) 2026 The Acharya
 - [Shot Data](http://shotdata.theacharya.co/readme.md): Shot Data
 - [Prologue](http://shotdata.theacharya.co/prologue.md): The heptapods' weapon meant tool, a gift freely given. Similarly, Production Data is built upon an open, freely given framework, offered to the editorial community.
