@@ -1,9 +1,9 @@
 ---
-label: Database Platforms
+label: Database Platform
 icon: database
 order: -1
 ---
-# Database Platforms
+# Database Platform
 
 ## What is Notion?
 
