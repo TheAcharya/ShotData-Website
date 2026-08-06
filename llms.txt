@@ -10,7 +10,7 @@
 - [Frequently Asked Questions](http://shotdata.theacharya.co/faq.md): Yes. The exported .csv manifest follows a standard comma-separated format, so it opens directly in Apple's Numbers, Microsoft Excel, Google Sheets, and other spreadsheet applications that support .csv files, without requiring any conversion.
 - [Troubleshooting](http://shotdata.theacharya.co/troubleshooting.md): Below, you will find a comprehensive list of common issues users may encounter, accompanied by solutions to resolve them.
 - [Press Kit & Media](http://shotdata.theacharya.co/press-kit-media.md): We would greatly appreciate your support in sharing and promoting Shot Data!
-- [Epilogue](http://shotdata.theacharya.co/epilogue.md): Louise Banks opens The Universal Language, a foundation for what comes next.
+- [Epilogue](http://shotdata.theacharya.co/epilogue.md): Neil goes back to the beginning.
 - [Release Notes](http://shotdata.theacharya.co/release-notes.md)
 - [Privacy Policy](http://shotdata.theacharya.co/privacy.md): The Acharya ("We", "Us", or "Our") built Shot Data (the "App") as a simple, private tool, available on the Mac App Store and through TestFlight. This Privacy Policy explains how We handle your information when you use the App, regardless of how you installed it.
 - [The Acharya](http://shotdata.theacharya.co/the-acharya.md): The Acharya is an independent production company based in Singapore founded by Vigneswaran Rajkumar. Its current relentless pursuit is to develop and produce feature films for a distinctive global audience.
