@@ -32,7 +32,7 @@
 
 ## Database
 
-- [Database Platform](http://shotdata.theacharya.co/database/database-platform.md): Notion is a single space where you can think, write, and plan. Capture thoughts, manage projects, or even run an entire company — and do it exactly the way you want.
+- [Database Platform](http://shotdata.theacharya.co/database/database-platform.md): Shot Data uploads shot lists to Notion only. This page explains what Notion is, and why it was chosen instead of other database platforms such as Airtable.
 - [Notion Prerequisite](http://shotdata.theacharya.co/database/notion-prerequisite.md): Login to your Notion account via a web browser.
 
 ## In Action
