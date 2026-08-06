@@ -1,55 +1,75 @@
 ---
 label: Welcome
-description: Shot Data creates a Shot List Database from Final Cut Pro still-image timelines.
+description: Production Data allows users to export Excel production reports from Final Cut Pro timelines.
 icon: home
 order: -1
-image: /static/shot-data-social-card.png
+image: /static/production-data-social-card.png
 ---
 
 # Shot Data
 
-![](/static/shot-data-social-card.png)
+![](/static/production-data-social-card.png)
 
-The shot list database creation application crafted for [Final Cut Pro](https://www.apple.com/final-cut-pro/). It serves as a native macOS frontend for storytellers who pre-cut a project as a stills timeline, turning that intention into ordered PNG stills and a shot list before cameras roll, powered by [OpenFCPXMLKit](https://github.com/TheAcharya/OpenFCPXMLKit), a free and open-source, experimental FCPXML parsing engine.
+The lightweight spreadsheet creation application crafted for [Final Cut Pro](https://www.apple.com/final-cut-pro/). It serves as a native macOS frontend, allowing users to conveniently export structured Excel production reports from Final Cut Pro projects, powered by [OpenFCPXMLKit](https://github.com/TheAcharya/OpenFCPXMLKit), a free and open-source, experimental FCPXML parsing engine.
 
 ## Core Features
 
-- Create a Shot List Database from Final Cut Pro still-image timelines: one PNG per shot plus a structured shot list.
-- Built for pre-cut stills timelines on the primary timeline.
-- Extract as Notion or CSV, with upload to Notion when you choose a Database Profile.
-- Notion Queue for extract first, upload later.
-- Scene Number and Folder Format controls, plus a quick Scene Number badge on Extract.
-- Drag and drop `.fcpxml` / `.fcpxmld` files, or timelines and compound clips from Final Cut Pro.
-- Each extract is saved to a uniquely named folder in your Export Folder.
-- Written in Apple Swift and SwiftUI.
+- Functionality allowing export of Excel workbooks (`.xlsx`) from Final Cut Pro timelines.
+- Precise extraction of timeline metadata, ensuring an accurate representation of clips, roles, and production information.
+- Role-based inventory sheets built from audio and video roles on the timeline, with per-role enable and disable control.
+- Comprehensive timeline functionality, encompassing support for timelines such as Projects and Compound Clips.
+- Optional report sheets for Markers, Keywords, Titles & Generators, Transitions, Effects, Speed Changes, Summary, and Media Summary.
+- Configurable report columns, timecode format, and disabled-clip exclusion for tailored deliverables.
+- Allows the creation of multiple configurations tailored to diverse project requirements, with assignable keyboard shortcuts.
+- Export on drop or confirm when you are ready, with automatic and manual export modes.
+- Accepts drag and drop and Final Cut Pro timeline drags.
+- Each export is saved to a uniquely named timestamped folder within your chosen export destination.
+- Optional experimental PDF report export (`.pdf`) alongside the Excel workbook, using the same active Configuration settings.
+- Exported Excel workbooks are compatible with Apple's Numbers and other spreadsheet applications.
+- Written in Apple Swift language and SwiftUI framework.
 - No hidden costs, no subscriptions, no in-app purchases.
 - Available on the Mac App Store.
 
-## Available Extraction Formats
+## Available Report Sheets
 
-- Notion (upload via Database Profile)
-- Comma-separated values (CSV)
+- Selected Roles Inventory
+- Markers
+- Keywords
+- Titles & Generators
+- Transitions
+- Non-Standard Effects & Templates
+- Video & Audio Effects
+- Speed Change Effects
+- Summary
+- Media Summary
 
 ## Demo
 
-==- Extract Shot List
+==- Export to Excel
 
 <video controls width="1920">
-  <source src="/assets/sd-extract-01.mp4" type="video/mp4">
+  <source src="/assets/sd-export-01.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
-==- Upload to Notion
+==- Review Roles
 
 <video controls width="1920">
-  <source src="/assets/sd-notion-01.mp4" type="video/mp4">
+  <source src="/assets/sd-roles-01.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
-==- Notion Queue
+==- Automatic Export
 
 <video controls width="1920">
-  <source src="/assets/sd-queue-01.mp4" type="video/mp4">
+  <source src="/assets/sd-automatic-export-01.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+==- Manual Export
+
+<video controls width="1920">
+  <source src="/assets/sd-manual-export-01.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
@@ -73,19 +93,21 @@ macOS 26.0 or later
 Final Cut Pro 12.0 (Lifetime / Perpetual Version) or later
 Final Cut Pro Creator Studio 12.0 (Subscription Version) or later
 Runs only on Apple silicon Macs
-Internet connection is necessary for Notion upload
 
 ## Use Cases
 
-- Pre-cut shot lists from storyboard stills
-- Shot List Database before the shoot
-- Director and cinematographer shooting-sequence visualisation
-- Scene-locked stills timelines in Final Cut Pro
-- Sound-locked timelines for picture and audio alignment before the shoot
-- Collaborative Notion databases for locked pre-shoot intention
+- Production tracking spreadsheets
+- Role inventory for sound editorial and mix
+- Assistant editor clip and conform reports
+- VFX turnover and handoff sheets
+- Post-production deliverable documentation
+- Timeline marker and keyword logging exports
+- Client review and tracking workbooks
+- Offline and online editorial notes
+- Dubbing and ADR role sheets
 
 ## Support
 
-There is currently no dedicated trial version of **Shot Data**. However, prospective users are warmly welcome to download the latest CLI build from [OpenFCPXMLKit](https://github.com/TheAcharya/OpenFCPXMLKit), the open-source engine that powers the application, with full documentation provided within the repository. We would encourage you to test your own `.fcpxml` or `.fcpxmld` still-image timelines with the CLI first, and to proceed with purchasing **Shot Data** only once you are happy with the results, for the graphical workflow and in-app Notion upload.
+There is currently no dedicated trial version of **Production Data**. However, prospective users are warmly welcome to download the latest CLI build from [OpenFCPXMLKit](https://github.com/TheAcharya/OpenFCPXMLKit), the open-source engine that powers the application, with full documentation provided within the repository. The spreadsheet produced via the CLI is identical in output to the one generated by **Production Data** itself, so we would encourage you to test your own `.fcpxml` or `.fcpxmld` files with the CLI first, and to proceed with purchasing **Production Data** only once you are happy with the results.
 
-Do note that OpenFCPXMLKit is offered as-is, as an open-source project, and does not come with official support. That said, if you have any questions or run into issues specifically with the downloaded **Shot Data** software, please do not hesitate to reach out. You can contact us [here](https://tech.theacharya.co).
+Do note that OpenFCPXMLKit is offered as-is, as an open-source project, and does not come with official support. That said, if you have any questions or run into issues specifically with the downloaded **Production Data** software, please do not hesitate to reach out. You can contact us [here](https://tech.theacharya.co).
