@@ -1,6 +1,6 @@
 ﻿# Shot Data
 
-> Production Data allows users to export Excel production reports from Final Cut Pro timelines.
+> Shot Data creates a Shot List Database from Final Cut Pro still-image timelines.
 
 - [Additional Credits](http://shotdata.theacharya.co/additional-credits.md): Shot Data is also made possible because of the hard work of these amazing open-source projects and libraries. ❤️
 - [Disclaimers](http://shotdata.theacharya.co/disclaimers.md): The author(s) have no affiliation with Apple or Notion in any capacity. All product names, logos, and brands are property of their respective owners.
