@@ -7,84 +7,77 @@ order: -5
 
 ![Database Settings](/assets/sd-database-settings.png)
 
-!!!info Info
-Delve deeper into the distinctions and parallels between Notion and Airtable [here](/databases/database-platforms).
-!!!
+**Shot Data** stores [Notion](https://www.notion.com/) Database Profiles so you can upload shot-list manifests during extract or later from [Notion Queue](/user-guide/notion-queue). Each profile holds a Profile Name, Integration Token, and Database URL.
 
-## Creating Notion Database Profile
+## Creating a Notion Database Profile
 
 ![Create Notion Profile](/assets/sd-database-settings_01.png)
 
 !!!info Info
-For Notion Profile, it is imperative to underscore that users are mandated to utilise the provided Notion's [Marker Data Template](/user-guide/databases/#notion-template).
+Duplicate the [Shot Data Notion Template](#notion-template) first. Your database title (key) column must be named `Shot ID` and must use Notion’s **Title** property type. **Shot Data** will not create that column for you.
 !!!
 
-1. Click on the `+` button to Create Database Profile.
+1. Click the `+` button to create a Database Profile.
 2. Enter a Profile Name.
-3. For Notion Platform, click on the `Notion` tab.
-4. Click `Save` once values are entered.
+3. Enter your Notion Integration Token and Notion Database URL.
+4. Click `Save`.
 
-==- Notion Workspace
-
-Enter your [Notion Workspace Name](/databases/notion-prerequisite#obtain-your-workspace-name) here.
+Platform is fixed to Notion — there is no platform tab to choose.
 
 ==- Notion Integration Token
 
-Enter your [Notion Integration Token](/databases/notion-prerequisite#obtain-your-integration-token) here.
+Enter your [Notion Integration Token](/databases/notion-prerequisite#obtain-your-integration-token) here. The field is secure.
 
 ==- Notion Database URL
 
-Enter your [Notion Database URL](/databases/notion-prerequisite##obtain-your-database-url) here.
+Enter your [Notion Database URL](/databases/notion-prerequisite#obtain-your-database-url) here. The field is secure.
 
 !!!info Info
-Users must duplicate the supplied [Marker Data Template](/user-guide/databases/#notion-template). Subsequently, you can acquire the link from your duplicated Notion Template within your Workspace.
-!!!
-
-==- Rename Key Column
-
-By [!badge text="Default"] **Marker Data** will designate the Notion's Key Column with the nomenclature of `Marker ID`. However, you retain the flexibility to establish an alternative form of Notion Database by integrating Marker Metadata from Final Cut Pro. To illustrate, you have the capability to designate your Notion's Key Column as, for instance, `Shot Code`. Upon configuring this setting in Notion, you may then input the same corresponding value in this field as `Shot Code`.
-
-!!!warning Warning
-Please do not enter `Marker ID` into this field. `Marker ID` is the default key column and cannot be used in this field.
-!!!
-
-==- Merge Only
-
-Merge Only offers users selectively merge or update individual columns within a Notion Database. By [!badge text="Default"], the column selection feature of Merge Only remains inactive. The utilisation of Merge Only is only possible when Notion Database URL is provided.
-
-!!!info Info
-The utilisation of the 'Merge Only' column feature is presently confined exclusive to the Notion Database Profile.
+Duplicate the [Shot Data Notion Template](#notion-template), then copy the link from your duplicated database in Notion.
 !!!
 
 ===
 
-## Duplicate Database Profile
+!!!warning Warning
+Upload aborts if the live Notion database has no title property named `Shot ID`. Other manifest fields that are missing from the database schema are skipped (they are not created automatically). `Image Filename` still drives the page image upload even when it is not a database property; `Icon Image` sets the page icon and is not stored as a property.
+!!!
 
-You have the ability to duplicate any Database Profile by clicking on the `Duplicate` button.
+## Upload Threads
+
+![Upload Threads](/assets/sd-database-settings_02.png)
+
+Press `Upload Threads` in the Databases toolbar to set how many Notion rows upload in parallel. Choices are `5`, `10`, and `15`. By [!badge text="Default"] the value is `5`.
 
 !!!info Info
-Through the utilisation of the `Duplicate` button, you can effortlessly generate numerous Database Profiles. The sole prerequisite is the substitution of the Database URL for Notion or the Base ID and Table ID for Airtable, thereby facilitating the quick replication of Database Profiles.
+Upload Threads is app-wide. It applies to every Database Profile and to both extract-time upload and [Notion Queue](/user-guide/notion-queue). It is not stored on individual profiles.
+!!!
+
+## Duplicate Database Profile
+
+You can duplicate any Database Profile with the `Duplicate` button.
+
+!!!info Info
+After duplicating, edit the copy and replace the Notion Database URL so each profile points at the correct destination.
 !!!
 
 ## Edit Database Profile
 
-You have the ability to edit any Database Profile by clicking on the `Edit` button.
+You can edit any Database Profile with the `Edit` button.
 
 !!!info Info
-Upon the expiration of values, such as the `Token`, upon obtaining a renewed set of Tokens, you can update your pre-existing Database Profiles. This task is accomplished by clicking the `Edit` button, followed by `Save` button.
+When a token expires or you rotate credentials, open the profile with `Edit`, update the values, then `Save`.
 !!!
 
 ## Delete Database Profile
 
-1. Click on the `-` button.
-2. You will be prompted for confirmation before deletion.
+1. Select a profile in the table.
+2. Click the `-` button.
+3. Confirm deletion when prompted.
 
-## Open Database Folder in Finder
+## Open Database Profiles in Finder
 
-Select the `Open Database Folder in Finder` link to unveil the Finder directory housing the Database Profile files. You can copy the `.json` files to another location for the purpose of creating backups and restoration of your Database Profile files.
+Select `Open Database Profiles in Finder` to reveal the folder that stores your Database Profile `.json` files. You can copy those files elsewhere for backup and restore.
 
 ## Notion Template
 
 [![](/assets/template-banner-01.png)](https://soothsayer.notion.site/509f0a7f6eb742579160569a43116227?v=fc1eb1226b4345feb63a43a70c58c99a){target="_blank"}
-
-[!ref icon="paper-airplane" text="Sending to Notion"](/in-action/notion-profile)
