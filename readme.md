@@ -1,6 +1,6 @@
 # Shot Data
 
-![](/static/production-data-social-card.png)
+![](/static/shot-data-social-card.png)
 
 The shot list database creation application crafted for [Final Cut Pro](https://www.apple.com/final-cut-pro/). It serves as a native macOS frontend for storytellers who pre-cut a project as a stills timeline, turning that intention into ordered PNG stills and a shot list before cameras roll, powered by [OpenFCPXMLKit](https://github.com/TheAcharya/OpenFCPXMLKit), a free and open-source, experimental FCPXML parsing engine.
 
