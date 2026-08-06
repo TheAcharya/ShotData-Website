@@ -22,7 +22,7 @@
 
 ## User Guide
 
-- [Overview](http://shotdata.theacharya.co/user-guide/overview.md): Production Data has been meticulously crafted with a focus on simplicity, ensuring that users can execute tasks with minimal interaction. A central objective in its development has been reducing the number of clicks required for a seamless experience.
+- [Overview](http://shotdata.theacharya.co/user-guide/overview.md): Shot Data has been crafted with a focus on simplicity, so you can turn a Final Cut Pro still-image timeline into a shot list with minimal interaction. A central aim is fewer clicks and a smoother path from FCPXML to PNG frames and a Notion or CSV manifest.
 - [Extract](http://shotdata.theacharya.co/user-guide/extract.md): Extract Window
 - [Notion Queue](http://shotdata.theacharya.co/user-guide/notion-queue.md): Notion Queue Window
 - [General Settings](http://shotdata.theacharya.co/user-guide/general.md): General Settings
