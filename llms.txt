@@ -30,10 +30,10 @@
 - [Database Settings](http://shotdata.theacharya.co/user-guide/databases.md): Database Settings
 - [Keyboard Shortcuts](http://shotdata.theacharya.co/user-guide/keyboard-shortcuts.md): You can use keyboard shortcuts to quickly accomplish Common tasks in Shot Data. To use a keyboard shortcut, press all the keys in the shortcut at the same time.
 
-## Databases
+## Database
 
-- [Database Platforms](http://shotdata.theacharya.co/databases/database-platforms.md): Notion is a single space where you can think, write, and plan. Capture thoughts, manage projects, or even run an entire company — and do it exactly the way you want.
-- [Notion Prerequisite](http://shotdata.theacharya.co/databases/notion-prerequisite.md): Login to your Notion account via a web browser.
+- [Database Platform](http://shotdata.theacharya.co/database/database-platform.md): Notion is a single space where you can think, write, and plan. Capture thoughts, manage projects, or even run an entire company — and do it exactly the way you want.
+- [Notion Prerequisite](http://shotdata.theacharya.co/database/notion-prerequisite.md): Login to your Notion account via a web browser.
 
 ## In Action
 

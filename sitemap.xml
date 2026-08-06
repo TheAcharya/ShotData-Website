@@ -7,13 +7,13 @@
     <loc>http://shotdata.theacharya.co/license/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/troubleshooting/</loc>
-  </url>
-  <url>
     <loc>http://shotdata.theacharya.co/additional-credits/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/disclaimers/</loc>
+  </url>
+  <url>
+    <loc>http://shotdata.theacharya.co/troubleshooting/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/user-guide/extract/</loc>
@@ -28,12 +28,6 @@
     <loc>http://shotdata.theacharya.co/user-guide/configurations/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/user-guide/notion-queue/</loc>
-  </url>
-  <url>
-    <loc>http://shotdata.theacharya.co/user-guide/databases/</loc>
-  </url>
-  <url>
     <loc>http://shotdata.theacharya.co/user-guide/keyboard-shortcuts/</loc>
   </url>
   <url>
@@ -41,6 +35,9 @@
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/privacy/</loc>
+  </url>
+  <url>
+    <loc>http://shotdata.theacharya.co/user-guide/notion-queue/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/credits/</loc>
@@ -52,13 +49,13 @@
     <loc>http://shotdata.theacharya.co/epilogue/</loc>
   </url>
   <url>
+    <loc>http://shotdata.theacharya.co/user-guide/databases/</loc>
+  </url>
+  <url>
     <loc>http://shotdata.theacharya.co/release-notes/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/the-acharya/</loc>
-  </url>
-  <url>
-    <loc>http://shotdata.theacharya.co/databases/notion-prerequisite/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/user-guide/overview/</loc>
@@ -73,6 +70,9 @@
     <loc>http://shotdata.theacharya.co/case-study/final-cut-pro-enigma/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/databases/database-platforms/</loc>
+    <loc>http://shotdata.theacharya.co/database/database-platform/</loc>
+  </url>
+  <url>
+    <loc>http://shotdata.theacharya.co/database/notion-prerequisite/</loc>
   </url>
 </urlset>

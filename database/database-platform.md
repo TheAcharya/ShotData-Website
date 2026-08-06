@@ -1,4 +1,4 @@
-# Database Platforms
+# Database Platform
 
 ## What is Notion?
 
