@@ -28,6 +28,9 @@
     <loc>http://shotdata.theacharya.co/user-guide/configurations/</loc>
   </url>
   <url>
+    <loc>http://shotdata.theacharya.co/user-guide/databases/</loc>
+  </url>
+  <url>
     <loc>http://shotdata.theacharya.co/user-guide/keyboard-shortcuts/</loc>
   </url>
   <url>
@@ -49,9 +52,6 @@
     <loc>http://shotdata.theacharya.co/epilogue/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/user-guide/databases/</loc>
-  </url>
-  <url>
     <loc>http://shotdata.theacharya.co/release-notes/</loc>
   </url>
   <url>
@@ -70,9 +70,9 @@
     <loc>http://shotdata.theacharya.co/case-study/final-cut-pro-enigma/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/database/database-platform/</loc>
+    <loc>http://shotdata.theacharya.co/database/notion-prerequisite/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/database/notion-prerequisite/</loc>
+    <loc>http://shotdata.theacharya.co/database/database-platform/</loc>
   </url>
 </urlset>
