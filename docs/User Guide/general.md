@@ -1,7 +1,7 @@
 ---
 label: General
 icon: gear
-order: -3
+order: -4
 ---
 # General Settings
 
