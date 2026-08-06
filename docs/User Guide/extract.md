@@ -11,6 +11,18 @@ order: -2
 
 Following the creation of your [Configuration](/user-guide/configurations), choose an `Export Folder` and an `Extraction Format` in the footer, then provide a timeline to Extract. Set `Scene Number` and `Folder Format` under [General → File](/user-guide/general).
 
+## Scene Number
+
+![Extract Window](/assets/sd-main-02.png)
+
+A ruby `Scene` badge sits in the top-right corner of Extract. Click it to open a quick Scene Number editor without leaving the panel.
+
+The value is the same `Scene Number` stored under [General → File](/user-guide/general). Shot IDs use the form `{Scene Number}-{NNN}` — for example `1-001` or `50A-001`.
+
+!!!info Info
+Scene Number must not be empty before extraction begins. Alphanumeric values are allowed.
+!!!
+
 ## Drag and Drop
 
 ![Extract Window](/assets/sd-main-01.gif)
