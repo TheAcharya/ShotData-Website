@@ -71,9 +71,9 @@ Your browser does not support the video tag.
 
 ![Main Extract Window](/assets/sd-main.png)
 
-![General Settings](/assets/sd-general-settings.png)
+![Notion Queue Window](/assets/sd-notion-queue.png)
 
-![Roles](/assets/sd-roles-settings.png)
+![General Settings](/assets/sd-general-settings.png)
 
 ![Configuration Settings](/assets/sd-configuration-settings.png)
 
