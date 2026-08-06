@@ -5,21 +5,21 @@ order: -3
 ---
 # Prologue
 
-## Offer Weapon
+## You're not shooting the bullet. You're catching it.
 
-![The heptapods' weapon meant tool, a gift freely given. <br>Similarly, Production Data is built upon an open, freely given framework, offered to the editorial community.](assets/arrival_01.gif)
+![In Tenet, the bullet is caught because the event has already happened. <br>Likewise, a Shot List Database presents the scene as already decided — and Shot Data turns a locked stills timeline in Final Cut Pro into that ordered list.](assets/tenet_01.gif)
 
-Considering the multifaceted issues and concepts elucidated in the case studies, my aspiration is to conceive an application that adeptly tackles these challenges. This envisioned application would proficiently parse an FCPXML export from Final Cut Pro, seamlessly translating its underlying structure, roles, markers, and effects into a report that is not only meaningful but also genuinely useful to editors, coordinators, producers, and directors alike. Envision a scenario where users can judiciously review and share role inventories, marker logs, keyword collections, and media summaries with unparalleled clarity, without wrestling with the Terminal or the intricacies of raw FCPXML.
+Some directors follow a distinctive workflow: they pre-cut the movie or project in Final Cut Pro as a stills timeline, locking the shooting sequence before a single frame is captured on set. From that timeline, each still can become a PNG so a Shot List Database visualises the scene even before cameras roll — reviewed, shared, and optionally uploaded into Notion with clarity, without wrestling with the Terminal or the intricacies of raw FCPXML.
 
-What if the intricate task of transforming a complex timeline into a professional, shareable spreadsheet could be executed effortlessly with a mere drag and drop? This contemplation underpins the core objectives I aim to address in order to elevate and refine the reporting experience significantly.
+What if turning a pre-cut stills timeline into a professional Shot List Database could be executed effortlessly with a mere drag and drop? That question underpins the core objectives below.
 
 ## Application Objectives
 
-- Deliver a nearly seamless experience, from FCPXML to finished spreadsheet, with a near-single-drop functionality.
+- Deliver a nearly seamless experience, from a locked stills timeline in FCPXML to PNG stills and a Shot List Database, with a near-single-drop functionality.
 - Facilitate a native, graphical macOS interface, sparing users from having to touch the Terminal.
-- Provide comprehensive Excel reporting, with an optional accompanying PDF report for those who prefer it.
-- Build upon an open-source parsing framework, ensuring the logic behind every report remains transparent.
+- Support optional in-app Notion upload and Notion Queue for extract-first, upload-later workflows.
+- Build upon an open-source Shot Extraction framework, ensuring the logic behind every extract remains transparent.
 - Remain affordable, with no subscription and no recurring cost attached to continued use.
-- Prioritise time efficiency, sparing users from manually cataloguing timeline data by hand.
+- Prioritise time efficiency, sparing directors and cinematographers from manually assembling a shot list from a pre-cut sequence by hand.
 
-Enter **Production Data**!
+Enter **Shot Data**!
