@@ -1,9 +1,9 @@
 ---
 label: Welcome
-description: Production Data allows users to export Excel production reports from Final Cut Pro timelines.
+description: Shot Data creates a Shot List Database from Final Cut Pro still-image timelines.
 icon: home
 order: -1
-image: /static/production-data-social-card.png
+image: /static/shot-data-social-card.png
 ---
 
 # Shot Data
