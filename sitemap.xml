@@ -28,9 +28,6 @@
     <loc>http://shotdata.theacharya.co/user-guide/configurations/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/user-guide/databases/</loc>
-  </url>
-  <url>
     <loc>http://shotdata.theacharya.co/user-guide/keyboard-shortcuts/</loc>
   </url>
   <url>
@@ -50,6 +47,9 @@
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/epilogue/</loc>
+  </url>
+  <url>
+    <loc>http://shotdata.theacharya.co/user-guide/databases/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/release-notes/</loc>

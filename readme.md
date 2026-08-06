@@ -77,6 +77,8 @@ Your browser does not support the video tag.
 
 ![Configuration Settings](/assets/sd-configuration-settings.png)
 
+![Database Settings](/assets/sd-database-settings.png)
+
 ## System Requirements
 
 macOS 26.0 or later

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.839300797466">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.839301698130">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -23,7 +23,7 @@
     <meta property="og:url" content="http://shotdata.theacharya.co/user-guide/databases/">
     <meta property="og:title" content="Database Settings">
     <meta property="og:description" content="Database Settings">
-    <meta property="og:image" content="http://shotdata.theacharya.co/assets/template-banner-01.png">
+    <meta property="og:image" content="http://shotdata.theacharya.co/assets/sd-database-settings.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Database Settings">
@@ -35,7 +35,7 @@
     <meta name="twitter:url" content="http://shotdata.theacharya.co/user-guide/databases/">
     <meta name="twitter:title" content="Database Settings">
     <meta name="twitter:description" content="Database Settings">
-    <meta name="twitter:image" content="http://shotdata.theacharya.co/assets/template-banner-01.png">
+    <meta name="twitter:image" content="http://shotdata.theacharya.co/assets/sd-database-settings.png">
     <meta name="twitter:image:alt" content="Database Settings">
 
     <!-- Alternate Markdown -->
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../static/favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.839300797466" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.839301698130" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.839300797466" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.839301698130" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.839300797466" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.839301698130" data-turbo-eval="false" defer></script>
 
     <meta name="msvalidate.01" content="325120C12888C61306930ACDFB17A57E" />
     <!-- Google Tag Manager -->
@@ -258,30 +258,13 @@
                 <!-- Page content  -->
 <h1 id="database-settings">Database Settings</h1>
 <figure class="content-center">
-    <img src="/assets/sd-database-settings.png" alt="Database Settings" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../assets/sd-database-settings.png" alt="Database Settings" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="2064" height="1368" />
     <figcaption class="caption">Database Settings</figcaption>
 </figure>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-info"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-info" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-            <h5>Info</h5>
-<p>Delve deeper into the distinctions and parallels between Notion and Airtable <a href="../../databases/database-platforms/">here</a>.</p>
-        </div>
-    </div>
-</div>
-<h2 id="creating-notion-database-profile">Creating Notion Database Profile</h2>
+<p><strong>Shot Data</strong> stores <a href="https://www.notion.com/">Notion</a> Database Profiles so you can upload shot-list manifests during extract or later from <a href="/user-guide/notion-queue">Notion Queue</a>. Each profile holds a Profile Name, Integration Token, and Database URL.</p>
+<h2 id="creating-a-notion-database-profile">Creating a Notion Database Profile</h2>
 <figure class="content-center">
-    <img src="/assets/sd-database-settings_01.png" alt="Create Notion Profile" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../assets/sd-database-settings_01.png" alt="Create Notion Profile" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="2064" height="1368" />
     <figcaption class="caption">Create Notion Profile</figcaption>
 </figure>
 <div class="flex mb-6">
@@ -298,28 +281,25 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Info</h5>
-<p>For Notion Profile, it is imperative to underscore that users are mandated to utilise the provided Notion&#x27;s <a href="/user-guide/databases/#notion-template">Marker Data Template</a>.</p>
+<p>Duplicate the <doc-anchor-trigger to="#notion-template">Shot Data Notion Template</doc-anchor-trigger> first. Your database title (key) column must be named <code translate="no" v-pre>Shot ID</code> and must use Notion’s <strong>Title</strong> property type. <strong>Shot Data</strong> will not create that column for you.</p>
         </div>
     </div>
 </div>
 <ol>
-<li>Click on the <code translate="no" v-pre>+</code> button to Create Database Profile.</li>
+<li>Click the <code translate="no" v-pre>+</code> button to create a Database Profile.</li>
 <li>Enter a Profile Name.</li>
-<li>For Notion Platform, click on the <code translate="no" v-pre>Notion</code> tab.</li>
-<li>Click <code translate="no" v-pre>Save</code> once values are entered.</li>
+<li>Enter your Notion Integration Token and Notion Database URL.</li>
+<li>Click <code translate="no" v-pre>Save</code>.</li>
 </ol>
+<p>Platform is fixed to Notion — there is no platform tab to choose.</p>
 <doc-panels expando>
-   <doc-panel id="notion-workspace" collapsed>
-       <template #title>Notion Workspace</template>
-<p>Enter your <a href="../../databases/notion-prerequisite/#obtain-your-workspace-name">Notion Workspace Name</a> here.</p>
-   </doc-panel>
    <doc-panel id="notion-integration-token" collapsed>
        <template #title>Notion Integration Token</template>
-<p>Enter your <a href="../../databases/notion-prerequisite/#obtain-your-integration-token">Notion Integration Token</a> here.</p>
+<p>Enter your <a href="../../databases/notion-prerequisite/#obtain-your-integration-token">Notion Integration Token</a> here. The field is secure.</p>
    </doc-panel>
    <doc-panel id="notion-database-url" collapsed>
        <template #title>Notion Database URL</template>
-<p>Enter your <a href="../../databases/notion-prerequisite/##obtain-your-database-url">Notion Database URL</a> here.</p>
+<p>Enter your <a href="../../databases/notion-prerequisite/#obtain-your-database-url">Notion Database URL</a> here. The field is secure.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-info"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -334,16 +314,12 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Info</h5>
-<p>Users must duplicate the supplied <a href="/user-guide/databases/#notion-template">Marker Data Template</a>. Subsequently, you can acquire the link from your duplicated Notion Template within your Workspace.</p>
+<p>Duplicate the <doc-anchor-trigger to="#notion-template">Shot Data Notion Template</doc-anchor-trigger>, then copy the link from your duplicated database in Notion.</p>
         </div>
     </div>
 </div>
    </doc-panel>
-   <doc-panel id="rename-key-column" collapsed>
-       <template #title>Rename Key Column</template>
-<p>By <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
-    <span>Default</span>
-</span> <strong>Marker Data</strong> will designate the Notion&#x27;s Key Column with the nomenclature of <code translate="no" v-pre>Marker ID</code>. However, you retain the flexibility to establish an alternative form of Notion Database by integrating Marker Metadata from Final Cut Pro. To illustrate, you have the capability to designate your Notion&#x27;s Key Column as, for instance, <code translate="no" v-pre>Shot Code</code>. Upon configuring this setting in Notion, you may then input the same corresponding value in this field as <code translate="no" v-pre>Shot Code</code>.</p>
+</doc-panels>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -357,16 +333,18 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Warning</h5>
-<p>Please do not enter <code translate="no" v-pre>Marker ID</code> into this field. <code translate="no" v-pre>Marker ID</code> is the default key column and cannot be used in this field.</p>
+<p>Upload aborts if the live Notion database has no title property named <code translate="no" v-pre>Shot ID</code>. Other manifest fields that are missing from the database schema are skipped (they are not created automatically). <code translate="no" v-pre>Image Filename</code> still drives the page image upload even when it is not a database property; <code translate="no" v-pre>Icon Image</code> sets the page icon and is not stored as a property.</p>
         </div>
     </div>
 </div>
-   </doc-panel>
-   <doc-panel id="merge-only" collapsed>
-       <template #title>Merge Only</template>
-<p>Merge Only offers users selectively merge or update individual columns within a Notion Database. By <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
+<h2 id="upload-threads">Upload Threads</h2>
+<figure class="content-center">
+    <img src="../../assets/sd-database-settings_02.png" alt="Upload Threads" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="2064" height="1368" />
+    <figcaption class="caption">Upload Threads</figcaption>
+</figure>
+<p>Press <code translate="no" v-pre>Upload Threads</code> in the Databases toolbar to set how many Notion rows upload in parallel. Choices are <code translate="no" v-pre>5</code>, <code translate="no" v-pre>10</code>, and <code translate="no" v-pre>15</code>. By <span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-primary-text bg-badge-primary border border-badge-primary-border h-6 px-2 text-xs rounded-md">
     <span>Default</span>
-</span>, the column selection feature of Merge Only remains inactive. The utilisation of Merge Only is only possible when Notion Database URL is provided.</p>
+</span> the value is <code translate="no" v-pre>5</code>.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-info"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -381,14 +359,12 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Info</h5>
-<p>The utilisation of the &#x27;Merge Only&#x27; column feature is presently confined exclusive to the Notion Database Profile.</p>
+<p>Upload Threads is app-wide. It applies to every Database Profile and to both extract-time upload and <a href="/user-guide/notion-queue">Notion Queue</a>. It is not stored on individual profiles.</p>
         </div>
     </div>
 </div>
-   </doc-panel>
-</doc-panels>
 <h2 id="duplicate-database-profile">Duplicate Database Profile</h2>
-<p>You have the ability to duplicate any Database Profile by clicking on the <code translate="no" v-pre>Duplicate</code> button.</p>
+<p>You can duplicate any Database Profile with the <code translate="no" v-pre>Duplicate</code> button.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-info"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -403,12 +379,12 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Info</h5>
-<p>Through the utilisation of the <code translate="no" v-pre>Duplicate</code> button, you can effortlessly generate numerous Database Profiles. The sole prerequisite is the substitution of the Database URL for Notion or the Base ID and Table ID for Airtable, thereby facilitating the quick replication of Database Profiles.</p>
+<p>After duplicating, edit the copy and replace the Notion Database URL so each profile points at the correct destination.</p>
         </div>
     </div>
 </div>
 <h2 id="edit-database-profile">Edit Database Profile</h2>
-<p>You have the ability to edit any Database Profile by clicking on the <code translate="no" v-pre>Edit</code> button.</p>
+<p>You can edit any Database Profile with the <code translate="no" v-pre>Edit</code> button.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-info"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -423,17 +399,18 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Info</h5>
-<p>Upon the expiration of values, such as the <code translate="no" v-pre>Token</code>, upon obtaining a renewed set of Tokens, you can update your pre-existing Database Profiles. This task is accomplished by clicking the <code translate="no" v-pre>Edit</code> button, followed by <code translate="no" v-pre>Save</code> button.</p>
+<p>When a token expires or you rotate credentials, open the profile with <code translate="no" v-pre>Edit</code>, update the values, then <code translate="no" v-pre>Save</code>.</p>
         </div>
     </div>
 </div>
 <h2 id="delete-database-profile">Delete Database Profile</h2>
 <ol>
-<li>Click on the <code translate="no" v-pre>-</code> button.</li>
-<li>You will be prompted for confirmation before deletion.</li>
+<li>Select a profile in the table.</li>
+<li>Click the <code translate="no" v-pre>-</code> button.</li>
+<li>Confirm deletion when prompted.</li>
 </ol>
-<h2 id="open-database-folder-in-finder">Open Database Folder in Finder</h2>
-<p>Select the <code translate="no" v-pre>Open Database Folder in Finder</code> link to unveil the Finder directory housing the Database Profile files. You can copy the <code translate="no" v-pre>.json</code> files to another location for the purpose of creating backups and restoration of your Database Profile files.</p>
+<h2 id="open-database-profiles-in-finder">Open Database Profiles in Finder</h2>
+<p>Select <code translate="no" v-pre>Open Database Profiles in Finder</code> to reveal the folder that stores your Database Profile <code translate="no" v-pre>.json</code> files. You can copy those files elsewhere for backup and restore.</p>
 <h2 id="notion-template">Notion Template</h2>
 <figure class="content-center">
     <a href="https://soothsayer.notion.site/509f0a7f6eb742579160569a43116227?v=fc1eb1226b4345feb63a43a70c58c99a" target="_blank">
@@ -441,20 +418,6 @@
     </a>
     <figcaption class="caption"></figcaption>
 </figure>
-<p>
-<div class="mb-6 px-5 py-4 flex justify-between relative border border-base-border hover:border-base-border-hover rounded transition-colors duration-150">
-    <div class="flex items-center text-base-500">
-        <span class="inline-flex items-center justify-center leading-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M1.513 1.96a1.374 1.374 0 0 1 1.499-.21l19.335 9.215a1.147 1.147 0 0 1 0 2.07L3.012 22.25a1.374 1.374 0 0 1-1.947-1.46L2.49 12 1.065 3.21a1.375 1.375 0 0 1 .448-1.25Zm2.375 10.79-1.304 8.042L21.031 12 2.584 3.208l1.304 8.042h7.362a.75.75 0 0 1 0 1.5Z"/></svg>
-        </span>
-        <span class="inline-block font-medium ml-2">Sending to Notion</span>
-    </div>
-    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
-        <span>/in-action/notion-profile</span>
-    </div>
-    <a href="/in-action/notion-profile" class="absolute block inset-0"></a>
-</div>
-</p>
 
                 
                 <!-- Required only on API pages -->
