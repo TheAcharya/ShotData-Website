@@ -89,7 +89,7 @@ Provide one timeline at a time.
 
 When uploading to Notion (during extract or from [Notion Queue](/user-guide/notion-queue)), check:
 
-1. Your [Database Profile](/user-guide/databases) has a valid Integration Token and Database URL — see [Notion Prerequisite](/databases/notion-prerequisite).
+1. Your [Database Profile](/user-guide/databases) has a valid Integration Token and Database URL — see [Notion Prerequisite](/database/notion-prerequisite).
 2. The Notion database title (key) column is named `Shot ID` and uses Notion’s **Title** property type. **Shot Data** will not create that column. Typical messages:
    - `Notion database must have a title property named "Shot ID"…`
    - `Notion database column "Shot ID" exists but is not the title (key) property…`
