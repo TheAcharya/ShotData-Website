@@ -24,11 +24,11 @@ Duplicate the [Shot Data Notion Template](#notion-template) first. Your database
 
 ==- Notion Integration Token
 
-Enter your [Notion Integration Token](/databases/notion-prerequisite#obtain-your-integration-token) here. The field is secure.
+Enter your [Notion Integration Token](/database/notion-prerequisite#obtain-your-integration-token) here. The field is secure.
 
 ==- Notion Database URL
 
-Enter your [Notion Database URL](/databases/notion-prerequisite#obtain-your-database-url) here. The field is secure.
+Enter your [Notion Database URL](/database/notion-prerequisite#obtain-your-database-url) here. The field is secure.
 
 !!!info Info
 Duplicate the [Shot Data Notion Template](#notion-template), then copy the link from your duplicated database in Notion.
