@@ -17,8 +17,6 @@ Duplicate the [Shot Data Notion Template](#notion-template) first. Your database
 3. Enter your Notion Integration Token and Notion Database URL.
 4. Click `Save`.
 
-Platform is fixed to Notion — there is no platform tab to choose.
-
 ==- Notion Integration Token
 
 Enter your [Notion Integration Token](/databases/notion-prerequisite#obtain-your-integration-token) here. The field is secure.
