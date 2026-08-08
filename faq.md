@@ -58,7 +58,7 @@ Put simply, **Marker Data** is oriented towards marker-driven, collaborative dat
 
 ## Was AI and LLMs used in the development of Shot Data?
 
-Yes, though the extent varied across different parts of the application. The underlying engine, [OpenFCPXMLKit](https://github.com/TheAcharya/OpenFCPXMLKit), which handles the parsing and shot extracting logic that powers **Shot Data** , was developed with substantial assistance from various large language models throughout its creation.
+Yes, though the extent varied across different parts of the application. The underlying engine, [OpenFCPXMLKit](https://github.com/TheAcharya/OpenFCPXMLKit), which handles the parsing and shot extracting logic that powers **Shot Data**, was developed with substantial assistance from various large language models throughout its creation.
 
 The user interface, by contrast, has a more traditional origin. It was built upon the interface of [Marker Data](https://markerdata.theacharya.co), which was originally hand-written. AI and LLM tools were subsequently used to re-wire and repurpose this existing interface for **Shot Data**'s specific needs, rather than to author it from scratch.
 
