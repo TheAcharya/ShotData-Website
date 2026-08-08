@@ -38,20 +38,6 @@ Your browser does not support the video tag.
 Your browser does not support the video tag.
 </video>
 
-==- Automatic Export
-
-<video controls width="1920">
-  <source src="/assets/sd-automatic-export-01.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-
-==- Manual Export
-
-<video controls width="1920">
-  <source src="/assets/sd-manual-export-01.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-
 ===
 
 ## Screenshot
