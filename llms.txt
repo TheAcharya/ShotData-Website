@@ -6,7 +6,7 @@
 - [Disclaimers](http://shotdata.theacharya.co/disclaimers.md): The author(s) have no affiliation with Apple or Notion in any capacity. All product names, logos, and brands are property of their respective owners.
 - [Shot Data End User License Agreement](http://shotdata.theacharya.co/license.md): Copyright (c) 2026 The Acharya
 - [Shot Data](http://shotdata.theacharya.co/readme.md): Shot Data
-- [Prologue](http://shotdata.theacharya.co/prologue.md): In Tenet, the bullet is caught because the event has already happened. Likewise, a Shot List Database presents the scene as already decided — and Shot Data turns a locked stills timeline in Final Cut Pro into that ordered list.
+- [Prologue](http://shotdata.theacharya.co/prologue.md): In Tenet, the bullet is caught because the event has already happened. Likewise, a Shot List Database presents the scene as already decided, and Shot Data turns a locked stills timeline in Final Cut Pro into that ordered list.
 - [Frequently Asked Questions](http://shotdata.theacharya.co/faq.md): Yes. The exported .csv manifest follows a standard comma-separated format, so it opens directly in Apple's Numbers, Microsoft Excel, Google Sheets, and other spreadsheet applications that support .csv files, without requiring any conversion.
 - [Troubleshooting](http://shotdata.theacharya.co/troubleshooting.md): Below, you will find a comprehensive list of common issues users may encounter, accompanied by solutions to resolve them.
 - [Press Kit & Media](http://shotdata.theacharya.co/press-kit-media.md): We would greatly appreciate your support in sharing and promoting Shot Data!
