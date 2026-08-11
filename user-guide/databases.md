@@ -15,7 +15,8 @@ Duplicate the [Shot Data Notion Template](#notion-template) first. Your database
 1. Click the `+` button to create a Database Profile.
 2. Enter a Profile Name.
 3. Enter your Notion Integration Token and Notion Database URL.
-4. Click `Save`.
+4. Click `Test Connection` to confirm **Shot Data** can reach the database and that the title column is `Shot ID`.
+5. Click `Save`.
 
 ==- Notion Integration Token
 
@@ -29,10 +30,18 @@ Enter your [Notion Database URL](/database/notion-prerequisite#obtain-your-datab
 Duplicate the [Shot Data Notion Template](#notion-template), then copy the link from your duplicated database in Notion.
 !!!
 
+==- Test Connection
+
+After you enter the token and Database URL, click `Test Connection`. **Shot Data** checks that the integration can open the database and that the title (key) property is named `Shot ID`. A green checkmark means the profile is ready for upload. A red status shows the error so you can fix the token, URL, or database schema before you save or extract.
+
+!!!info Info
+`Test Connection` only reads from Notion. It does not create pages, upload images, or change your database columns. The status clears if you edit the token or Database URL.
+!!!
+
 ===
 
 !!!warning Warning
-Upload aborts if the live Notion database has no title property named `Shot ID`. Other manifest fields that are missing from the database schema are skipped (they are not created automatically). `Image Filename` still drives the page image upload even when it is not a database property; `Icon Image` sets the page icon and is not stored as a property.
+Upload aborts if the live Notion database has no title property named `Shot ID`. Use `Test Connection` to catch that before extract or [Notion Queue](/user-guide/notion-queue). Other manifest fields that are missing from the database schema are skipped (they are not created automatically). `Image Filename` still drives the page image upload even when it is not a database property; `Icon Image` sets the page icon and is not stored as a property.
 !!!
 
 ## Upload Threads
@@ -58,7 +67,7 @@ After duplicating, edit the copy and replace the Notion Database URL so each pro
 You can edit any Database Profile with the `Edit` button.
 
 !!!info Info
-When a token expires or you rotate credentials, open the profile with `Edit`, update the values, then `Save`.
+When a token expires or you rotate credentials, open the profile with `Edit`, update the values, click `Test Connection`, then `Save`.
 !!!
 
 ## Delete Database Profile
