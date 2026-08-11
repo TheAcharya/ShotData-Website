@@ -16,10 +16,10 @@
     <loc>http://shotdata.theacharya.co/disclaimers/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/user-guide/extract/</loc>
+    <loc>http://shotdata.theacharya.co/prologue/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/prologue/</loc>
+    <loc>http://shotdata.theacharya.co/user-guide/extract/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/user-guide/general/</loc>
@@ -31,19 +31,19 @@
     <loc>http://shotdata.theacharya.co/user-guide/databases/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/user-guide/keyboard-shortcuts/</loc>
-  </url>
-  <url>
     <loc>http://shotdata.theacharya.co/faq/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/privacy/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/user-guide/notion-queue/</loc>
+    <loc>http://shotdata.theacharya.co/user-guide/keyboard-shortcuts/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/credits/</loc>
+  </url>
+  <url>
+    <loc>http://shotdata.theacharya.co/user-guide/notion-queue/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/press-kit-media/</loc>
@@ -68,6 +68,9 @@
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/case-study/final-cut-pro-enigma/</loc>
+  </url>
+  <url>
+    <loc>http://shotdata.theacharya.co/case-study/what-is-sound-lock/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/database/notion-prerequisite/</loc>
