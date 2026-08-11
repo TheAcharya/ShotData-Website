@@ -85,14 +85,43 @@ This is intentional. **Shot Data** processes one FCPXML timeline per action. If 
 
 Provide one timeline at a time.
 
+## Test Connection shows a red status
+
+On [Databases](/user-guide/databases), after you enter an Integration Token and Database URL, click `Test Connection` before you save or extract.
+
+A **green** checkmark means **Shot Data** can reach the database and the title (key) property is named `Shot ID`. A **red** status means the profile is not ready yet — read the message beside the icon.
+
+Typical error messages:
+
+| Message | What to do |
+|---------|------------|
+| `Could not parse a Notion database ID from the URL.` | Paste the full Database URL from your duplicated Notion database — see [Notion Prerequisite](/database/notion-prerequisite#obtain-your-database-url). |
+| `Notion database must have a title property named "Shot ID". Use the Shot Data Notion template, or rename the title column to "Shot ID".` | Duplicate the [Shot Data Notion Template](/user-guide/databases/#notion-template), or rename the database’s title (key) column to `Shot ID`. **Shot Data** will not create that column. |
+| `Notion database column "Shot ID" exists but is not the title (key) property. Rename the database title column to "Shot ID".` | In Notion, make sure `Shot ID` is the **Title** property — not a text, select, or other type. |
+| `Notion API 401: …` / `Notion API 403: …` (or similar) | Check the Integration Token and that the integration is connected to the database in Notion (Connections). See [Notion Prerequisite](/database/notion-prerequisite#obtain-your-integration-token). |
+| `Notion API 404: …` (or similar) | The Database URL may point at the wrong page, or the integration cannot see that database yet — reconnect Connections and copy the URL again. |
+| `Database has no data_sources — reconnect the integration and retry` | Open the database in Notion, reconnect the integration under Connections, then run `Test Connection` again. |
+
+Also check:
+
+1. Outbound HTTPS is allowed for **Shot Data** (for example if you use Little Snitch).
+2. [Notion’s status](https://status.notion.so/) if Notion itself is degraded.
+
+`Test Connection` only reads from Notion. It does not create pages, upload images, or change columns. Editing the token or Database URL clears the previous status — run the test again after you fix the issue.
+
+See also [Databases](/user-guide/databases) and [Notion upload fails / Shot ID errors](#notion-upload-fails--shot-id-errors).
+
 ## Notion upload fails / Shot ID errors
 
 When uploading to Notion (during extract or from [Notion Queue](/user-guide/notion-queue)), check:
 
-1. Your [Database Profile](/user-guide/databases) has a valid Integration Token and Database URL — see [Notion Prerequisite](/database/notion-prerequisite).
+1. Open your [Database Profile](/user-guide/databases), confirm the Integration Token and Database URL, then click `Test Connection` — fix any red status before you extract or queue an upload. See [Notion Prerequisite](/database/notion-prerequisite) and [Test Connection shows a red status](#test-connection-shows-a-red-status).
 2. The Notion database title (key) column is named `Shot ID` and uses Notion’s **Title** property type. **Shot Data** will not create that column. Typical messages:
-   - `Notion database must have a title property named "Shot ID"…`
-   - `Notion database column "Shot ID" exists but is not the title (key) property…`
+   - `Could not parse a Notion database ID from the URL.`
+   - `Notion database must have a title property named "Shot ID". Use the Shot Data Notion template, or rename the title column to "Shot ID".`
+   - `Notion database column "Shot ID" exists but is not the title (key) property. Rename the database title column to "Shot ID".`
+   - `Notion API 401: …` / `Notion API 403: …` / `Notion API 404: …` (token, Connections, or wrong URL)
+   - `Database has no data_sources — reconnect the integration and retry`
 3. The integration is connected to the database in Notion (Connections).
 4. If you use a firewall such as Little Snitch, allow outbound HTTPS for **Shot Data**.
 
