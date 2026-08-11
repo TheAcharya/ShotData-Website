@@ -8,7 +8,7 @@ order: -96
 
 ## What's happened, happened.
 
-![Neil goes back to the beginning.](assets/arrival_02.gif)
+![Neil goes back to the beginning.](assets/tenet_02.gif)
 
 A film begins long before the first take. For some of us, it begins as a stills timeline: storyboard stills created in various applications, assembled and locked in Final Cut Pro as a pre-cut of the scene while the set is still empty and the schedule is still only intention. That sequence is not a rough sketch of post-production; it is the shoot, decided early, held in order, waiting for the day the cameras finally match what was already pictured.
 
