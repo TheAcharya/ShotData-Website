@@ -19,7 +19,7 @@
 ## Case Study
 
 - [Final Cut Pro's Enigma](http://shotdata.theacharya.co/case-study/final-cut-pro-enigma.md): Final Cut Pro stands out as a radically different NLE primarily because of its exclusive optimisation for the macOS ecosystem, leveraging seamless integration with Apple hardware and software.
-- [What is Sound Lock?](http://shotdata.theacharya.co/case-study/what-is-sound-lock.md): Most people in film and television already know what Picture Lock means.
+- [What is Sound Lock?](http://shotdata.theacharya.co/case-study/what-is-sound-lock.md): A traditional hand-drawn storyboard, one of the visual forms a filmmaker might build against a locked track.
 
 ## User Guide
 
