@@ -5,7 +5,7 @@ order: -2
 ---
 # What is Sound Lock?
 
-![A traditional hand-drawn storyboard, one of the visual forms a filmmaker might build against a locked track.](https://upload.wikimedia.org/wikipedia/commons/d/d0/Storyboard_for_The_Radio_Adventures_of_Dr._Floyd.jpg)
+![A traditional hand-drawn storyboard, one of the visual forms a filmmaker might build against a locked track.](https://upload.wikimedia.org/wikipedia/commons/d/d0/Storyboard_for_The_Radio_Adventures_of_Dr._Floyd.jpg){width="800"}
 
 ## Picture Lock, as a Starting Point
 
