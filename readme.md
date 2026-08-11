@@ -11,9 +11,9 @@ The shot list database creation application crafted for [Final Cut Pro](https://
 - Extract as Notion or CSV, with upload to Notion when you choose a Database Profile.
 - Notion Queue for extract first, upload later.
 - Scene Number and Folder Format controls, plus a quick Scene Number badge on Extract.
-- Drag and drop `.fcpxml` / `.fcpxmld` files, or timelines and compound clips from Final Cut Pro.
+- Drag and drop `.fcpxml` / `.fcpxmld` files, or timelines from Final Cut Pro.
 - Each extract is saved to a uniquely named folder in your Export Folder.
-- Written in Apple Swift and SwiftUI.
+- Written in Apple Swift language and SwiftUI framework.
 - No hidden costs, no subscriptions, no in-app purchases.
 - Available on the Mac App Store.
 
