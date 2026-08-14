@@ -15,7 +15,7 @@ What if turning a pre-cut stills timeline into a professional Shot List Database
 
 ## Application Objectives
 
-- Deliver a nearly seamless experience, from a locked stills timeline in FCPXML to PNG stills and a Shot List Database, with a near-single-drop functionality.
+- Deliver a nearly seamless experience, from a locked stills timeline in FCPXML to PNG stills and a Shot List Database, with a single drag and drop.
 - Facilitate a native, graphical macOS interface, sparing users from having to touch the Terminal.
 - Support optional in-app Notion upload and Notion Queue for extract-first, upload-later workflows.
 - Build upon an open-source Shot Extraction framework, ensuring the logic behind every extract remains transparent.
