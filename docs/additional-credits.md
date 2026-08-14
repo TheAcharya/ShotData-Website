@@ -13,3 +13,4 @@ Shot Data is also made possible because of the hard work of these amazing open-s
 | [ButtonKit](https://github.com/Dean151/ButtonKit) | Asynchronous and Throwable button implementation for SwiftUI, with animations and progress tracking |
 | [DockProgress](https://github.com/sindresorhus/DockProgress) | Show progress in your app's Dock icon |
 | [SwiftEmojiPicker](https://github.com/sergius-la/SwiftEmojiPicker) | A native SwiftUI emoji picker for iOS and macOS |
+| [App Store Connect CLI](https://github.com/rorkai/App-Store-Connect-CLI) | A fast, scriptable CLI for App Store Connect |
