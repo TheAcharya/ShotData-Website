@@ -17,7 +17,13 @@ That said, this website is ready when you need it: answers to common questions, 
 2. Launch **Shot Data**.
 3. Read `Onboarding` information and instructions.
 4. Create your first [Configuration](/user-guide/configurations).
-5. Start using **Shot Data** and have fun!
+5. Return to [General](/user-guide/general) Settings and select your `Export Folder`.
+6. Press `⌘` `S` on your keyboard to `Update Active Configuration`.
+7. Start using **Shot Data** and have fun!
+
+!!!info Info
+Whenever you change settings on an active [Configuration](/user-guide/configurations), press `⌘` `S` to `Update Active Configuration`. Press `⌘` `Z` to `Discard Changes` and revert to the last saved preset.
+!!!
 
 ## Onboarding
 
