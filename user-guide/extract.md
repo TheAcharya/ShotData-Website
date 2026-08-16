@@ -33,5 +33,21 @@ Extraction begins as soon as a valid timeline is received, provided an Export Fo
 !!!
 
 !!!info Info
-Extract is intended for primary-spine still-image timelines. If Final Cut Pro cannot grant access to the source stills, **Shot Data** will ask you to choose a media folder before writing PNGs.
+Extract is intended for primary-spine still-image timelines. If **Shot Data** cannot open the source stills, it will ask you to `Choose Media Folder` before writing PNGs — see [Choose Media Folder](#choose-media-folder).
+!!!
+
+## Choose Media Folder
+
+After planning shots, **Shot Data** may show `Choose Media Folder` if it cannot open the source stills — for example after dragging a timeline from Final Cut Pro (staged in Cache), when stills live on another volume, or when stills sit inside a Final Cut Pro library (`.fcpbundle`).
+
+The panel message is `Original media, a Final Cut Pro library, or an enclosing folder.` Select one of those, then press `Grant Access`.
+
+- The folder that holds your original stills
+- The Final Cut Pro library (`.fcpbundle`) that contains those stills
+- A parent folder that contains the library or the stills
+
+If the first choice does not unlock every still, **Shot Data** offers `Choose Another Folder` or `Cancel Extract`. Closing the panel or pressing `Cancel Extract` stops the extraction cleanly — it is not treated as a hard failure.
+
+!!!info Info
+The [Export Folder](/user-guide/general/#export-folder) bookmark does not automatically cover source media. A media-folder grant is session-only for that extract and is not saved under [General](/user-guide/general). If stills remain unreadable, see [Troubleshooting](/troubleshooting#prompted-to-choose-a-media-folder--stills-cannot-be-read).
 !!!
