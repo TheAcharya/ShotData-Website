@@ -66,15 +66,32 @@ Press `Close` on the progress footer when you are finished reviewing the result.
 
 ## Prompted to choose a media folder / stills cannot be read
 
-After planning shots, **Shot Data** may ask you to choose a folder that contains the source still images. That happens when the App Sandbox cannot open the planned stills — for example after dragging a timeline from Final Cut Pro (staged in Cache), or when stills live on another volume.
+After planning shots, **Shot Data** may show `Choose Media Folder` when it cannot open the planned stills. That happens under App Sandbox — for example after dragging a timeline from Final Cut Pro (staged in Cache), when stills live on another volume, or when stills sit inside a Final Cut Pro library (`.fcpbundle`).
 
-- Choose the folder that holds your source images, or a parent folder that contains them all
-- Cancelling the panel stops the extraction cleanly (it is not treated as a hard failure)
-- If you pick the wrong folder, you may see a message that the selected folder doesn’t contain the stills — choose again at a higher level
+The panel title is `Choose Media Folder`. The message is `Original media, a Final Cut Pro library, or an enclosing folder.` Press `Grant Access` after you select one of those.
+
+You will see this when:
+
+- The progress phase on [Extract](/user-guide/extract) reads `Choose Media Folder`
+- Stills are stored inside a Final Cut Pro library package (`.fcpbundle`)
+- The export destination is set, but the source images are on a different volume or folder
+
+What to choose:
+
+- The folder that holds your original stills
+- The Final Cut Pro library (`.fcpbundle`) itself — pick the library, not only a parent folder, when stills live inside it
+- A parent folder that contains the library or the stills
+
+If the first choice does not unlock every still, **Shot Data** shows the same `Choose Media Folder` message with `Choose Another Folder` or `Cancel Extract`.
+
+- Press `Choose Another Folder` to pick again
+- Press `Cancel Extract`, or close the panel, to stop the extraction cleanly (it is not treated as a hard failure)
 
 !!!info Info
-The export folder bookmark does not automatically cover source media. Granting a media folder is a separate, session-only access for that extract.
+The [Export Folder](/user-guide/general/#export-folder) bookmark does not automatically cover source media. A media-folder grant is session-only for that extract and is not saved as a setting. **Shot Data** will not skip unreadable stills.
 !!!
+
+See also [Choose Media Folder](/user-guide/extract#choose-media-folder) on Extract, and [Shot Data does not appear under Files and Folders privacy](#shot-data-does-not-appear-under-files-and-folders-privacy).
 
 ## Extraction fails on video, Motion templates, titles, or other non-stills
 
@@ -214,4 +231,4 @@ If the alert persists, contact support with a description of your macOS version 
 
 ## Shot Data does not appear under Files and Folders privacy
 
-Sandboxed open-panel grants often do **not** list the app under System Settings → Privacy & Security → Files and Folders. That is normal. Access comes from the folders you choose in **Shot Data** (export folder, media folder), not from a Full Disk Access toggle.
+Sandboxed open-panel grants often do **not** list the app under System Settings → Privacy & Security → Files and Folders. That is normal. Access comes from the folders you choose in **Shot Data** (export folder, media folder, or a Final Cut Pro library), not from a Full Disk Access toggle.
