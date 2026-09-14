@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.842716798248">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.842717032256">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../static/favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.842716798248" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.842717032256" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.842716798248" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.842717032256" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.842716798248" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.842717032256" data-turbo-eval="false" defer></script>
 
     <meta name="msvalidate.01" content="325120C12888C61306930ACDFB17A57E" />
     <!-- Google Tag Manager -->
@@ -373,6 +373,56 @@
         <div class="pr-5 ml-3 w-full">
             <h5>Info</h5>
 <p>The <a href="/user-guide/general/#export-folder">Export Folder</a> bookmark does not automatically cover source media. A media-folder grant is session-only for that extract and is not saved under <a href="/user-guide/general">General</a>. If stills remain unreadable, see <a href="../../troubleshooting/#prompted-to-choose-a-media-folder--stills-cannot-be-read">Troubleshooting</a>.</p>
+        </div>
+    </div>
+</div>
+<h2 id="extract-and-upload">Extract and Upload</h2>
+<p>When <a href="/user-guide/general/#extraction-format">Extraction Format</a> is a <a href="/user-guide/databases">Database Profile</a>, <strong>Shot Data</strong> extracts first, then uploads to Notion.</p>
+<ul>
+<li>The extract progress bar runs to completion, then a second bar shows upload progress as <code translate="no" v-pre>Upload (n/total)</code>.</li>
+<li>Press <code translate="no" v-pre>Stop</code> to cancel work in progress.</li>
+<li>If <code translate="no" v-pre>Ask for Upload Confirmation</code> is enabled under <a href="/user-guide/general/#ask-for-upload-confirmation">General → File</a>, <strong>Shot Data</strong> pauses after planning and asks <code translate="no" v-pre>Extract stills and upload to Notion?</code> before anything is written. Press <code translate="no" v-pre>Extract &amp; Upload</code> to continue, or <code translate="no" v-pre>Cancel</code> to stop.</li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-info"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-info" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Info</h5>
+<p>CSV and <code translate="no" v-pre>Notion (No Upload)</code> write locally only. Use <a href="/user-guide/notion-queue">Notion Queue</a> when you want to extract first and upload later.</p>
+        </div>
+    </div>
+</div>
+<h2 id="review-the-output">Review the Output</h2>
+<p>When extraction finishes, the progress card shows how many shots were extracted (for example <code translate="no" v-pre>12 Shots Extracted</code>).</p>
+<ul>
+<li><code translate="no" v-pre>Show in Finder</code> opens the unique export folder containing the PNGs and the Notion or CSV manifest.</li>
+<li><code translate="no" v-pre>Open Notion Database</code> appears after extract-and-upload when that extract’s Database Profile has a usable Database URL. It opens the database in Notion Desktop, or in your browser if Notion Desktop App is not installed.</li>
+<li><code translate="no" v-pre>Show Error Details</code> appears if the run failed. <code translate="no" v-pre>Close</code> dismisses the card.</li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-info"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-info" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Info</h5>
+<p><code translate="no" v-pre>Open Notion Database</code> uses the Database URL from the profile used for that extract. It is not shown for <code translate="no" v-pre>Notion (No Upload)</code> or CSV, and it is not available on <a href="/user-guide/notion-queue">Notion Queue</a>.</p>
         </div>
     </div>
 </div>

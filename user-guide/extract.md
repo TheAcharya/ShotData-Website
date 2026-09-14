@@ -51,3 +51,27 @@ If the first choice does not unlock every still, **Shot Data** offers `Choose An
 !!!info Info
 The [Export Folder](/user-guide/general/#export-folder) bookmark does not automatically cover source media. A media-folder grant is session-only for that extract and is not saved under [General](/user-guide/general). If stills remain unreadable, see [Troubleshooting](/troubleshooting#prompted-to-choose-a-media-folder--stills-cannot-be-read).
 !!!
+
+## Extract and Upload
+
+When [Extraction Format](/user-guide/general/#extraction-format) is a [Database Profile](/user-guide/databases), **Shot Data** extracts first, then uploads to Notion.
+
+- The extract progress bar runs to completion, then a second bar shows upload progress as `Upload (n/total)`.
+- Press `Stop` to cancel work in progress.
+- If `Ask for Upload Confirmation` is enabled under [General → File](/user-guide/general/#ask-for-upload-confirmation), **Shot Data** pauses after planning and asks `Extract stills and upload to Notion?` before anything is written. Press `Extract & Upload` to continue, or `Cancel` to stop.
+
+!!!info Info
+CSV and `Notion (No Upload)` write locally only. Use [Notion Queue](/user-guide/notion-queue) when you want to extract first and upload later.
+!!!
+
+## Review the Output
+
+When extraction finishes, the progress card shows how many shots were extracted (for example `12 Shots Extracted`).
+
+- `Show in Finder` opens the unique export folder containing the PNGs and the Notion or CSV manifest.
+- `Open Notion Database` appears after extract-and-upload when that extract’s Database Profile has a usable Database URL. It opens the database in Notion Desktop, or in your browser if Notion Desktop App is not installed.
+- `Show Error Details` appears if the run failed. `Close` dismisses the card.
+
+!!!info Info
+`Open Notion Database` uses the Database URL from the profile used for that extract. It is not shown for `Notion (No Upload)` or CSV, and it is not available on [Notion Queue](/user-guide/notion-queue).
+!!!
