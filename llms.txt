@@ -38,5 +38,5 @@
 
 ## In Action
 
-- [Creating Excel Spreadsheet](http://shotdata.theacharya.co/in-action/creating-excel-spreadsheet.md): Create Configuration for Excel
-- [Creating PDF Report](http://shotdata.theacharya.co/in-action/creating-pdf-report.md): Create Configuration for PDF
+- [Extract a Shot List](http://shotdata.theacharya.co/in-action/extract-a-shot-list.md): Create Configuration for Shot List
+- [Notion Queue](http://shotdata.theacharya.co/in-action/notion-queue.md): Create Notion Profile
