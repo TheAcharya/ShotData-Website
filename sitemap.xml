@@ -25,19 +25,22 @@
     <loc>http://shotdata.theacharya.co/user-guide/general/</loc>
   </url>
   <url>
+    <loc>http://shotdata.theacharya.co/user-guide/databases/</loc>
+  </url>
+  <url>
     <loc>http://shotdata.theacharya.co/user-guide/notion-queue/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/user-guide/configurations/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/user-guide/databases/</loc>
-  </url>
-  <url>
     <loc>http://shotdata.theacharya.co/faq/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/privacy/</loc>
+  </url>
+  <url>
+    <loc>http://shotdata.theacharya.co/user-guide/overview/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/press-kit-media/</loc>
@@ -59,9 +62,6 @@
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/the-acharya/</loc>
-  </url>
-  <url>
-    <loc>http://shotdata.theacharya.co/user-guide/overview/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/in-action/extract-a-shot-list/</loc>
