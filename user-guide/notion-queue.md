@@ -41,7 +41,7 @@ Uploads run one shot list after another. Within each list, **Shot Data** uploads
 !!!
 
 !!!info Info
-Your Notion database title (key) column must already be named `Shot ID`. **Shot Data** will not create that column for you. See [Databases](/user-guide/databases) and the [Notion Prerequisite](/databases/notion-prerequisite).
+Your Notion database title (key) column must already be named `Shot ID`. **Shot Data** will not create that column for you. See [Databases](/user-guide/databases) and the [Notion Prerequisite](/database/notion-prerequisite).
 !!!
 
 ## Scenario 2 - Load Existing Extracts
@@ -57,8 +57,10 @@ If shot-list folders already exist in an Export Destination — for example afte
 
 You can drag specific extraction folders onto Notion Queue to list only those shot lists.
 
+Dropping folders clears the current Queue list, then scans the dropped folders.
+
 ![Drag and Drop to Queue Window](/assets/sd-queue-03.gif)
 
 !!!info Info
-Right-click the table and choose `Clear` to empty the Queue list.
+Right-click the table and choose `Clear` to empty the Queue list. **Shot Data** uploads the Notion manifest beside each scanned folder, so a copied or moved shot-list folder still uploads even if the original export path has changed.
 !!!
