@@ -51,15 +51,21 @@ No. **Shot Data** is built and optimised exclusively for Apple Silicon.
 
 ## Why is Shot Data only available on the latest macOS versions?
 
-**Shot Data** is compatible exclusively with the current and preceding major release of macOS, owing to Apple's policy of restricting new software features and frameworks to their most recent operating system releases. Whilst these features may technically function on older systems, Apple provides no official support for such compatibility, which presents considerable challenges for developers who must then choose between implementing extensive workarounds or confining support to the most current OS versions.
+**Shot Data** requires macOS 26.0 or later, owing to Apple's policy of restricting new software features and frameworks to their most recent operating system releases. Whilst these features may technically function on older systems, Apple provides no official support for such compatibility, which presents considerable challenges for developers who must then choose between implementing extensive workarounds or confining support to older OS versions.
 
-As an independent developer, we have elected to support only the current and immediately preceding major release of macOS, so as to avoid the complexities and time-consuming nature of such workarounds. This is a matter of practicality and efficiency, and is in no way a reflection of any lack of effort or dedication on our part.
+As an independent developer, we have elected to support the current major release of macOS, so as to avoid the complexities and time-consuming nature of such workarounds. This is a matter of practicality and efficiency, and is in no way a reflection of any lack of effort or dedication on our part.
 
 ## How is Marker Data different from Shot Data?
 
 [Marker Data](https://markerdata.theacharya.co) and **Shot Data** are two distinct applications, each built to address a different aspect of the Final Cut Pro workflow. **Marker Data** focuses on extracting a timeline's Marker metadata, along with associated PNGs or animated GIFs, and transmitting it into Notion or Airtable, allowing teams to manage VFX shots, shot collections, comments, and edit notes within a shared, dynamic database. **Shot Data**, by contrast, creates a shot list from still-image timelines: one PNG per shot plus a Notion or CSV manifest, with optional in-app Notion upload and Notion Queue.
 
 Put simply, **Marker Data** is oriented towards marker-driven, collaborative database workflows, while **Shot Data** is oriented towards stills-based shot lists. Both applications are built on open-source parsing foundations, and depending on your workflow, they can be used independently or alongside one another.
+
+## How is Production Data different from Shot Data?
+
+[Production Data](https://productiondata.theacharya.co) and **Shot Data** are two distinct applications, each built to address a different aspect of the Final Cut Pro workflow. **Production Data** turns FCPXML into production Excel and PDF reports — roles, sheets, and columns for production paperwork. **Shot Data**, by contrast, creates a Shot List Database from still-image timelines: one PNG per shot plus a Notion or CSV manifest, with optional in-app Notion upload and Notion Queue.
+
+Put simply, **Production Data** is oriented towards production reports, while **Shot Data** is oriented towards stills-based shot lists. Together with [Marker Data](https://markerdata.theacharya.co), they form a trilogy of Final Cut Pro tools and can be used independently or alongside one another.
 
 ## Was AI and LLMs used in the development of Shot Data?
 
