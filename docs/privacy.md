@@ -11,7 +11,7 @@ The Acharya ("We", "Us", or "Our") built Shot Data (the "App") as a simple, priv
 
 ## Summary
 
-**Shot Data does not collect, store, transmit, or track any personal data or usage data.** The App works entirely on your device and does not connect to any server operated by Us.
+**Shot Data does not collect, store, transmit, or track any personal data or usage data on servers operated by Us.** Extraction runs on your Mac. The App does not connect to any server operated by Us. If you choose to upload a shot list, the App sends that content to Notion using the Integration Token and Database URL you provide; Notion’s own privacy practices then apply.
 
 ## Data Collection
 
@@ -29,9 +29,9 @@ The App does not use tracking technologies of any kind. We do not use cookies, a
 
 ## Third-Party Services
 
-The App does not integrate any third-party analytics, advertising, or crash-reporting software development kits (SDKs). If a future version of the App includes any third-party service that processes data, We will update this Privacy Policy beforehand.
+The App does not integrate any third-party analytics, advertising, or crash-reporting software development kits (SDKs). Optional Notion upload uses Notion’s public API at your request; it is not used for analytics or advertising. If a future version of the App includes any other third-party service that processes data, We will update this Privacy Policy beforehand.
 
-Our support and documentation [site](https://shotdata.theacharya.co), is hosted independently of the App and may collect standard technical data (such as IP address or browser type) as part of normal website hosting. This is separate from the App itself, which does not transmit any data.
+Our support and documentation [site](https://shotdata.theacharya.co) is hosted independently of the App and may collect standard technical data (such as IP address or browser type) as part of normal website hosting. This is separate from the App itself.
 
 We also use GitHub to host documentation and, where applicable, source code related to the App. If you visit our GitHub repository, GitHub's own privacy practices will apply to that visit. You can read GitHub's Privacy Statement at [here](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
 
@@ -63,4 +63,4 @@ If you have any questions about this Privacy Policy, feel free to reach out [her
 
 ---
 
-Last updated: 6th August 2026
+Last updated: 14th September 2026
