@@ -110,7 +110,7 @@ Provide one timeline at a time.
 
 On [Databases](/user-guide/databases), after you enter an Integration Token and Database URL, click `Test Connection` before you save or extract.
 
-A **green** checkmark means **Shot Data** can reach the database and the title (key) property is named `Shot ID`. A **red** status means the profile is not ready yet — read the message beside the icon.
+A **green** tick means **Shot Data** can reach the database and the title (key) property is named `Shot ID`. A **red** status means the profile is not ready yet — read the message beside the icon.
 
 Typical error messages:
 
@@ -211,6 +211,12 @@ Clean Cache is disabled while an extraction is in progress. Wait until the run f
 !!!info Info
 Cache files may be named like `FCP Drop-…`. Export folders and shot-list names still use the timeline name from the project — not the Cache staging name.
 !!!
+
+## Open Notion Database does not appear
+
+`Open Notion Database` is shown on the [Extract](/user-guide/extract) completion card only after an extract that used a Notion [Database Profile](/user-guide/databases), when that profile’s Database URL can be opened. It is not shown for `Notion (No Upload)` or CSV extracts, and it is not available on [Notion Queue](/user-guide/notion-queue).
+
+If Notion Desktop App is not installed, the same button opens the database in your default browser.
 
 ## Drag and drop from Final Cut Pro does not start an extraction
 
