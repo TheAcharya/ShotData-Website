@@ -65,7 +65,7 @@ You can also click on the `Quick Configurations Selector` menu located on the to
 
 ### Method 4
 
-Starting with **Shot Data** version 1.1.0, you will have the capability to assign a shortcut to your chosen Configuration. Shortcuts can be assigned using key combinations ranging from `⌘` `1` to `⌘` `9`.
+You can assign a shortcut to your chosen Configuration. Shortcuts can be assigned using key combinations ranging from `⌘` `1` to `⌘` `9`.
 
 1. Right-click on your desired Configuration.
 
@@ -113,7 +113,7 @@ Go to **Shot Data**'s menu bar, click on `Update Active Configuration` under Con
 
 ### Method 3
 
-Press `⌘` `s` on your keyboard to `Update Active Configuration`. You can press `⌘` `s` anywhere within **Shot Data**.
+Press `⌘` `S` on your keyboard to `Update Active Configuration`. You can press `⌘` `S` anywhere within **Shot Data**.
 
 ## Delete Configuration
 
