@@ -32,14 +32,14 @@ The shot list database creation application crafted for [Final Cut Pro](https://
 
 ## Demo
 
-==- Export to Excel
+==- Extract a Shot List
 
 <video controls width="1920">
   <source src="/assets/sd-export-01.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
-==- Review Roles
+==- Notion Queue
 
 <video controls width="1920">
   <source src="/assets/sd-roles-01.mp4" type="video/mp4">
