@@ -37,7 +37,7 @@ Duplicate the [Shot Data Notion Template](#notion-template), then copy the link 
 
 ==- Test Connection
 
-After you enter the token and Database URL, click `Test Connection`. **Shot Data** checks that the integration can open the database and that the title (key) property is named `Shot ID`. A green checkmark means the profile is ready for upload. A red status shows the error so you can fix the token, URL, or database schema before you save or extract.
+After you enter the token and Database URL, click `Test Connection`. **Shot Data** checks that the integration can open the database and that the title (key) property is named `Shot ID`. A green tick means the profile is ready for upload. A red status shows the error so you can fix the token, URL, or database schema before you save or extract.
 
 !!!info Info
 `Test Connection` only reads from Notion. It does not create pages, upload images, or change your database columns. The status clears if you edit the token or Database URL.
