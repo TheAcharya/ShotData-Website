@@ -79,7 +79,7 @@ By [!badge text="Default"], confirmation is off. This option only applies when E
 
 <hr>
 
-## Notification
+## Notifications
 
 ![Notification Settings](/assets/sd-general-settings-notifications.png)
 
