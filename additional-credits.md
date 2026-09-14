@@ -7,6 +7,8 @@ Shot Data is also made possible because of the hard work of these amazing open-s
 | [SwiftTimecode](https://github.com/orchetect/swift-timecode) | SMPTE timecode library for Swift |
 | [SwiftExtensions](https://github.com/orchetect/swift-extensions) | Useful extensions on Swift standard library types |
 | [SwiftTextFile](https://github.com/orchetect/swift-textfile) | Read & write delimited text file formats (incl. CSV and TSV) |
+| [FilePicker](https://github.com/markrenaud/FilePicker) | SwiftUI file picker for selecting files |
+| [PasswordField](https://github.com/MrAsterisco/PasswordField) | Secure password field for SwiftUI |
 | [ButtonKit](https://github.com/Dean151/ButtonKit) | Asynchronous and Throwable button implementation for SwiftUI, with animations and progress tracking |
 | [DockProgress](https://github.com/sindresorhus/DockProgress) | Show progress in your app's Dock icon |
 | [SwiftEmojiPicker](https://github.com/sergius-la/SwiftEmojiPicker) | A native SwiftUI emoji picker for iOS and macOS |
