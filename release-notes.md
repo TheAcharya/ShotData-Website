@@ -1,1 +1,8 @@
 # Release Notes
+
+### 1.0.0 (X)
+
+**🎉 Released:**
+- TBA
+
+This is the first public release of **Shot Data**!
