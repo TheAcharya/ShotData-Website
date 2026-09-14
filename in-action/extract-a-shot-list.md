@@ -18,7 +18,10 @@ By [!badge text="Default"], **Shot Data** uses `Notion (No Upload)`. CSV extract
 
 ## Final Cut Pro to Shot List
 
-![Extract a Shot List](/assets/sd-main-01.gif)
+<video controls width="1920">
+  <source src="/assets/sd-queue-01.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 <br>
 
