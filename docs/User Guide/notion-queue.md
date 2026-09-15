@@ -28,12 +28,7 @@ Only **Notion** extracts appear in Notion Queue. CSV extracts are local only and
 
 When you need to extract several timelines before uploading, choose `Notion (No Upload)` under [General → File](/user-guide/general/#extraction-format). Each extract is saved to your [Export Folder](/user-guide/general/#export-folder). Notion Queue then lists those shot lists so you can assign destinations and upload when ready.
 
-<video controls width="1920">
-  <source src="/assets/sd-queue-01.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-
-<br>
+![Notion Queue](/assets/sd-notion-queue-01.gif)
 
 1. Create and set up your desired [Database Profiles](/user-guide/databases).
 2. Under [General → File](/user-guide/general/#extraction-format), select `Notion (No Upload)`.
@@ -53,7 +48,7 @@ Your Notion database title (key) column must already be named `Shot ID`. **Shot 
 
 If shot-list folders already exist in an Export Destination — for example after copying them to another Mac — press `Load from Export Destination` to scan and list them.
 
-![Load from Export Destination](/assets/sd-queue-02.gif)
+![Load from Export Destination](/assets/sd-notion-queue-02.gif)
 
 - Press `Load from Export Destination` to refresh the list from the current Export Folder.
 - When `Delete Folders After Upload` is enabled, folders that upload successfully are moved to the Trash.
@@ -64,7 +59,7 @@ You can drag specific extraction folders onto Notion Queue to list only those sh
 
 Dropping folders clears the current Queue list, then scans the dropped folders.
 
-![Drag and Drop to Queue Window](/assets/sd-queue-03.gif)
+![Drag and Drop to Queue Window](/assets/sd-notion-queue-03.gif)
 
 !!!info Info
 Right-click the table and choose `Clear` to empty the Queue list. **Shot Data** uploads the Notion manifest beside each scanned folder, so a copied or moved shot-list folder still uploads even if the original export path has changed.
