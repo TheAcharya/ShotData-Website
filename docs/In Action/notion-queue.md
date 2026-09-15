@@ -9,7 +9,7 @@ order: -2
 
 ## Configuration Setup
 
-![Create Notion Profile](/assets/sd-notion-queue-01.gif)
+![Create Notion Profile](/assets/sd-notion-queue-in-action-01.gif)
 
 1. [Create Your Configuration](/user-guide/configurations/#add-configuration).
 2. Select your desired Export Destination by clicking on the [Folder Icon](/user-guide/general/#export-folder).
@@ -24,7 +24,7 @@ Your Notion database title (key) column must already be named `Shot ID` and must
 ## Extract First, Upload Later
 
 <video controls width="1920">
-  <source src="/assets/sd-queue-01.mp4" type="video/mp4">
+  <source src="/assets/sd-notion-queue-in-action-01.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
