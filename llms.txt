@@ -28,7 +28,7 @@
 - [Notion Queue](http://shotdata.theacharya.co/user-guide/notion-queue.md): Notion Queue Window
 - [General Settings](http://shotdata.theacharya.co/user-guide/general.md): General Settings
 - [Configuration Settings](http://shotdata.theacharya.co/user-guide/configurations.md): Configuration Settings
-- [Database Settings](http://shotdata.theacharya.co/user-guide/databases.md): Database Settings
+- [Databases Settings](http://shotdata.theacharya.co/user-guide/databases.md): Database Settings
 - [Keyboard Shortcuts](http://shotdata.theacharya.co/user-guide/keyboard-shortcuts.md): You can use keyboard shortcuts to quickly accomplish common tasks in Shot Data. To use a keyboard shortcut, press all the keys in the shortcut at the same time.
 
 ## Database
