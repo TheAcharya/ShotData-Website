@@ -1,6 +1,6 @@
 ---
 label: Welcome
-description: Shot Data creates a Shot List Database from Final Cut Pro still-image timelines.
+description: Shot Data creates a Shot List Notion Database from Final Cut Pro still-image timelines.
 icon: home
 order: -1
 image: /static/shot-data-social-card.png
@@ -10,14 +10,14 @@ image: /static/shot-data-social-card.png
 
 ![](/static/shot-data-social-card.png)
 
-The shot list database creation application crafted for [Final Cut Pro](https://www.apple.com/final-cut-pro/). It serves as a native macOS frontend for storytellers who pre-cut a project as a stills timeline, turning that intention into ordered PNG stills and a shot list before cameras roll, powered by [OpenFCPXMLKit](https://github.com/TheAcharya/OpenFCPXMLKit), a free and open-source, experimental FCPXML parsing engine.
+The shot list database creation application crafted for [Final Cut Pro](https://www.apple.com/final-cut-pro/). It serves as a native macOS frontend for storytellers who pre-cut a project as a stills timeline, turning that intention into ordered PNG stills and a shot list designed for [Notion](https://www.notion.com) Database before cameras roll, powered by [OpenFCPXMLKit](https://github.com/TheAcharya/OpenFCPXMLKit), a free and open-source, experimental FCPXML parsing engine.
 
 ## Core Features
 
-- Create a Shot List Database from Final Cut Pro still-image timelines: one PNG per shot plus a structured shot list.
+- Create a Shot List Database for Notion from Final Cut Pro still-image timelines
 - Built for pre-cut stills timelines on the primary timeline.
 - Extract as Notion or CSV, with upload to Notion when you choose a Database Profile.
-- Notion Queue for extract first, upload later.
+- Notion Queue for extract first, batch upload later.
 - Scene Number and Folder Format controls, plus a quick Scene Number badge on Extract.
 - Drag and drop `.fcpxml` / `.fcpxmld` files, or timelines from Final Cut Pro.
 - Each extract is saved to a uniquely named folder in your Export Folder.
