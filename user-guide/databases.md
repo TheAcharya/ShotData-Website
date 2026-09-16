@@ -1,4 +1,4 @@
-# Databases Settings
+# Database Settings
 
 ![Database Settings](/assets/sd-database-settings.png)
 
