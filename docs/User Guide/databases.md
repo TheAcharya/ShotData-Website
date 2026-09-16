@@ -3,7 +3,7 @@ label: Databases
 icon: server
 order: -5
 ---
-# Databases Settings
+# Database Settings
 
 ![Database Settings](/assets/sd-database-settings.png)
 
