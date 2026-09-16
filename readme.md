@@ -6,7 +6,7 @@ The shot list database creation application crafted for [Final Cut Pro](https://
 
 ## Core Features
 
-- Create a Shot List Database for Notion from Final Cut Pro still-image timelines
+- Create a Shot List Database for Notion from Final Cut Pro still-image timelines.
 - Built for pre-cut stills timelines on the primary timeline.
 - Extract as Notion or CSV, with upload to Notion when you choose a Database Profile.
 - Notion Queue for extract first, batch upload later.
