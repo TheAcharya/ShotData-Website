@@ -26,7 +26,7 @@ The Notion JSON manifest is written to be structurally identical to the [Shot Da
 
 **Shot Data** writes only those values a still-image timeline can truthfully supply, namely `Shot ID`, `Shot Number`, `Shot Duration`, `Scene Number`, `Icon Image`, and `Image Filename`. The remaining columns, such as `Camera Angle`, `Lens`, `Scene Cast`, `Wardrobe Notes`, and `Lighting Notes`, describe creative and production intent that simply does not exist within FCPXML. Rather than fabricate those values, **Shot Data** leaves them empty for you to complete.
 
-### Why there is no built-in Shot List Editor
+## Why there is no built-in Shot List Editor
 
 It would certainly have been possible to introduce a Shot List Editor between extraction and upload, allowing those fields to be filled locally beforehand. After considerable deliberation, this was not implemented, for two reasons.
 
