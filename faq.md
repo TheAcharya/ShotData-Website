@@ -1,5 +1,15 @@
 # Frequently Asked Questions
 
+## What is the purpose of the CSV Extraction Format?
+
+The `CSV` Extraction Format exists to keep **Shot Data** deliberately open-ended. Whilst the Notion manifest is written to mirror the [Shot Data Notion Template](/user-guide/databases/#notion-template) schema, the CSV manifest makes no assumption whatsoever about where your shot list is ultimately destined.
+
+Every CSV extract is written alongside the very same ordered PNG stills produced by any other Extraction Format, with the `Image Filename` column binding each row to its corresponding still. That pairing of a plain, standards-compliant data set with a sequenced set of images is intentionally neutral. It may be imported into a spreadsheet application, ingested by a bespoke production database, parsed by an in-house script, or repurposed entirely by a custom application built around your own pipeline.
+
+In short, Notion is the destination **Shot Data** is built around, whilst `CSV` is the provision for everything else. You are free to take the data set and the stills and reshape them however your workflow demands.
+
+CSV extracts are local only and do not appear in [Notion Queue](/user-guide/notion-queue). Select `Notion` or `Notion (No Upload)` as your [Extraction Format](/user-guide/general/#extraction-format) when you require Queue support.
+
 ## Is the exported CSV compatible with spreadsheet applications like Apple Numbers?
 
 Yes. The exported `.csv` manifest follows a standard comma-separated format, so it opens directly in Apple's [Numbers](https://www.apple.com/iwork/index.html), Microsoft Excel, Google Sheets, and other spreadsheet applications that support `.csv` files, without requiring any conversion.
@@ -7,6 +17,34 @@ Yes. The exported `.csv` manifest follows a standard comma-separated format, so 
 ## Is the Notion manifest compatible with csv2notion-neo?
 
 Yes. The Notion JSON manifest written by **Shot Data** is compatible with [csv2notion-neo](https://github.com/TheAcharya/csv2notion-neo), which is free and open source. You can upload that Data Set with csv2notion-neo from the command line if you prefer a terminal workflow. **Shot Data** also includes its own in-process Notion upload for the same kind of manifest.
+
+## Why is the JSON file produced by the Notion Extraction Format mostly empty?
+
+This is entirely by design, and is not an indication that the extraction has failed.
+
+The Notion JSON manifest is written to be structurally identical to the [Shot Data Notion Template](/user-guide/databases/#notion-template) database schema. Every column defined in that template is present in the manifest, irrespective of whether **Shot Data** is in a position to populate it.
+
+**Shot Data** writes only those values a still-image timeline can truthfully supply, namely `Shot ID`, `Shot Number`, `Shot Duration`, `Scene Number`, `Icon Image`, and `Image Filename`. The remaining columns, such as `Camera Angle`, `Lens`, `Scene Cast`, `Wardrobe Notes`, and `Lighting Notes`, describe creative and production intent that simply does not exist within FCPXML. Rather than fabricate those values, **Shot Data** leaves them empty for you to complete.
+
+### Why there is no built-in Shot List Editor
+
+It would certainly have been possible to introduce a Shot List Editor between extraction and upload, allowing those fields to be filled locally beforehand. After considerable deliberation, this was not implemented, for two reasons.
+
+Firstly, it would immediately create two competing sources of truth. The moment you amend a shot in Notion, the locally extracted data set becomes outdated, and reconciling the two would introduce far more complexity than it resolves.
+
+Secondly, it would be markedly slower than the alternative. Populating those fields directly within Notion, whether by hand, by way of the [Notion MCP with AI agents](https://www.notion.com/help/notion-mcp), or using [Notion's own built-in AI](https://www.notion.com/help/category/notion-ai), can be accomplished in a matter of minutes, and leaves the Notion database as the single, authoritative source of truth for the production.
+
+The empty columns are nonetheless retained in full, so that the manifest remains faithful to the template schema and **Shot Data** is future-proofed against any expansion of the extracted field set.
+
+## Why is there no PDF Extraction Format?
+
+Storyboards and shot lists have traditionally been exported and circulated as PDF documents, and for a short-form piece that remains perfectly serviceable. On a production of any appreciable scale, however, that approach begins to falter.
+
+Consider a project comprising upwards of a hundred scenes. The result is a proliferation of PDF documents to be juggled on set, tedious to search, awkward to organise, and cumbersome to distribute across departments. A PDF is, by its very nature, a static snapshot. The instant a shot is revised, reordered, or removed, every copy in circulation is rendered obsolete and the document must be regenerated and redistributed in its entirety.
+
+A database removes those shortcomings outright. Within Notion, the same shot list may be filtered, sorted, grouped, and tagged to suit whoever happens to be consulting it, with custom views prepared for each department. Each shot is its own page, carrying its still image alongside any notes, references, or blocks appended to it as the production evolves. Revisions are reflected immediately for everyone, with no reissuing required.
+
+That is the reasoning behind **Shot Data** producing a Shot List Database rather than a document.
 
 ## How is the Mac app different from the CLI?
 
