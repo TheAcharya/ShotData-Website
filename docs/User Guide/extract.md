@@ -41,6 +41,10 @@ Extraction begins as soon as a valid timeline is received, provided an Export Fo
 Extract is intended for primary-spine still-image timelines. If **Shot Data** cannot open the source stills, it will ask you to `Choose Media Folder` before writing PNGs — see [Choose Media Folder](#choose-media-folder).
 !!!
 
+!!!info Info
+On macOS, dropping an FCPXML onto the Dock icon does not always bring **Shot Data** to the front. If the window stays in the background, click the app icon to restore it.
+!!!
+
 ## Choose Media Folder
 
 After planning shots, **Shot Data** may show `Choose Media Folder` if it cannot open the source stills — for example after dragging a timeline from Final Cut Pro (staged in Cache), when stills live on another volume, or when stills sit inside a Final Cut Pro library (`.fcpbundle`).
