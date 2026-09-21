@@ -221,15 +221,7 @@ Cache files may be named like `FCP Drop-…`. Export folders and shot-list names
 
 `Open Notion Database` is shown on the [Extract](/user-guide/extract) completion card only after an extract that used a Notion [Database Profile](/user-guide/databases), when that profile’s Database URL can be opened. It is not shown for `Notion (No Upload)` or CSV extracts, and it is not available on [Notion Queue](/user-guide/notion-queue).
 
-If Notion Desktop App is not installed, the same button opens the database in your default browser. Option-click `Open Notion Database` to open the database in your default browser even when Notion Desktop App is installed.
-
-## Open Notion Database does not show the uploaded database
-
-If Notion Desktop App is already running, it may come to the front without switching to the uploaded database. Option-click `Open Notion Database` on the [Extract](/user-guide/extract) completion card to open the database in your default browser.
-
-## Option-click Open Notion Database still opens Notion Desktop
-
-Option-click `Open Notion Database` on the [Extract](/user-guide/extract) completion card opens the database in your default browser. If that browser is Safari, Safari may still open Notion Desktop App when it is installed. That is normal. Choose a different browser if you want the database to stay in the browser.
+If Notion Desktop App is not installed, the same button opens the database in your default browser.
 
 ## Drag and drop from Final Cut Pro does not start an extraction
 
