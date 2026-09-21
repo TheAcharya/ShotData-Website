@@ -65,7 +65,7 @@ Scene Number must not be empty. Alphanumeric values are allowed. You can also ed
 
 ### Notion Icon
 
-![Notification Settings](/assets/sd-general-settings-emoji-picker.png)
+![Emoji Picker](/assets/sd-general-settings-emoji-picker.png)
 
 Choose the emoji written into the Notion manifest as `Icon Image` (used as the Notion page icon on upload).
 
@@ -76,6 +76,8 @@ By [!badge text="Default"], the icon is `🎬`.
 Checking `Ask for Upload Confirmation` pauses extract-and-upload after planning, so you can confirm before Notion is written.
 
 By [!badge text="Default"], confirmation is off. This option only applies when Extraction Format is a database profile that uploads.
+
+![Upload Confirmation](/assets/sd-general-settings-upload-confirmation.png)
 
 <hr>
 
