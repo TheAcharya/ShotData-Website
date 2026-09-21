@@ -105,6 +105,16 @@ Put simply, **Marker Data** is oriented towards marker-driven, collaborative dat
 
 Put simply, **Production Data** is oriented towards production reports, while **Shot Data** is oriented towards stills-based shot lists. Together with [Marker Data](https://markerdata.theacharya.co), they form a trilogy of Final Cut Pro tools and can be used independently or alongside one another.
 
+## Are you affiliated with Notion?
+
+We are not associated with, nor do we have any affiliation with, Notion in any capacity.
+
+## Is it possible to use Shot Data with the free plan of Notion?
+
+**Shot Data** can be used with Notion's free plan. There are no technical constraints imposed by Shot Data on such usage. However, it is important to consider the limitations inherent to Notion's free tier. Specifically, Notion's free plan restricts uploads to a maximum of 5MB per file. **Shot Data** uploads each shot's PNG still (and, where set, a page icon) to Notion, so files larger than that limit may fail to upload even when extraction itself succeeds.
+
+To use [Notion AI](https://www.notion.com/help/category/notion-ai) or the [Notion MCP](https://www.notion.com/help/notion-mcp) with the shot list, a paid Notion account is required.
+
 ## Was AI and LLMs used in the development of Shot Data?
 
 Yes, though the extent varied across different parts of the application. The underlying engine, [OpenFCPXMLKit](https://github.com/TheAcharya/OpenFCPXMLKit), which handles the parsing and shot extracting logic that powers **Shot Data**, was developed with substantial assistance from various large language models throughout its creation.
