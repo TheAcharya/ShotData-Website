@@ -21,7 +21,7 @@ Yes. The exported `.csv` manifest follows a standard comma-separated format, so 
 
 ## Is the Notion manifest compatible with csv2notion-neo?
 
-Yes. The Notion JSON manifest written by **Shot Data** is compatible with [csv2notion-neo](https://github.com/TheAcharya/csv2notion-neo), which is free and open source. You can upload that Data Set with csv2notion-neo from the command line if you prefer a terminal workflow. **Shot Data** also includes its own in-process Notion upload for the same kind of manifest.
+Yes. The Notion JSON manifest written by **Shot Data** is compatible with [CSV2Notion Neo](https://github.com/TheAcharya/csv2notion-neo), which is free and open source. You can upload that Data Set with csv2notion-neo from the command line if you prefer a terminal workflow. **Shot Data** also includes its own in-process Notion upload for the same kind of manifest.
 
 ## Why is the JSON file produced by the Notion Extraction Format mostly empty?
 
@@ -114,6 +114,12 @@ We are not associated with, nor do we have any affiliation with, Notion in any c
 **Shot Data** can be used with Notion's free plan. There are no technical constraints imposed by Shot Data on such usage. However, it is important to consider the limitations inherent to Notion's free tier. Specifically, Notion's free plan restricts uploads to a maximum of 5MB per file. **Shot Data** uploads each shot's PNG still (and, where set, a page icon) to Notion, so files larger than that limit may fail to upload even when extraction itself succeeds.
 
 To use [Notion AI](https://www.notion.com/help/category/notion-ai) or the [Notion MCP](https://www.notion.com/help/notion-mcp) with the shot list, a paid Notion account is required.
+
+## Could other database platforms be supported in the foreseeable future?
+
+No. **Shot Data** uploads shot lists to [Notion](https://www.notion.com/) only. Our emphasis remains the steadfast support and enhancement of that Notion integration, a platform already widely embraced by users and companies across the Film and TV industry. Developing a robust in-app uploader, inspired by our very own [CSV2Notion Neo](https://github.com/TheAcharya/csv2notion-neo) project, has demanded a significant investment of time and effort.
+
+Should you need a destination other than Notion, the `CSV` Extraction Format is the provision for that: a local, standards-compliant data set you can take wherever your pipeline requires.
 
 ## Was AI and LLMs used in the development of Shot Data?
 
