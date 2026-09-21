@@ -33,7 +33,7 @@ Your browser does not support the video tag.
 5. When the run finishes, press `Open Notion Database` to view the uploaded shot list, and `Show in Finder` to review the PNGs and manifest.
 
 !!!info Info
-`Open Notion Database` appears after extract-and-upload. It is not shown for `Notion (No Upload)` or CSV.
+`Open Notion Database` appears after extract-and-upload. It is not shown for `Notion (No Upload)` or CSV. Option-click to open the database in your web browser.
 !!!
 
 ## Afterthoughts
