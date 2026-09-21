@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.843276464222">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.843277339237">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../static/favicon.ico" />
-    <link href="../resources/css/retype.css?v=4.6.0.843276464222" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.6.0.843277339237" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.843276464222" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.843277339237" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.843276464222" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.843277339237" data-turbo-eval="false" defer></script>
 
     <meta name="msvalidate.01" content="325120C12888C61306930ACDFB17A57E" />
     <!-- Google Tag Manager -->
@@ -268,7 +268,7 @@
 <h2 id="is-the-exported-csv-compatible-with-spreadsheet-applications-like-apple-numbers">Is the exported CSV compatible with spreadsheet applications like Apple Numbers?</h2>
 <p>Yes. The exported <code translate="no" v-pre>.csv</code> manifest follows a standard comma-separated format, so it opens directly in Apple&#x27;s <a href="https://www.apple.com/iwork/index.html" class="outbound" target="_blank">Numbers</a>, Microsoft Excel, Google Sheets, and other spreadsheet applications that support <code translate="no" v-pre>.csv</code> files, without requiring any conversion.</p>
 <h2 id="is-the-notion-manifest-compatible-with-csv2notion-neo">Is the Notion manifest compatible with csv2notion-neo?</h2>
-<p>Yes. The Notion JSON manifest written by <strong>Shot Data</strong> is compatible with <a href="https://github.com/TheAcharya/csv2notion-neo" class="outbound" target="_blank">csv2notion-neo</a>, which is free and open source. You can upload that Data Set with csv2notion-neo from the command line if you prefer a terminal workflow. <strong>Shot Data</strong> also includes its own in-process Notion upload for the same kind of manifest.</p>
+<p>Yes. The Notion JSON manifest written by <strong>Shot Data</strong> is compatible with <a href="https://github.com/TheAcharya/csv2notion-neo" class="outbound" target="_blank">CSV2Notion Neo</a>, which is free and open source. You can upload that Data Set with csv2notion-neo from the command line if you prefer a terminal workflow. <strong>Shot Data</strong> also includes its own in-process Notion upload for the same kind of manifest.</p>
 <h2 id="why-is-the-json-file-produced-by-the-notion-extraction-format-mostly-empty">Why is the JSON file produced by the Notion Extraction Format mostly empty?</h2>
 <p>This is entirely by design, and is not an indication that the extraction has failed.</p>
 <p>The Notion JSON manifest is written to be structurally identical to the <a href="/user-guide/databases/#notion-template">Shot Data Notion Template</a> database schema. Every column defined in that template is present in the manifest, irrespective of whether <strong>Shot Data</strong> is in a position to populate it.</p>
@@ -315,6 +315,9 @@
 <h2 id="is-it-possible-to-use-shot-data-with-the-free-plan-of-notion">Is it possible to use Shot Data with the free plan of Notion?</h2>
 <p><strong>Shot Data</strong> can be used with Notion&#x27;s free plan. There are no technical constraints imposed by Shot Data on such usage. However, it is important to consider the limitations inherent to Notion&#x27;s free tier. Specifically, Notion&#x27;s free plan restricts uploads to a maximum of 5MB per file. <strong>Shot Data</strong> uploads each shot&#x27;s PNG still (and, where set, a page icon) to Notion, so files larger than that limit may fail to upload even when extraction itself succeeds.</p>
 <p>To use <a href="https://www.notion.com/help/category/notion-ai" class="outbound" target="_blank">Notion AI</a> or the <a href="https://www.notion.com/help/notion-mcp" class="outbound" target="_blank">Notion MCP</a> with the shot list, a paid Notion account is required.</p>
+<h2 id="could-other-database-platforms-be-supported-in-the-foreseeable-future">Could other database platforms be supported in the foreseeable future?</h2>
+<p>No. <strong>Shot Data</strong> uploads shot lists to <a href="https://www.notion.com/" class="outbound" target="_blank">Notion</a> only. Our emphasis remains the steadfast support and enhancement of that Notion integration, a platform already widely embraced by users and companies across the Film and TV industry. Developing a robust in-app uploader, inspired by our very own <a href="https://github.com/TheAcharya/csv2notion-neo" class="outbound" target="_blank">CSV2Notion Neo</a> project, has demanded a significant investment of time and effort.</p>
+<p>Should you need a destination other than Notion, the <code translate="no" v-pre>CSV</code> Extraction Format is the provision for that: a local, standards-compliant data set you can take wherever your pipeline requires.</p>
 <h2 id="was-ai-and-llms-used-in-the-development-of-shot-data">Was AI and LLMs used in the development of Shot Data?</h2>
 <p>Yes, though the extent varied across different parts of the application. The underlying engine, <a href="https://github.com/TheAcharya/OpenFCPXMLKit" class="outbound" target="_blank">OpenFCPXMLKit</a>, which handles the parsing and shot extracting logic that powers <strong>Shot Data</strong>, was developed with substantial assistance from various large language models throughout its creation.</p>
 <p>The user interface, by contrast, has a more traditional origin. It was built upon the interface of <a href="https://markerdata.theacharya.co" class="outbound" target="_blank">Marker Data</a>, which was originally hand-written. AI and LLM tools were subsequently used to re-wire and repurpose this existing interface for <strong>Shot Data</strong>&#x27;s specific needs, rather than to author it from scratch.</p>
