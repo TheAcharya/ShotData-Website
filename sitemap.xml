@@ -16,22 +16,22 @@
     <loc>http://shotdata.theacharya.co/troubleshooting/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/user-guide/general/</loc>
-  </url>
-  <url>
     <loc>http://shotdata.theacharya.co/prologue/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/user-guide/databases/</loc>
   </url>
   <url>
+    <loc>http://shotdata.theacharya.co/user-guide/general/</loc>
+  </url>
+  <url>
+    <loc>http://shotdata.theacharya.co/faq/</loc>
+  </url>
+  <url>
     <loc>http://shotdata.theacharya.co/user-guide/extract/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/user-guide/notion-queue/</loc>
-  </url>
-  <url>
-    <loc>http://shotdata.theacharya.co/faq/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/user-guide/configurations/</loc>
@@ -43,37 +43,37 @@
     <loc>http://shotdata.theacharya.co/press-kit-media/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/credits/</loc>
-  </url>
-  <url>
-    <loc>http://shotdata.theacharya.co/user-guide/overview/</loc>
-  </url>
-  <url>
     <loc>http://shotdata.theacharya.co/epilogue/</loc>
+  </url>
+  <url>
+    <loc>http://shotdata.theacharya.co/credits/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/release-notes/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/user-guide/keyboard-shortcuts/</loc>
-  </url>
-  <url>
-    <loc>http://shotdata.theacharya.co/in-action/notion-queue/</loc>
+    <loc>http://shotdata.theacharya.co/user-guide/overview/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/the-acharya/</loc>
   </url>
   <url>
+    <loc>http://shotdata.theacharya.co/user-guide/keyboard-shortcuts/</loc>
+  </url>
+  <url>
     <loc>http://shotdata.theacharya.co/in-action/extract-a-shot-list/</loc>
+  </url>
+  <url>
+    <loc>http://shotdata.theacharya.co/in-action/notion-queue/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/case-study/final-cut-pro-enigma/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/database/notion-prerequisite/</loc>
+    <loc>http://shotdata.theacharya.co/case-study/what-is-sound-lock/</loc>
   </url>
   <url>
-    <loc>http://shotdata.theacharya.co/case-study/what-is-sound-lock/</loc>
+    <loc>http://shotdata.theacharya.co/database/notion-prerequisite/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/database/database-platform/</loc>

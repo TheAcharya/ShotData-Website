@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.843274616711">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.843276464222">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../static/favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.843274616711" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.843276464222" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.843274616711" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.843276464222" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.843274616711" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.843276464222" data-turbo-eval="false" defer></script>
 
     <meta name="msvalidate.01" content="325120C12888C61306930ACDFB17A57E" />
     <!-- Google Tag Manager -->
@@ -287,7 +287,8 @@
 <li><a href="/user-guide/configurations/#add-configuration">Create Your Configuration</a>.</li>
 <li>Select your desired Export Destination by clicking on the <a href="/user-guide/general/#export-folder">Folder Icon</a>.</li>
 <li>Duplicate the <a href="/user-guide/databases/#notion-template">Shot Data Notion Template</a>, then create your <a href="/user-guide/databases">Database Profiles</a>. Click <code translate="no" v-pre>Test Connection</code> before you save.</li>
-<li>Under <a href="/user-guide/general/#extraction-format">General → File</a>, select <code translate="no" v-pre>Notion (No Upload)</code>.</li>
+<li>Under <a href="/user-guide/general/#extraction-format">File</a>, select <code translate="no" v-pre>Notion (No Upload)</code> so extracts stay local until you upload from Notion Queue.</li>
+<li>Set <a href="/user-guide/general/#scene-number">Scene Number</a> and <a href="/user-guide/general/#folder-format">Folder Format</a> under <a href="/user-guide/general">File</a>.</li>
 <li>Return to Configurations to <a href="/user-guide/configurations/#update-active-configuration">Update Active Configuration</a>.</li>
 </ol>
 <div class="flex mb-6">
@@ -304,7 +305,7 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Info</h5>
-<p>Your Notion database title (key) column must already be named <code translate="no" v-pre>Shot ID</code> and must use Notion’s <strong>Title</strong> property type. <strong>Shot Data</strong> will not create that column for you. CSV extracts are local only and do not appear in Notion Queue.</p>
+<p>Your Notion database title (key) column must already be named <code translate="no" v-pre>Shot ID</code> and must use Notion’s <strong>Title</strong> property type. <strong>Shot Data</strong> will not create that column for you. You choose a Database Profile as the <strong>Upload Destination</strong> on each Queue row, not as Extraction Format. CSV extracts are local only and do not appear in Notion Queue. To extract and upload in one run, see <a href="/in-action/extract-a-shot-list">Extract a Shot List</a>.</p>
         </div>
     </div>
 </div>
