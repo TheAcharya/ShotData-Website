@@ -73,7 +73,7 @@ CSV and `Notion (No Upload)` write locally only. Use [Notion Queue](/user-guide/
 When extraction finishes, the progress card shows how many shots were extracted (for example `12 Shots Extracted`).
 
 - `Show in Finder` opens the unique export folder containing the PNGs and the Notion or CSV manifest.
-- `Open Notion Database` appears after extract-and-upload when that extract’s Database Profile has a usable Database URL. It opens the database in Notion Desktop, or in your browser if Notion Desktop App is not installed.
+- `Open Notion Database` appears after extract-and-upload when that extract’s Database Profile has a usable Database URL. It opens the database in Notion Desktop, or in your browser if Notion Desktop App is not installed. Option-click to open in your web browser.
 - `Show Error Details` appears if the run failed. `Close` dismisses the card.
 
 !!!info Info
