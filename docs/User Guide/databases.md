@@ -88,3 +88,5 @@ Select `Open Database Profiles in Finder` to reveal the folder that stores your 
 ## Notion Template
 
 [![](/assets/template-banner-01.png)](https://soothsayer.notion.site/3ec5e4740c4c80469210fda4aacbfc78?v=85e5e4740c4c8345864c08682519f7de){target="_blank"}
+
+[!ref icon="paper-airplane" text="Extract a Shot List"](/in-action/extract-a-shot-list)
