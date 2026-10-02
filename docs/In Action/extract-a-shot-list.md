@@ -41,6 +41,15 @@ Your browser does not support the video tag.
 `Open Notion Database` appears after extract-and-upload. It is not shown for `Notion (No Upload)` or CSV. Option-click to open the database in your web browser.
 !!!
 
+## Notion Template Demo
+
+<video controls width="1920">
+  <source src="/assets/sd-notion-template-demo.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<br>
+
 ## Afterthoughts
 
 Once a Final Cut Pro timeline has been extracted into a meaningful shot list, that shot list no longer sits inert in a folder. It lives inside a Notion database, and in doing so it becomes something a production can genuinely work with.
