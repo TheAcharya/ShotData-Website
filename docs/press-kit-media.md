@@ -14,22 +14,6 @@ We would greatly appreciate your support in sharing and promoting **Shot Data**!
 
 Feel free to reach out directly [here](https://tech.theacharya.co).
 
-## What Users Say
-
-<style>
-	.quote {
-		text-align: left;
-		color: #FFFFFF;
-		border-radius: 10px;
-		background-color: #000000;
-		border: 2px solid #000000;
-		padding-top: 20px;
-		padding-left: 20px;
-		padding-right: 20px;
-		margin-bottom: 20px;
-	}
-</style>
-
 ## Trivia
 
 - **Shot Data** is the third macOS application developed by The Acharya.
