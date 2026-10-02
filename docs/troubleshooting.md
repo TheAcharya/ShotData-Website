@@ -95,6 +95,8 @@ See also [Choose Media Folder](/user-guide/extract#choose-media-folder) on Extra
 
 ## Extraction fails on video, Motion templates, titles, or other non-stills
 
+![Failed to extract completely](/assets/sd-troubleshooting_02.png)
+
 **Shot Data** only extracts the FCPXML **primary timeline** (primary spine). Connected clips and secondary lanes are ignored.
 
 Only **still images** on that primary timeline are supported. Extraction will fail (or skip unsupported items by throwing) when the primary spine includes things such as:
