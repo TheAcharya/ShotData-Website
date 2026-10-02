@@ -52,6 +52,8 @@ Your browser does not support the video tag.
 
 ![Database Settings](/assets/sd-database-settings.png)
 
+[!embed text="Notion Template Demo"](/assets/ssd-notion-template-demo.mp4)
+
 ## System Requirements
 
 macOS 26.0 or later
