@@ -59,3 +59,5 @@ Dropping folders clears the current Queue list, then scans the dropped folders.
 !!!info Info
 Right-click the table and choose `Clear` to empty the Queue list. **Shot Data** uploads the Notion manifest beside each scanned folder, so a copied or moved shot-list folder still uploads even if the original export path has changed.
 !!!
+
+[!ref icon="paper-airplane" text="Notion Queue"](/in-action/notion-queue)
