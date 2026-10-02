@@ -25,7 +25,7 @@ Your Notion database title (key) column must already be named `Shot ID` and must
 ## Extract First, Upload Later
 
 <video controls width="1920">
-  <source src="/assets/sd-notion-queue-in-action-01.mp4" type="video/mp4">
+  <source src="/assets/sd-notion-queue-in-action-02.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 

@@ -35,14 +35,14 @@ The shot list database creation application crafted for [Final Cut Pro](https://
 ==- Extract a Shot List
 
 <video controls width="1920">
-  <source src="/assets/sd-export-01.mp4" type="video/mp4">
+  <source src="/assets/sd-extract-a-shot-list-02.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
 ==- Notion Queue
 
 <video controls width="1920">
-  <source src="/assets/sd-roles-01.mp4" type="video/mp4">
+  <source src="/assets/sd-notion-queue-in-action-02.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 

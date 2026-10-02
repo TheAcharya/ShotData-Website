@@ -25,7 +25,7 @@ This walkthrough extracts and uploads in one run. The app default is `Notion (No
 ## Final Cut Pro to Shot List
 
 <video controls width="1920">
-  <source src="/assets/sd-queue-01.mp4" type="video/mp4">
+  <source src="/assets/sd-extract-a-shot-list-02.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
