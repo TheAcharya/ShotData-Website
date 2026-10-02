@@ -33,3 +33,5 @@ Your browser does not support the video tag.
 !!!info Info
 You can also press `Load from Export Destination` to list shot-list folders already in your Export Folder, or drag specific extraction folders onto Notion Queue. When `Delete Folders After Upload` is enabled, folders that upload successfully are moved to the Trash.
 !!!
+
+[!ref icon="paper-airplane" text="Notion Queue"](/in-action/notion-queue)

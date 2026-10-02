@@ -49,6 +49,9 @@
     <loc>http://shotdata.theacharya.co/credits/</loc>
   </url>
   <url>
+    <loc>http://shotdata.theacharya.co/in-action/notion-queue/</loc>
+  </url>
+  <url>
     <loc>http://shotdata.theacharya.co/release-notes/</loc>
   </url>
   <url>
@@ -62,9 +65,6 @@
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/in-action/extract-a-shot-list/</loc>
-  </url>
-  <url>
-    <loc>http://shotdata.theacharya.co/in-action/notion-queue/</loc>
   </url>
   <url>
     <loc>http://shotdata.theacharya.co/case-study/final-cut-pro-enigma/</loc>
