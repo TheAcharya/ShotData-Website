@@ -36,7 +36,7 @@ Your browser does not support the video tag.
 `Open Notion Database` appears after extract-and-upload. It is not shown for `Notion (No Upload)` or CSV. Option-click to open the database in your web browser.
 !!!
 
-## Notion Template Demo
+## Notion Template
 
 <video controls width="1920">
   <source src="/assets/sd-notion-template-demo.mp4" type="video/mp4">
