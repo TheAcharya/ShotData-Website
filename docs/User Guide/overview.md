@@ -15,7 +15,7 @@ That said, this website is ready when you need it: answers to common questions, 
 
 ![Shot Data's Mac App Store Page](/assets/sd-install.png)
 
-1. Download **Shot Data** from the [Mac App Store](https://tech.theacharya.co).
+1. Download **Shot Data** from the [Mac App Store](https://apps.apple.com/app/shot-data/id6746703981).
 2. Launch **Shot Data**.
 3. Read `Onboarding` information and instructions.
 4. Create your first [Configuration](/user-guide/configurations).

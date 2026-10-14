@@ -8,6 +8,8 @@ image: /static/shot-data-social-card.png
 
 # Shot Data
 
+> [:icon-desktop-download: Available on the Mac App Store for USD $59.99.](https://apps.apple.com/app/shot-data/id6746703981)
+
 ![](/static/shot-data-social-card.png)
 
 The shot list database creation application crafted for [Final Cut Pro](https://www.apple.com/final-cut-pro/). It serves as a native macOS frontend for storytellers who pre-cut a project as a stills timeline, turning that intention into ordered PNG stills and a shot list designed for [Notion](https://www.notion.com) Database before cameras roll, powered by [OpenFCPXMLKit](https://github.com/TheAcharya/OpenFCPXMLKit), a free and open-source, experimental FCPXML parsing engine.
