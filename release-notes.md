@@ -1,8 +1,8 @@
 # Release Notes
 
-### 1.0.0 (X)
+### 1.0.0 (1)
 
 **🎉 Released:**
-- TBA
+- 20th October 2026
 
 This is the first public release of **Shot Data**!
